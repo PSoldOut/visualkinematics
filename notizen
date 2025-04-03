@@ -1,0 +1,8 @@
+-zwei tabs wären okay. einer für python editor und der andere dann zum rendern
+-am besten wäre natürlich das ganze in jupiter lab einzubringen, wobei das wahrscheinlich unmöglih sein wird
+-es hat sich gezeigt das kleine codebebeispiele gut sind wo man dann direkt was sehen kann
+-er will jetzt nicht dass ich bis ins rendering python nehme. also im hintergrund javascript laufen zu lassen ist schon in ordnung
+-es ist tatsächlich ok wenn meine ptyhon funktionen ledeglich javascript funktionen aufrufen
+-es sollte schon generisch sein sodass mit wenig aufwand auch mal ein anderes beispiel von kinematischen aufgaben erstellt werden kann. (also nicht hardcoden das ein langes script nur für genau eine bewegung in einer aufgabe geschrieben werden muss
+-man kann wohl iframes verwenden um ein fremdes element mit in einen tab zu bringen oder so
+
