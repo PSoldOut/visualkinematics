@@ -141,7 +141,7 @@ def apply_rot_matrix(mesh, rot_mat):
     q = r.as_quat()  # Reihenfolge: [x, y, z, w]
 
     # Setze Quaternion (pythreejs erwartet [w, x, y, z])
-    mesh.quaternion = quaternion_multiply(mesh.quaternion, (q[0], q[1], q[2], q[3]))
+    mesh.quaternion = quaternion_multiply((q[0], q[1], q[2], q[3]), mesh.quaternion)
 
 
 
