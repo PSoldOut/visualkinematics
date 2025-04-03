@@ -3,20 +3,19 @@ import pythreejs as three
 import time
 from scipy.spatial.transform import Rotation as R, Slerp
 
-
+#die angles werden in der Reihenfolge zurückgegeben wie order es vorgibt bsp: order="ZXY" rückgabe->[z,x,y]
 def quaternion_to_euler(x, y, z, w, order):
     quaternion = [x, y, z, w]
     euler_angles = R.from_quat(quaternion).as_euler(order, degrees=True)
     return euler_angles
 
 
-#??
-def euler_to_rot_mat(x, y, z, order):
-    euler_angles = [x,y,z]
-    r = R.from_euler(order, euler_angles, degrees=True)
+#die angles müssen in der Reihenfolge angegeben werden wie es in der order steht bsp: angles=[y,x,z] order="YXZ"
+def euler_to_rot_mat(angles, order):
+    r = R.from_euler(order, angles, degrees=True)
     return r.as_matrix()
 
-#??
+#die angles werden in der Reihenfolge zurückgegeben wie order es vorgibt bsp: order="ZXY" rückgabe->[z,x,y]
 def rot_matrix_to_euler(rot_mat, order):
     r = R.from_matrix(rot_mat)
     return r.as_euler(order, degrees=True)
@@ -25,9 +24,8 @@ def rot_matrix_to_quaternion(rot_mat):
     r = R.from_matrix(rot_mat).as_quat()
     return r
 
-#??
-def euler_to_quaternion(x, y, z, order='XYZ'):
-    angles = [x,y,z]
+#die angles müssen in der Reihenfolge angegeben werden wie es in der order steht bsp: angles=[y,x,z] order="YXZ"
+def euler_to_quaternion(angles, order='XYZ'):
     r = R.from_euler(order, angles, degrees=True)
     quat = r.as_quat()
     return quat
@@ -222,139 +220,96 @@ def set_scale_animated(mesh, x, y, z):
         time.sleep(0.01)
 
 
-
-def rotate_animated(mesh, x, y, z, order):
+#die angles müssen in der Reihenfolge angegeben werden wie es in der order steht bsp: angles=[y,x,z] order="YXZ"
+def rotate_local_animated(mesh, angles, order):
     time.sleep(0.5)
-    if order == "XYZ":
-        delta = 0.5
-        if np.deg2rad(x) < 0:
-            delta *= -1
-        counter = delta
-        while counter < abs(x):
-            q = euler_to_quaternion(delta, 0, 0, order)
-            mesh.quaternion = quaternion_multiply(mesh.quaternion, q)
-            counter+=abs(delta)
-            time.sleep(0.01)
-        time.sleep(0.5)
-        delta = 0.5
-        if y < 0:
-            delta *= -1
-        counter = delta
-        while counter < abs(y):
-            q = euler_to_quaternion(0, delta, 0, order)
-            mesh.quaternion = quaternion_multiply(mesh.quaternion, q)
-            counter+=abs(delta)
-            time.sleep(0.01)
-        time.sleep(0.5)
-        delta = 0.5
-        if z < 0:
-            delta *= -1
-        counter = delta
-        while counter < abs(z):
-            q = euler_to_quaternion(0, 0, delta, order)
-            mesh.quaternion = quaternion_multiply(mesh.quaternion, q)
-            counter+=abs(delta)
-            time.sleep(0.01)
-        time.sleep(0.5)
-    elif order == "XZY":
-        delta = 0.5
-        if x < 0:
-            delta *= -1
-        counter = delta
-        while counter < abs(x):
-            q = euler_to_quaternion(delta, 0, 0, order)
-            mesh.quaternion = quaternion_multiply(mesh.quaternion, q)
-            counter+=abs(delta)
-            time.sleep(0.01)
-        time.sleep(0.5)
-        delta = 0.5
-        if np.deg2rad(z) < 0:
-            delta *= -1
-        counter = delta
-        while counter < abs(z):
-            q = euler_to_quaternion(0, 0, delta, order)
-            mesh.quaternion = quaternion_multiply(mesh.quaternion, q)
-            counter+=abs(delta)
-            time.sleep(0.01)
-        time.sleep(0.5)
-        delta = 0.5
-        if y < 0:
-            delta *= -1
-        counter = delta
-        while counter < abs(y):
-            q = euler_to_quaternion(0, delta, 0, order)
-            mesh.quaternion = quaternion_multiply(mesh.quaternion, q)
-            counter+=abs(delta)
-            time.sleep(0.01)
-        time.sleep(0.5)
-    elif order == "YXZ":
-        delta = 0.5
-        if y < 0:
-            delta *= -1
-        counter = delta
-        while counter < abs(y):
-            q = euler_to_quaternion(0, delta, 0, order)
-            mesh.quaternion = quaternion_multiply(mesh.quaternion, q)
-            counter+=abs(delta)
-            time.sleep(0.01)
-        time.sleep(0.5)
-        delta = 0.5
-        if x < 0:
-            delta *= -1
-        counter = delta
-        while counter < abs(x):
-            q = euler_to_quaternion(delta, 0, 0, order)
-            mesh.quaternion = quaternion_multiply(mesh.quaternion, q)
-            counter+=abs(delta)
-            time.sleep(0.01)
-        time.sleep(0.5)
-        delta = 0.5
-        if z < 0:
-            delta *= -1
-        counter = delta
-        while counter < abs(z):
-            q = euler_to_quaternion(0, 0, delta, order)
-            mesh.quaternion = quaternion_multiply(mesh.quaternion, q)
-            counter+=abs(delta)
-            time.sleep(0.01)
-        time.sleep(0.5)
+    delta = 0.5
+    if angles[0] < 0:
+        delta *= -1
+    counter = delta
+    while counter < abs(angles[0]):
+        q = euler_to_quaternion([delta, 0, 0], order)
+        mesh.quaternion = quaternion_multiply(mesh.quaternion, q)
+        counter+=abs(delta)
+        time.sleep(0.01)
+    time.sleep(0.5)
+    delta = 0.5
+    if angles[1] < 0:
+        delta *= -1
+    counter = delta
+    while counter < abs(angles[1]):
+        q = euler_to_quaternion([0, delta, 0], order)
+        mesh.quaternion = quaternion_multiply(mesh.quaternion, q)
+        counter+=abs(delta)
+        time.sleep(0.01)
+    time.sleep(0.5)
+    delta = 0.5
+    if angles[2] < 0:
+        delta *= -1
+    counter = delta
+    while counter < abs(angles[2]):
+        q = euler_to_quaternion([0, 0, delta], order)
+        mesh.quaternion = quaternion_multiply(mesh.quaternion, q)
+        counter+=abs(delta)
+        time.sleep(0.01)
+    time.sleep(0.5)
+    
+
+
+
+#die angles müssen in der Reihenfolge angegeben werden wie es in der order steht bsp: angles=[y,x,z] order="YXZ"
+def rotate_animated(mesh, angles, order):
+    time.sleep(0.5)
+    delta = 0.5
+    if angles[0] < 0:
+        delta *= -1
+    counter = delta
+    while counter < abs(angles[0]):
+        q = euler_to_quaternion([delta, 0, 0], order)
+        mesh.quaternion = quaternion_multiply(q, mesh.quaternion)
+        counter+=abs(delta)
+        time.sleep(0.01)
+    time.sleep(0.5)
+    delta = 0.5
+    if angles[1] < 0:
+        delta *= -1
+    counter = delta
+    while counter < abs(angles[1]):
+        q = euler_to_quaternion([0, delta, 0], order)
+        mesh.quaternion = quaternion_multiply(q, mesh.quaternion)
+        counter+=abs(delta)
+        time.sleep(0.01)
+    time.sleep(0.5)
+    delta = 0.5
+    if angles[2] < 0:
+        delta *= -1
+    counter = delta
+    while counter < abs(angles[2]):
+        q = euler_to_quaternion([0, 0, delta], order)
+        mesh.quaternion = quaternion_multiply(q, mesh.quaternion)
+        counter+=abs(delta)
+        time.sleep(0.01)
+    time.sleep(0.5)
+    
 
 
 
 
 
-def rotate_world(obj, angles, order='XYZ'):
-    """
-    Wendet eine Rotation um das Welt-Koordinatensystem an.
-    :param obj: Das 3D-Objekt (Mesh)
-    :param angles: Die Euler-Winkel [x, y, z] in Grad
-    :param order: Die Rotationsreihenfolge (z. B. 'XYZ', 'ZYX')
-    """
-    # Erstelle eine Rotation aus den Euler-Winkeln
-    r = R.from_euler(order, angles, degrees=True)
+def rotate(mesh, angles, order):
+    q1 = euler_to_quaternion([angles[0], 0, 0], order)
+    q2 = euler_to_quaternion([0, angles[1], 0], order)
+    q3 = euler_to_quaternion([0, 0, angles[2]], order)
+    current = quaternion_multiply(q1, mesh.quaternion)
+    current = quaternion_multiply(q2, current)
+    mesh.quaternion = quaternion_multiply(q3, current)
 
-    # Wandle die Rotation in ein Quaternion um
-    q_new = r.as_quat()  # [x, y, z, w]
-
-    # Wandle das bestehende Quaternion des Objekts in ein NumPy-Array um
-    q_current = np.array(obj.quaternion)  # [x, y, z, w]
-
-    # Quaternion-Multiplikation (neue Rotation zuerst!)
-    q_result = R.from_quat(q_new) * R.from_quat(q_current)
-
-    # Setze das neue Quaternion am Objekt
-    obj.quaternion = list(q_result.as_quat())
-
-
-
-
-def rotate(mesh, x, y, z, order):
-    q = euler_to_quaternion(x, y, z, order)
+def rotate_local(mesh, angles, order):
+    q = euler_to_quaternion(angles, order)
     mesh.quaternion = quaternion_multiply(mesh.quaternion, q)
-    print(mesh.quaternion)
 
-def set_rotation(mesh, x, y, z, order):
-    q = euler_to_quaternion(x, y, z, order=order)
+def set_rotation(mesh, angles, order):
+    q = euler_to_quaternion(angles, order=order)
     mesh.quaternion = [q[0], q[1], q[2], q[3]]
 
 def translate(mesh, x=0, y=0, z=0):
