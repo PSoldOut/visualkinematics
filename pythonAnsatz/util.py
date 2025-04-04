@@ -173,6 +173,8 @@ def apply_rot_matrix_animated(mesh, rot_mat):
         mesh.quaternion = [n[0], n[1], n[2], n[3]]
         t += delta
         time.sleep(0.01)
+    n = slerp_quaternion(old_quat, new_quat, 1)
+    mesh.quaternion = [n[0], n[1], n[2], n[3]]
 
 
 
@@ -201,33 +203,34 @@ def slerp_quaternion(q1, q2, t):
 
 
 
-def set_scale(mesh, x, y, z):
-    mesh.scale = (x, y, z)
+def set_scale(mesh, scale):
+    mesh.scale = scale
     
 
-def set_scale_animated(mesh, x, y, z):
+def set_scale_animated(mesh, scale):
     old_x = mesh.scale[0]
     old_y = mesh.scale[1]
     old_z = mesh.scale[2]
     t = 0
     delta = 0.02
     while(t<=1):
-        current_x = (x-old_x)*t + old_x
-        current_y = (y-old_y)*t + old_y
-        current_z = (z-old_z)*t + old_z
+        current_x = (scale[0]-old_x)*t + old_x
+        current_y = (scale[0]-old_y)*t + old_y
+        current_z = (scale[0]-old_z)*t + old_z
         mesh.scale = (current_x, current_y, current_z)
         t+=delta
         time.sleep(0.01)
 
 
 #die angles müssen in der Reihenfolge angegeben werden wie es in der order steht bsp: angles=[y,x,z] order="YXZ"
-def rotate_local_animated(mesh, angles, order):
+def rotate_animated(mesh, angles, order):
+    q_final = quaternion_multiply(mesh.quaternion, euler_to_quaternion(angles, order))
     time.sleep(0.5)
     delta = 0.5
     if angles[0] < 0:
         delta *= -1
     counter = delta
-    while counter < abs(angles[0]):
+    while counter <= abs(angles[0]):
         q = euler_to_quaternion([delta, 0, 0], order)
         mesh.quaternion = quaternion_multiply(mesh.quaternion, q)
         counter+=abs(delta)
@@ -237,7 +240,7 @@ def rotate_local_animated(mesh, angles, order):
     if angles[1] < 0:
         delta *= -1
     counter = delta
-    while counter < abs(angles[1]):
+    while counter <= abs(angles[1]):
         q = euler_to_quaternion([0, delta, 0], order)
         mesh.quaternion = quaternion_multiply(mesh.quaternion, q)
         counter+=abs(delta)
@@ -247,64 +250,30 @@ def rotate_local_animated(mesh, angles, order):
     if angles[2] < 0:
         delta *= -1
     counter = delta
-    while counter < abs(angles[2]):
+    while counter <= abs(angles[2]):
         q = euler_to_quaternion([0, 0, delta], order)
         mesh.quaternion = quaternion_multiply(mesh.quaternion, q)
         counter+=abs(delta)
         time.sleep(0.01)
+    mesh.quaternion = q_final
     time.sleep(0.5)
     
 
 
 
 #die angles müssen in der Reihenfolge angegeben werden wie es in der order steht bsp: angles=[y,x,z] order="YXZ"
-def rotate_animated(mesh, angles, order):
-    time.sleep(0.5)
-    delta = 0.5
-    if angles[0] < 0:
-        delta *= -1
-    counter = delta
-    while counter < abs(angles[0]):
-        q = euler_to_quaternion([delta, 0, 0], order)
-        mesh.quaternion = quaternion_multiply(q, mesh.quaternion)
-        counter+=abs(delta)
-        time.sleep(0.01)
-    time.sleep(0.5)
-    delta = 0.5
-    if angles[1] < 0:
-        delta *= -1
-    counter = delta
-    while counter < abs(angles[1]):
-        q = euler_to_quaternion([0, delta, 0], order)
-        mesh.quaternion = quaternion_multiply(q, mesh.quaternion)
-        counter+=abs(delta)
-        time.sleep(0.01)
-    time.sleep(0.5)
-    delta = 0.5
-    if angles[2] < 0:
-        delta *= -1
-    counter = delta
-    while counter < abs(angles[2]):
-        q = euler_to_quaternion([0, 0, delta], order)
-        mesh.quaternion = quaternion_multiply(q, mesh.quaternion)
-        counter+=abs(delta)
-        time.sleep(0.01)
-    time.sleep(0.5)
+def rotate_global_animated(mesh, angles, order):
+    rotate_animated(mesh, angles[::-1], order[::-1])
     
 
 
 
 
 
-def rotate(mesh, angles, order):
-    q1 = euler_to_quaternion([angles[0], 0, 0], order)
-    q2 = euler_to_quaternion([0, angles[1], 0], order)
-    q3 = euler_to_quaternion([0, 0, angles[2]], order)
-    current = quaternion_multiply(q1, mesh.quaternion)
-    current = quaternion_multiply(q2, current)
-    mesh.quaternion = quaternion_multiply(q3, current)
+def rotate_global(mesh, angles, order):
+    mesh.quaternion = quaternion_multiply(euler_to_quaternion(angles, order[::-1]), mesh.quaternion)
 
-def rotate_local(mesh, angles, order):
+def rotate(mesh, angles, order):
     q = euler_to_quaternion(angles, order)
     mesh.quaternion = quaternion_multiply(mesh.quaternion, q)
 
@@ -312,41 +281,55 @@ def set_rotation(mesh, angles, order):
     q = euler_to_quaternion(angles, order=order)
     mesh.quaternion = [q[0], q[1], q[2], q[3]]
 
-def translate(mesh, x=0, y=0, z=0):
-    mesh.position = (mesh.position[0]+x, mesh.position[1]+y, mesh.position[2]+z)
 
-def set_translation(mesh, x=0, y=0, z=0):
-    mesh.position = (x, y, z)
+def set_rotation_global(mesh, angles, order):
+    set_rotation(mesh, angles[::-1], order[::-1])
 
-def set_translation_animated(mesh, x, y, z):
+def translate(mesh, vec):
+    mesh.position = (mesh.position[0]+vec[0], mesh.position[1]+vec[1], mesh.position[2]+vec[2])
+
+def set_translation(mesh, vec):
+    mesh.position = vec
+
+def set_translation_animated(mesh, vec, speed=50.0):
     t = 0
     delta = 0.01
     old_x = mesh.position[0]
     old_y = mesh.position[1]
     old_z = mesh.position[2]
     while(t<=1):
-        current_x = ((x-old_x)*t + old_x)
-        current_y = ((y-old_y)*t + old_y)
-        current_z = ((z-old_z)*t + old_z)
+        current_x = ((vec[0]-old_x)*t + old_x)
+        current_y = ((vec[1]-old_y)*t + old_y)
+        current_z = ((vec[2]-old_z)*t + old_z)
         mesh.position = (current_x, current_y, current_z)
         t+=delta
-        time.sleep(0.02)
+        time.sleep(1.0/speed)
+    current_x = ((vec[0]-old_x)*1 + old_x)
+    current_y = ((vec[1]-old_y)*1 + old_y)
+    current_z = ((vec[2]-old_z)*1 + old_z)
+    mesh.position = (current_x, current_y, current_z)
+    time.sleep(1.0/speed)
 
 
-def translate_animated(mesh, x, y, z):
+
+def translate_animated(mesh, vec, speed=50.0):
     t = 0
     delta = 0.01
     old_x = mesh.position[0]
     old_y = mesh.position[1]
     old_z = mesh.position[2]
     while(t<=1):
-        current_x = ((x)*t + old_x)
-        current_y = ((y)*t + old_y)
-        current_z = ((z)*t + old_z)
+        current_x = ((vec[0])*t + old_x)
+        current_y = ((vec[1])*t + old_y)
+        current_z = ((vec[2])*t + old_z)
         mesh.position = (current_x, current_y, current_z)
         t+=delta
-        time.sleep(0.02)
-
+        time.sleep(1.0/speed)
+    current_x = ((vec[0])*1 + old_x)
+    current_y = ((vec[1])*1 + old_y)
+    current_z = ((vec[2])*1 + old_z)
+    mesh.position = (current_x, current_y, current_z)
+    time.sleep(1.0/speed)
         
 
 
