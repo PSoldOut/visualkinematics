@@ -4,19 +4,19 @@ import time
 from scipy.spatial.transform import Rotation as R, Slerp
 
 #die angles werden in der Reihenfolge zurückgegeben wie order es vorgibt bsp: order="ZXY" rückgabe->[z,x,y]
-def quaternion_to_euler(x, y, z, w, order):
+def quaternion_to_euler(x, y, z, w, order="ZYZ"):
     quaternion = [x, y, z, w]
     euler_angles = R.from_quat(quaternion).as_euler(order, degrees=True)
     return euler_angles
 
 
 #die angles müssen in der Reihenfolge angegeben werden wie es in der order steht bsp: angles=[y,x,z] order="YXZ"
-def euler_to_rot_mat(angles, order):
+def euler_to_rot_mat(angles, order="ZYZ"):
     r = R.from_euler(order, angles, degrees=True)
     return r.as_matrix()
 
 #die angles werden in der Reihenfolge zurückgegeben wie order es vorgibt bsp: order="ZXY" rückgabe->[z,x,y]
-def rot_matrix_to_euler(rot_mat, order):
+def rot_matrix_to_euler(rot_mat, order="ZYZ"):
     r = R.from_matrix(rot_mat)
     return r.as_euler(order, degrees=True)
 
@@ -25,7 +25,7 @@ def rot_matrix_to_quaternion(rot_mat):
     return r
 
 #die angles müssen in der Reihenfolge angegeben werden wie es in der order steht bsp: angles=[y,x,z] order="YXZ"
-def euler_to_quaternion(angles, order='XYZ'):
+def euler_to_quaternion(angles, order='ZYZ'):
     r = R.from_euler(order, angles, degrees=True)
     quat = r.as_quat()
     return quat
@@ -109,7 +109,7 @@ def create_axes(len):
 
 
 
-def create_grid(size, density):
+def create_grid_XY(size, density):
     line_material = three.LineBasicMaterial(color='#777777')
     line_material.transparent = True
     line_material.opacity = 0.5
@@ -127,7 +127,28 @@ def create_grid(size, density):
         line2 = three.Line(line_geometry2, line_material)
         grid_group.add(line1)
         grid_group.add(line2)
+    return grid_group
 
+
+
+def create_grid_XZ(size, density):
+    line_material = three.LineBasicMaterial(color='#777777')
+    line_material.transparent = True
+    line_material.opacity = 0.5
+
+    grid_group = three.Group()
+    for i in range((int)((-size/2)*(1/density)), (int)((size/2)*(1/density))+1):
+        points1 = [[-size/2,0,i*density],[size/2,0,i*density]]
+        points2 = [[i*density,0,-size/2],[i*density,0,size/2]]
+        # Geometrie für die Linie
+        line_geometry1 = three.BufferGeometry(
+        attributes={'position': three.BufferAttribute(points1, False)})
+        line1 = three.Line(line_geometry1, line_material)
+        line_geometry2 = three.BufferGeometry(
+        attributes={'position': three.BufferAttribute(points2, False)})
+        line2 = three.Line(line_geometry2, line_material)
+        grid_group.add(line1)
+        grid_group.add(line2)
     return grid_group
 
 
@@ -146,12 +167,12 @@ def apply_rot_matrix(mesh, rot_mat):
 
 
 
-def createQuad(posX, posY, posZ, width, height, depth, r=0, g=255, b=0):
+def createQuad(posX, posY, posZ, width, height, depth, r=0, g=255, b=0, transparent=True):
     # Erstelle die Geometrie (Breite, Höhe, Tiefe)
     geometry = three.BoxGeometry(width=width, height=height, depth=depth)
     # Material (Farbe & Eigenschaften)
     hex_color = f'#{r:02X}{g:02X}{b:02X}'
-    material = three.MeshStandardMaterial(color=hex_color, metalness=0.5, roughness=0.8, transparent=True, opacity=0.5, depthWrite=False)
+    material = three.MeshStandardMaterial(color=hex_color, metalness=0.5, roughness=0.8, transparent=transparent, opacity=0.5, depthWrite=False)
     # Erstelle das Mesh (Geometrie + Material)
     mesh = three.Mesh(geometry, material)
     mesh.position = (posX, posY, posZ)
@@ -223,7 +244,7 @@ def set_scale_animated(mesh, scale):
 
 
 #die angles müssen in der Reihenfolge angegeben werden wie es in der order steht bsp: angles=[y,x,z] order="YXZ"
-def rotate_animated(mesh, angles, order):
+def rotate_animated(mesh, angles, order="ZYZ"):
     q_final = quaternion_multiply(mesh.quaternion, euler_to_quaternion(angles, order))
     time.sleep(0.5)
     delta = 0.5
@@ -262,7 +283,7 @@ def rotate_animated(mesh, angles, order):
 
 
 #die angles müssen in der Reihenfolge angegeben werden wie es in der order steht bsp: angles=[y,x,z] order="YXZ"
-def rotate_global_animated(mesh, angles, order):
+def rotate_global_animated(mesh, angles, order="ZYZ"):
     rotate_animated(mesh, angles[::-1], order[::-1])
     
 
@@ -270,19 +291,19 @@ def rotate_global_animated(mesh, angles, order):
 
 
 
-def rotate_global(mesh, angles, order):
+def rotate_global(mesh, angles, order="ZYZ"):
     mesh.quaternion = quaternion_multiply(euler_to_quaternion(angles, order[::-1]), mesh.quaternion)
 
-def rotate(mesh, angles, order):
+def rotate(mesh, angles, order="ZYZ"):
     q = euler_to_quaternion(angles, order)
     mesh.quaternion = quaternion_multiply(mesh.quaternion, q)
 
-def set_rotation(mesh, angles, order):
+def set_rotation(mesh, angles, order="ZYZ"):
     q = euler_to_quaternion(angles, order=order)
     mesh.quaternion = [q[0], q[1], q[2], q[3]]
 
 
-def set_rotation_global(mesh, angles, order):
+def set_rotation_global(mesh, angles, order="ZYZ"):
     set_rotation(mesh, angles[::-1], order[::-1])
 
 def translate(mesh, vec):
