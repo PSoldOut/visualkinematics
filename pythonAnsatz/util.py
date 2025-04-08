@@ -1,5 +1,6 @@
 import numpy as np
 import pythreejs as three
+from pythreejs import *
 import time
 from scipy.spatial.transform import Rotation as R, Slerp
 
@@ -58,6 +59,35 @@ def compute_normals(vertices, indices):
     # Normalisiere die Vertex-Normalen
     normals = np.array([n / np.linalg.norm(n) if np.linalg.norm(n) > 0 else n for n in normals])
     return normals
+
+
+
+
+def order_angles(x, y, z, order):
+    if order == "ZYZ" or order == "zyz":
+        return [z,y,z]
+    elif order == "XYX" or order == "xyx":
+        return [x,y,x]
+    elif order == "XZX" or order == "xzx":
+        return [x,z,x]
+    elif order == "YXY" or order == "yxy":
+        return [y,x,y]
+    elif order == "YZY" or order == "yzy":
+        return [y,z,y]
+    elif order == "ZXZ" or order == "zxz":
+        return [z,x,z]
+    elif order == "XYZ" or order == "xyz":
+        return [x,y,z]
+    elif order == "XZY" or order == "xzy":
+        return [x,z,y] 
+    elif order == "YZX" or order == "yzx":
+        return [y,z,x]
+    elif order == "YXZ" or order == "yxz":
+        return [y,x,z]
+    elif order == "ZXY" or order == "zxy":
+        return [z,x,y]
+    elif order == "ZYX" or order == "zyx":
+        return [z,y,x]
 
 
 
@@ -167,23 +197,42 @@ def apply_rot_matrix(mesh, rot_mat):
 
 
 
-def createQuad(posX, posY, posZ, width, height, depth, r=0, g=255, b=0, transparent=True):
+def createQuad(pos, width, height, depth, color=[0,255,0], transparent=True):
     # Erstelle die Geometrie (Breite, Höhe, Tiefe)
     geometry = three.BoxGeometry(width=width, height=height, depth=depth)
     # Material (Farbe & Eigenschaften)
-    hex_color = f'#{r:02X}{g:02X}{b:02X}'
-    material = three.MeshStandardMaterial(color=hex_color, metalness=0.5, roughness=0.8, transparent=transparent, opacity=0.5, depthWrite=False)
+    hex_color = f'#{color[0]:02X}{color[1]:02X}{color[2]:02X}'
+    material = three.MeshStandardMaterial(color=hex_color, metalness=0.5, roughness=0.8, transparent=transparent, opacity=0.5)
     # Erstelle das Mesh (Geometrie + Material)
     mesh = three.Mesh(geometry, material)
-    mesh.position = (posX, posY, posZ)
+    mesh.position = (pos[0], pos[1], pos[2])
     return mesh
 
 
 
 
+def create_cylinder(pos, radiusTop=1, radiusBottom=1, height=2, radialSegments=32, color=[255,0,0], transparent=True):
+    # Erstelle eine CylinderGeometry
+    geometry = CylinderGeometry(
+    radiusTop=radiusTop,     # Radius oben
+    radiusBottom=radiusBottom,  # Radius unten
+    height=height,        # Höhe
+    radialSegments=radialSegments  # Auflösung rundherum
+    )
+    hex_color = f'#{color[0]:02X}{color[1]:02X}{color[2]:02X}'
+    material = three.MeshStandardMaterial(color=hex_color, metalness=0.5, roughness=0.8, transparent=transparent, opacity=0.5)
+
+    # Mesh aus Geometrie + Material
+    cylinder = Mesh(
+        geometry=geometry,
+        material=material,
+        position=pos
+    )
+    return cylinder
 
 
-def apply_rot_matrix_animated(mesh, rot_mat):
+
+def apply_rot_matrix_animated(mesh, rot_mat, speed=100):
     q = R.from_matrix(rot_mat).as_quat() 
     old_quat = mesh.quaternion
     new_quat = quaternion_multiply(mesh.quaternion, (q[0], q[1], q[2], q[3]))
@@ -193,7 +242,7 @@ def apply_rot_matrix_animated(mesh, rot_mat):
         n = slerp_quaternion(old_quat, new_quat, t)
         mesh.quaternion = [n[0], n[1], n[2], n[3]]
         t += delta
-        time.sleep(0.01)
+        time.sleep(1/speed)
     n = slerp_quaternion(old_quat, new_quat, 1)
     mesh.quaternion = [n[0], n[1], n[2], n[3]]
 
@@ -288,6 +337,19 @@ def rotate_global_animated(mesh, angles, order="ZYZ"):
     
 
 
+def move(robot, x_vel, theta_vel):
+    rot_mat_z = np.array([
+    [np.cos(theta_vel), -np.sin(theta_vel), 0],
+    [np.sin(theta_vel),  np.cos(theta_vel), 0],
+    [0,             0,             1]
+    ])
+
+    apply_rot_matrix(robot, rot_mat_z)
+    x = robot.quaternion[0]
+    y = robot.quaternion[1]
+    z = robot.quaternion[2]
+    w = robot.quaternion[3]
+    translate(robot, [np.cos(np.radians(quaternion_to_euler(x,y,z,w,"XYZ")[2]))*x_vel, np.sin(np.radians(quaternion_to_euler(x,y,z,w,"XYZ")[2]))*x_vel, 0])
 
 
 
@@ -301,7 +363,6 @@ def rotate(mesh, angles, order="ZYZ"):
 def set_rotation(mesh, angles, order="ZYZ"):
     q = euler_to_quaternion(angles, order=order)
     mesh.quaternion = [q[0], q[1], q[2], q[3]]
-
 
 def set_rotation_global(mesh, angles, order="ZYZ"):
     set_rotation(mesh, angles[::-1], order[::-1])
