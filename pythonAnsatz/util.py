@@ -1,8 +1,15 @@
 import numpy as np
 import pythreejs as three
 from pythreejs import *
+from pythreejs import SpriteMaterial, Sprite
 import time
 from scipy.spatial.transform import Rotation as R, Slerp
+
+
+
+
+
+
 
 #die angles werden in der Reihenfolge zurückgegeben wie order es vorgibt bsp: order="ZXY" rückgabe->[z,x,y]
 def quaternion_to_euler(x, y, z, w, order="ZYZ"):
@@ -110,7 +117,7 @@ def quaternion_multiply(q1, q2):
 
 
 
-def create_axes(len):
+def create_axes(len, font_scale=0.4, show_labels=True):
     line_material_x = three.LineBasicMaterial(color='red')
     line_material_y = three.LineBasicMaterial(color='green')
     line_material_z = three.LineBasicMaterial(color='blue')
@@ -131,6 +138,50 @@ def create_axes(len):
     axes_group.add(line_x)
     axes_group.add(line_y)
     axes_group.add(line_z)
+
+
+    font_offset=0.3
+
+    ttx = TextTexture("X", color='#000000')
+    x_label = Sprite(
+    material=SpriteMaterial(map=ttx, transparent=True, opacity=0.9, depthWrite=False),
+    position=[len+font_offset, 0, 0],
+    scale=(font_scale, font_scale, font_scale),
+    visible=show_labels
+    )
+
+    tty = TextTexture("Y", color='#000000')
+    y_label = Sprite(
+    material=SpriteMaterial(map=tty, transparent=True, opacity=0.9, depthWrite=False),
+    position=[0, len+font_offset, 0],
+    scale=(font_scale, font_scale, font_scale),
+    visible=show_labels
+    )
+
+    ttz = TextTexture("Z", color='#000000')
+    z_label = Sprite(
+    material=SpriteMaterial(map=ttz, transparent=True, opacity=0.9, depthWrite=False),
+    position=[0, 0, len+font_offset],
+    scale=(font_scale, font_scale, font_scale),
+    visible=show_labels
+    )
+
+    axes_group.add([x_label, y_label, z_label])
+
+
+    cyl_x = create_cylinder([len,0,0], radiusTop=0.1, radiusBottom=0.01, height=0.3, color=[255,0,0])
+    rotate(cyl_x, [0,0,90], "XYZ")
+    axes_group.add(cyl_x)
+
+    cyl_y = create_cylinder([0,len,0], radiusTop=0.1, radiusBottom=0.01, height=0.3, color=[0,255,0])
+    rotate(cyl_y, [180,0,0], "XYZ")
+    axes_group.add(cyl_y)
+
+    cyl_z = create_cylinder([0,0,len], radiusTop=0.1, radiusBottom=0.01, height=0.3, color=[0,0,255])
+    rotate(cyl_z, [-90,0,0], "XYZ")
+    axes_group.add(cyl_z)
+
+
     return axes_group
 
 
