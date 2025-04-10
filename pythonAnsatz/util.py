@@ -117,7 +117,7 @@ def quaternion_multiply(q1, q2):
 
 
 
-def create_axes(len, font_scale=0.4, show_labels=True):
+def create_axes(len, font_scale=0.4, show_labels=True, name=""):
     line_material_x = three.LineBasicMaterial(color='red')
     line_material_y = three.LineBasicMaterial(color='green')
     line_material_z = three.LineBasicMaterial(color='blue')
@@ -181,6 +181,15 @@ def create_axes(len, font_scale=0.4, show_labels=True):
     rotate(cyl_z, [-90,0,0], "XYZ")
     axes_group.add(cyl_z)
 
+    if name!="":
+        n = TextTexture(name, color='#000000')
+        name_label = Sprite(
+        material=SpriteMaterial(map=n, transparent=True, opacity=1, depthWrite=False),
+        position=[font_offset, font_offset, font_offset],
+        scale=(font_scale, font_scale, font_scale),
+        visible=show_labels
+        )
+        axes_group.add([name_label])
 
     return axes_group
 
@@ -384,8 +393,38 @@ def rotate_animated(mesh, angles, order="ZYZ"):
 
 #die angles müssen in der Reihenfolge angegeben werden wie es in der order steht bsp: angles=[y,x,z] order="YXZ"
 def rotate_global_animated(mesh, angles, order="ZYZ"):
-    rotate_animated(mesh, angles[::-1], order[::-1])
-    
+    time.sleep(0.5)
+    delta = 0.5
+    if angles[0] < 0:
+        delta *= -1
+    counter = delta
+    while counter < abs(angles[0]):
+        q = euler_to_quaternion([delta, 0, 0], order)
+        mesh.quaternion = quaternion_multiply(q, mesh.quaternion)
+        counter+=abs(delta)
+        time.sleep(0.01)
+    time.sleep(0.5)
+    delta = 0.5
+    if angles[1] < 0:
+        delta *= -1
+    counter = delta
+    while counter < abs(angles[1]):
+        q = euler_to_quaternion([0, delta, 0], order)
+        mesh.quaternion = quaternion_multiply(q, mesh.quaternion)
+        counter+=abs(delta)
+        time.sleep(0.01)
+    time.sleep(0.5)
+    delta = 0.5
+    if angles[2] < 0:
+        delta *= -1
+    counter = delta
+    while counter < abs(angles[2]):
+        q = euler_to_quaternion([0, 0, delta], order)
+        mesh.quaternion = quaternion_multiply(q, mesh.quaternion)
+        counter+=abs(delta)
+        time.sleep(0.01)
+    time.sleep(0.5)
+
 
 
 def move(robot, x_vel, theta_vel):
