@@ -14,9 +14,28 @@
 
 \maketitle
 
-\section{Introduction}
+\section{Einleitung}
 
-latex ist anscheinend relativ beliebt...
+Die Grundlagen der Kinematik stellen einen wesentlichen Bestandteil der Robotik dar und sind sowohl für mobile als auch für stationäre Roboter von zentraler Bedeutung.
+Während es bei stationären Robotern häufig darum geht, die Position des Endeffektors präzise zu berechnen,
+konzentriert sich die Kinematik bei mobilen Robotern vor allem darauf, deren Position zuverlässig bestimmen zu können.
+Ein fundiertes Verständnis der erforderlichen kinematischen Modelle ist unerlässlich, um diese Größen korrekt zu berechnen (vgl. Autonomous Mobile Robots, S. 57).
+
+Im Rahmen dieser Projektarbeit wird ein Framework entwickelt, das die Visualisierung kinematischer Kennwerte ermöglicht.
+Das Ziel dieses Frameworks ist es, unterstützend in der Lehre eingesetzt zu werden, um das Verständnis der Kinematik zu fördern und die praktische Anwendung dieser Konzepte zu erleichtern.
+Ein besonderer Fokus dieser Arbeit liegt auf der Rotation von Körpern im Raum. Dabei wird insbesondere erläutert,
+was unter Eulerwinkeln sowie Roll-Pitch-Yaw-Winkeln zu verstehen ist und worin die Unterschiede zwischen beiden Darstellungen bestehen.
+Darüber hinaus werden auch Rotationsmatrizen sowie Quaternionen behandelt, um die verschiedenen Ansätze zur Beschreibung von Rotationen umfassend darzustellen.
+
+\section{Theoretischer Hintergrund}
+\subsection{Darstellung der Position und Orientierung eines Roboters}
+Ein Roboter wird in der Regel als ein unverformbarer, fester Körper (Rigid Body) betrachtet, der sowohl eine bestimmte Position als auch eine Orientierung im Raum besitzt.
+Die Position beschreibt den Abstand und die Verschiebung zwischen dem globalen Weltkoordinatensystem und dem körpereigenen Koordinatensystem des Roboters.
+Die Orientierung hingegen gibt den Unterschied in der Winkelausrichtung zwischen dem Weltkoordinatensystem und dem lokalen Koordinatensystem des Roboters an.
+Die Kombination aus Position und Orientierung eines Körpers wird als Pose bezeichnet. Die Transformation von einer Pose in eine andere kann intuitiv als Bewegung interpretiert werden.
+Diese Transformation setzt sich aus einer Translation (Verschiebung) und einer Rotation (Drehung) zusammen.
+(vgl. Robotics, Vision and Control, S. 24–27)
+
 
 \newpage
 \section{Math}

@@ -7,7 +7,21 @@ from scipy.spatial.transform import Rotation as R, Slerp
 
 
 
+def rot_axis_from_rot_mat(rot_mat):
+    # Beispiel: eine 3x3 Rotationsmatrix
+    R = np.array(rot_mat)
 
+    # Eigenwerte und Eigenvektoren berechnen
+    eigenvalues, eigenvectors = np.linalg.eig(R)
+
+    # Eigenvektor für Eigenwert 1 finden
+    axis = eigenvectors[:, np.isclose(eigenvalues, 1)]
+
+    # Ergebnis auf 1D normieren (optional)
+    axis = axis[:, 0]
+    axis = axis / np.linalg.norm(axis)
+    return np.real(axis)
+   
 
 
 
@@ -292,7 +306,15 @@ def create_cylinder(pos, radiusTop=1, radiusBottom=1, height=2, radialSegments=3
 
 
 
-def apply_rot_matrix_animated(mesh, rot_mat, speed=100):
+def apply_rot_matrix_animated(mesh, rot_mat, speed=100, show_rot_axis=True):
+    if show_rot_axis==True:
+        a = rot_axis_from_rot_mat(rot_mat)
+        material_axis = three.LineBasicMaterial(color='black')
+        points_axis = [a*-10, a*10]
+        geometry_axis = three.BufferGeometry(attributes={'position' : three.BufferAttribute(points_axis, False)})
+        axis = three.Line(geometry_axis, material_axis)
+
+    mesh.add(axis)
     q = R.from_matrix(rot_mat).as_quat() 
     old_quat = mesh.quaternion
     new_quat = quaternion_multiply(mesh.quaternion, (q[0], q[1], q[2], q[3]))
@@ -306,7 +328,7 @@ def apply_rot_matrix_animated(mesh, rot_mat, speed=100):
     n = slerp_quaternion(old_quat, new_quat, 1)
     mesh.quaternion = [n[0], n[1], n[2], n[3]]
 
-
+    mesh.remove(axis)
 
 
 def slerp_quaternion(q1, q2, t):
