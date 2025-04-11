@@ -329,6 +329,30 @@ def slerp_quaternion(q1, q2, t):
 
 
 
+#vel [x,y,theta]
+def line_wheel_driven_robot(dummy, vel, steps):
+    lines = []
+    points = []
+    for i in range(steps):
+        points.append(dummy.position)
+        move(dummy, vel[0], vel[2])
+        if (i%64==0):
+            points.append(dummy.position)
+            line_material = three.LineBasicMaterial(color='black')
+            line_geometry = three.BufferGeometry(attributes={'position' : three.BufferAttribute([points[0], points[len(points)-1]], False)})
+            line = three.Line(geometry=line_geometry, material=line_material)
+            lines.append(line)
+            points = []
+    points.append(dummy.position)
+    line_material = three.LineBasicMaterial(color='black')
+    line_geometry = three.BufferGeometry(attributes={'position' : three.BufferAttribute([points[0], points[len(points)-1]], False)})
+    line = three.Line(geometry=line_geometry, material=line_material)
+    lines.append(line)
+    points = []
+
+    line_group = three.Group()
+    line_group.add(lines)
+    return line_group
 
 
 
@@ -427,19 +451,23 @@ def rotate_global_animated(mesh, angles, order="ZYZ"):
 
 
 
-def move(robot, x_vel, theta_vel):
-    rot_mat_z = np.array([
-    [np.cos(theta_vel), -np.sin(theta_vel), 0],
-    [np.sin(theta_vel),  np.cos(theta_vel), 0],
-    [0,             0,             1]
-    ])
+def move(robot, x_vel, theta_vel, steps=1):
+    for i in range(steps):
+        rot_mat_z = np.array([
+        [np.cos(theta_vel), -np.sin(theta_vel), 0],
+        [np.sin(theta_vel),  np.cos(theta_vel), 0],
+        [0,             0,             1]
+        ])
 
-    apply_rot_matrix(robot, rot_mat_z)
-    x = robot.quaternion[0]
-    y = robot.quaternion[1]
-    z = robot.quaternion[2]
-    w = robot.quaternion[3]
-    translate(robot, [np.cos(np.radians(quaternion_to_euler(x,y,z,w,"XYZ")[2]))*x_vel, np.sin(np.radians(quaternion_to_euler(x,y,z,w,"XYZ")[2]))*x_vel, 0])
+        apply_rot_matrix(robot, rot_mat_z)
+        x = robot.quaternion[0]
+        y = robot.quaternion[1]
+        z = robot.quaternion[2]
+        w = robot.quaternion[3]
+        translate(robot, [np.cos(np.radians(quaternion_to_euler(x,y,z,w,"XYZ")[2]))*x_vel, np.sin(np.radians(quaternion_to_euler(x,y,z,w,"XYZ")[2]))*x_vel, 0])
+        if (i%4==0 and i!=0):
+            time.sleep(0.01)
+    return robot.position
 
 
 
