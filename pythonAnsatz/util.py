@@ -357,7 +357,7 @@ def line_wheel_driven_robot(dummy, vel, steps):
     points = []
     for i in range(steps):
         points.append(dummy.position)
-        move(dummy, vel[0], vel[2])
+        move(dummy, vel)
         if (i%64==0):
             points.append(dummy.position)
             line_material = three.LineBasicMaterial(color='black')
@@ -472,12 +472,12 @@ def rotate_global_animated(mesh, angles, order="ZYZ"):
     time.sleep(0.5)
 
 
-
-def move(robot, x_vel, theta_vel, steps=1):
+#vel=[x,y,theta]
+def move(robot, vel, steps=1):
     for i in range(steps):
         rot_mat_z = np.array([
-        [np.cos(theta_vel), -np.sin(theta_vel), 0],
-        [np.sin(theta_vel),  np.cos(theta_vel), 0],
+        [np.cos(vel[2]), -np.sin(vel[2]), 0],
+        [np.sin(vel[2]),  np.cos(vel[2]), 0],
         [0,             0,             1]
         ])
 
@@ -486,7 +486,11 @@ def move(robot, x_vel, theta_vel, steps=1):
         y = robot.quaternion[1]
         z = robot.quaternion[2]
         w = robot.quaternion[3]
-        translate(robot, [np.cos(np.radians(quaternion_to_euler(x,y,z,w,"XYZ")[2]))*x_vel, np.sin(np.radians(quaternion_to_euler(x,y,z,w,"XYZ")[2]))*x_vel, 0])
+
+        z_angle = quaternion_to_euler(x,y,z,w,"XYZ")[2]
+        cos_z = np.cos(np.radians(z_angle))
+        sin_z = np.sin(np.radians(z_angle))
+        translate(robot, [cos_z*vel[0] + sin_z*vel[1], sin_z*vel[0] + cos_z*vel[1], 0])
         if (i%4==0 and i!=0):
             time.sleep(0.01)
     return robot.position
