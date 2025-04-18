@@ -3082,6 +3082,7 @@
     <bcf:citekey order="10" intorder="1">Robotics_Vision_and_Control</bcf:citekey>
     <bcf:citekey order="11" intorder="1">mobile_roboter</bcf:citekey>
     <bcf:citekey order="12" intorder="1">jupyterlab_docs</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">Robotics_Vision_and_Control</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

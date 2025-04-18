@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  17 APR 2025 21:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  18 APR 2025 21:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -621,17 +621,19 @@ Overfull \hbox (6.76453pt too wide) in paragraph at lines 4--5
 
 [4]
 
-[5]) (anforderungen.tex)
+[5]) (anforderungen.tex
 
-[6]
-<diagramme/komponentendiagramm.png, id=129, 672.5125pt x 732.7375pt>
+[6])
+
+[7]
+<diagramme/komponentendiagramm.png, id=135, 672.5125pt x 732.7375pt>
 File: diagramme/komponentendiagramm.png Graphic file (type png)
 <use diagramme/komponentendiagramm.png>
 Package pdftex.def Info: diagramme/komponentendiagramm.png  used on input line 64.
 (pdftex.def)             Requested size: 352.6793pt x 384.26808pt.
 
 
-[7]
+[8]
 Underfull \hbox (badness 1067) in paragraph at lines 77--77
 []\OT1/cmr/m/n/10 Python-Wrapper f[]ur three.js zur Dar-stel-lung von 3D-
  []
@@ -648,8 +650,8 @@ Overfull \hbox (21.94386pt too wide) in paragraph at lines 71--80
 
 
 
-[8 <./diagramme/komponentendiagramm.png (PNG copy)>]
-<uebung_robot.PNG, id=140, 601.4972pt x 231.86626pt>
+[9 <./diagramme/komponentendiagramm.png (PNG copy)>]
+<uebung_robot.PNG, id=145, 601.4972pt x 231.86626pt>
 File: uebung_robot.PNG Graphic file (type png)
 <use uebung_robot.PNG>
 Package pdftex.def Info: uebung_robot.PNG  used on input line 107.
@@ -661,48 +663,48 @@ Overfull \hbox (50.00006pt too wide) in paragraph at lines 107--108
 
 
 
-[9]
-<robot.PNG, id=148, 528.47438pt x 402.75468pt>
+[10]
+<robot.PNG, id=153, 528.47438pt x 402.75468pt>
 File: robot.PNG Graphic file (type png)
 <use robot.PNG>
 Package pdftex.def Info: robot.PNG  used on input line 130.
 (pdftex.def)             Requested size: 440.84746pt x 335.97017pt.
 
 
-[10 <./uebung_robot.PNG>]
-<rotations.PNG, id=154, 670.00313pt x 475.02469pt>
+[11 <./uebung_robot.PNG>]
+<rotations.PNG, id=159, 670.00313pt x 475.02469pt>
 File: rotations.PNG Graphic file (type png)
 <use rotations.PNG>
 Package pdftex.def Info: rotations.PNG  used on input line 148.
 (pdftex.def)             Requested size: 440.84746pt x 312.55322pt.
 
 
-[11 <./robot.PNG>]
-<klausur_quader.PNG, id=160, 277.035pt x 196.48407pt>
+[12 <./robot.PNG>]
+<klausur_quader.PNG, id=165, 277.035pt x 196.48407pt>
 File: klausur_quader.PNG Graphic file (type png)
 <use klausur_quader.PNG>
 Package pdftex.def Info: klausur_quader.PNG  used on input line 168.
 (pdftex.def)             Requested size: 264.51115pt x 187.6032pt.
 
 
-[12 <./rotations.PNG>]
+[13 <./rotations.PNG>]
 Overfull \hbox (28.15907pt too wide) in paragraph at lines 193--199
 []\OT1/cmr/m/n/10 Das No-te-book dient der Vi-su-el-len Si-mu-la-ti-on der Ro-ta-tio-nen. Mit der Funk-ti-on ro-ta-te[]global[]animated(mesh,
  []
 
 
 
-[13 <./klausur_quader.PNG>]
-<quader.PNG, id=172, 525.46312pt x 401.24907pt>
+[14 <./klausur_quader.PNG>]
+<quader.PNG, id=177, 525.46312pt x 401.24907pt>
 File: quader.PNG Graphic file (type png)
 <use quader.PNG>
 Package pdftex.def Info: quader.PNG  used on input line 203.
 (pdftex.def)             Requested size: 440.84746pt x 336.64894pt.
 
 
-[14 <./quader.PNG>]
+[15 <./quader.PNG>]
 
-[15] (main.aux)
+[16] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -714,17 +716,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18982 strings out of 473522
- 343529 string characters out of 5713642
- 1291548 words of memory out of 5000000
- 41950 multiletter control sequences out of 15000+600000
+ 18984 strings out of 473522
+ 343547 string characters out of 5713642
+ 1291552 words of memory out of 5000000
+ 41951 multiletter control sequences out of 15000+600000
  567046 words of font info for 68 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  66i,11n,81p,1960b,7177s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (15 pages, 429676 bytes).
+Output written on main.pdf (16 pages, 432682 bytes).
 PDF statistics:
- 251 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
+ 257 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
  175 words of extra memory for PDF output out of 10000 (max. 10000000)
 
