@@ -917,7 +917,7 @@ class Environment:
     - Die Umgebung kann mit einer interaktiven Steuerung für Kamera und Objekte angezeigt werden.
     - Widgets für die Manipulation von Objekten (Translation, Rotation, Skalierung) können zur Szene hinzugefügt werden.
     '''
-    def __init__(self, width=700, height=500, frame=create_axes(8, name="B"), grid=create_grid_XY(14,0.5), up=[0,0,1]):
+    def __init__(self, width=700, height=500, frame=None, grid=None, up=[0,0,1]):
         '''
         Initialisiert eine neue 3D-Umgebung.
 
@@ -927,6 +927,12 @@ class Environment:
         :param grid: Ein Gitterobjekt, das in der Szene angezeigt wird.
         :param up: Die Richtung der "Oben"-Achse für die Kamera.
         '''
+        if frame is None:
+            frame = create_axes(8, name="B")
+        if grid is None:
+            grid = create_grid_XY(14,0.5)
+        self.frame = frame
+        self.grid = grid
         self.scene = Scene()
         self.scene.background = "#DDDDDD"
         self.camera = PerspectiveCamera(position=[8, 8, 8],aspect=width/height, fov=50)
