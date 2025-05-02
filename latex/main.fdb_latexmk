@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1744992178.56706 "main.bcf" "main.bbl" "main" 1745002839.93246 0
-  "main.bcf" 1745002839 134921 7b5e31dbb78ab07d4f48ff4c78763adb "pdflatex"
-  "quellen.bib" 1744917760 7264 01f5c94b4a5f3917b0bcc9a86d30a61c ""
+["biber main"] 1746027923.16744 "main.bcf" "main.bbl" "main" 1746027925.32143 0
+  "main.bcf" 1746025714 134921 7b5e31dbb78ab07d4f48ff4c78763adb "pdflatex"
+  "quellen.bib" 1746027922 8085 a93df88f9fabfca4e9eebaf174a2e372 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1745002838.31772 "c:/Users/Philipp/Desktop/gitProjects/visualkinematics/latex/main.tex" "main.pdf" "main" 1745002839.93314 0
+["pdflatex"] 1746025713.38626 "c:/Users/Philipp/Desktop/gitProjects/visualkinematics/latex/main.tex" "main.pdf" "main" 1746027925.32161 0
   "C:/Users/Philipp/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1744817824 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Philipp/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1744032231 12037097 f1aaf3e725f1267bdc89a46b152a8116 ""
   "C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -120,17 +120,22 @@
   "C:/Users/Philipp/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/Philipp/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/Philipp/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "anforderungen.tex" 1745002837 2711 45d0613d36608ee7900f10c5d99768dd ""
-  "c:/Users/Philipp/Desktop/gitProjects/visualkinematics/latex/main.tex" 1744916058 10986 a275d3b578f0ae382d62d929b4af62c6 ""
+  "anforderungen.tex" 1745858866 2985 5a3e917717e5e91f8ba7044995455ca7 ""
+  "aufbau.tex" 1745859812 13434 fa2da52b4d7a662f17ef7aae70e0e762 ""
+  "ausblick_auf_bachelor.tex" 1745426970 2048 3647fbc33a74e0d1337a5874b3fe22df ""
+  "c:/Users/Philipp/Desktop/gitProjects/visualkinematics/latex/main.tex" 1746025710 5363 7e498e3c4a9eb3e4aeacc7873ee7d1d9 ""
   "diagramme/komponentendiagramm.png" 1744904897 31548 acf86ebf384bb87678b4223dd89a996e ""
+  "diagramme/prototypKomponentendiagramm.png" 1745857810 14641 fe1a93d25dad23c5e18d7e7a5477cb08 ""
   "einleitung.tex" 1744915804 1329 10400595c127a77036293cad4b5f57f2 ""
+  "evaluation.tex" 1745426011 3150 c3c646af439605cde758bfeb740e986a ""
   "klausur_quader.PNG" 1744903054 8348 d1cbe79ad41d69417110695518fc69eb ""
-  "main.aux" 1745002839 6104 66ad8aa3dcce3f3c81ed1ffc3f916f0c "pdflatex"
-  "main.bbl" 1744992184 32687 5adf2613359fc1feb539e7ba1146d1a2 "biber main"
-  "main.out" 1745002839 2682 a2a8805c1ac658baf8f4a87260ddd35e "pdflatex"
-  "main.run.xml" 1745002839 2420 8431ca539c7918615e4de9964de41b30 "pdflatex"
-  "main.tex" 1744916058 10986 a275d3b578f0ae382d62d929b4af62c6 ""
+  "main.aux" 1746025714 7360 c5c47f56f25240ead4d439c10a2a1864 "pdflatex"
+  "main.bbl" 1746027925 32687 5adf2613359fc1feb539e7ba1146d1a2 "biber main"
+  "main.out" 1746025714 3123 0c75c24214f3c50be1005bde1e512cf4 "pdflatex"
+  "main.run.xml" 1746025714 2420 8431ca539c7918615e4de9964de41b30 "pdflatex"
+  "main.tex" 1746025710 5363 7e498e3c4a9eb3e4aeacc7873ee7d1d9 ""
   "motivation.tex" 1744918778 1461 a77e83ae2ce81a715b8fdba9e38be50b ""
+  "prototyp.PNG" 1745860412 13579 3d26f6a420c1f065b5199bfbca5665c9 ""
   "quader.PNG" 1744907847 64221 462a92eba92f8b37832925799890a334 ""
   "robot.PNG" 1744904533 104822 373eb95fc927c5f5634d70d796dd556a ""
   "rotations.PNG" 1744904714 62775 cbc47b24aa8abfe648be40a1a34ff04d ""

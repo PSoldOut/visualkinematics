@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  18 APR 2025 21:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  30 APR 2025 17:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -623,110 +623,141 @@ Overfull \hbox (6.76453pt too wide) in paragraph at lines 4--5
 
 [5]) (anforderungen.tex
 
-[6])
+[6]) (aufbau.tex
 
 [7]
-<diagramme/komponentendiagramm.png, id=135, 672.5125pt x 732.7375pt>
+
+[8]
+<diagramme/komponentendiagramm.png, id=152, 672.5125pt x 732.7375pt>
 File: diagramme/komponentendiagramm.png Graphic file (type png)
 <use diagramme/komponentendiagramm.png>
-Package pdftex.def Info: diagramme/komponentendiagramm.png  used on input line 64.
+Package pdftex.def Info: diagramme/komponentendiagramm.png  used on input line 41.
 (pdftex.def)             Requested size: 352.6793pt x 384.26808pt.
 
 
-[8]
-Underfull \hbox (badness 1067) in paragraph at lines 77--77
-[]\OT1/cmr/m/n/10 Python-Wrapper f[]ur three.js zur Dar-stel-lung von 3D-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-[]\OT1/cmr/m/n/10 Frameworkinterne-
- []
-
-
-Overfull \hbox (21.94386pt too wide) in paragraph at lines 71--80
- [][] 
- []
-
-
-
 [9 <./diagramme/komponentendiagramm.png (PNG copy)>]
-<uebung_robot.PNG, id=145, 601.4972pt x 231.86626pt>
-File: uebung_robot.PNG Graphic file (type png)
-<use uebung_robot.PNG>
-Package pdftex.def Info: uebung_robot.PNG  used on input line 107.
-(pdftex.def)             Requested size: 440.84746pt x 169.94377pt.
+Underfull \hbox (badness 1231) in paragraph at lines 62--62
+[]\OT1/cmr/m/n/10 Hochsprachige, in-ter-pre-tier-te Pro-gram-mier-spra-che
+ []
 
-Overfull \hbox (50.00006pt too wide) in paragraph at lines 107--108
- [] 
+
+Underfull \hbox (badness 3449) in paragraph at lines 67--67
+\OT1/cmr/m/n/10 wie Schie-be-reg-ler, Drop-downs und But-tons in
  []
 
 
 
 [10]
-<robot.PNG, id=153, 528.47438pt x 402.75468pt>
+Overfull \hbox (4.62556pt too wide) in paragraph at lines 83--88
+[]\OT1/cmr/m/n/10 Erg[]anzend da-zu stellt die Bi-blio-thek ei-ne Klas-se na-mens En-vi-ron-ment be-reit. En-vi-ron-ment re-pr[]asentiert
+ []
+
+
+
+[11]
+<uebung_robot.PNG, id=169, 601.4972pt x 231.86626pt>
+File: uebung_robot.PNG Graphic file (type png)
+<use uebung_robot.PNG>
+Package pdftex.def Info: uebung_robot.PNG  used on input line 115.
+(pdftex.def)             Requested size: 440.84746pt x 169.94377pt.
+
+Overfull \hbox (50.00006pt too wide) in paragraph at lines 115--116
+ [] 
+ []
+
+<robot.PNG, id=171, 528.47438pt x 402.75468pt>
 File: robot.PNG Graphic file (type png)
 <use robot.PNG>
-Package pdftex.def Info: robot.PNG  used on input line 130.
+Package pdftex.def Info: robot.PNG  used on input line 138.
 (pdftex.def)             Requested size: 440.84746pt x 335.97017pt.
 
 
-[11 <./uebung_robot.PNG>]
-<rotations.PNG, id=159, 670.00313pt x 475.02469pt>
+[12 <./uebung_robot.PNG>]
+<rotations.PNG, id=178, 670.00313pt x 475.02469pt>
 File: rotations.PNG Graphic file (type png)
 <use rotations.PNG>
-Package pdftex.def Info: rotations.PNG  used on input line 148.
+Package pdftex.def Info: rotations.PNG  used on input line 156.
 (pdftex.def)             Requested size: 440.84746pt x 312.55322pt.
 
 
-[12 <./robot.PNG>]
-<klausur_quader.PNG, id=165, 277.035pt x 196.48407pt>
+[13 <./robot.PNG>]
+<klausur_quader.PNG, id=185, 277.035pt x 196.48407pt>
 File: klausur_quader.PNG Graphic file (type png)
 <use klausur_quader.PNG>
-Package pdftex.def Info: klausur_quader.PNG  used on input line 168.
+Package pdftex.def Info: klausur_quader.PNG  used on input line 176.
 (pdftex.def)             Requested size: 264.51115pt x 187.6032pt.
 
 
-[13 <./rotations.PNG>]
-Overfull \hbox (28.15907pt too wide) in paragraph at lines 193--199
+[14 <./rotations.PNG>]
+Overfull \hbox (28.15907pt too wide) in paragraph at lines 201--207
 []\OT1/cmr/m/n/10 Das No-te-book dient der Vi-su-el-len Si-mu-la-ti-on der Ro-ta-tio-nen. Mit der Funk-ti-on ro-ta-te[]global[]animated(mesh,
  []
 
 
 
-[14 <./klausur_quader.PNG>]
-<quader.PNG, id=177, 525.46312pt x 401.24907pt>
+[15 <./klausur_quader.PNG>]
+<quader.PNG, id=196, 525.46312pt x 401.24907pt>
 File: quader.PNG Graphic file (type png)
 <use quader.PNG>
-Package pdftex.def Info: quader.PNG  used on input line 203.
+Package pdftex.def Info: quader.PNG  used on input line 211.
 (pdftex.def)             Requested size: 440.84746pt x 336.64894pt.
+) (evaluation.tex
+
+[16 <./quader.PNG>]) (ausblick_auf_bachelor.tex
+
+[17])
+
+[18]
+Overfull \hbox (3.48677pt too wide) in paragraph at lines 52--54
+\OT1/cmr/m/n/10 Bibliothek Three.js er-stellt, um zu []uberpr[]ufen, ob die grund-le-gen-den Funk-tio-na-lit[]aten, die zur Erf[]ullung
+ []
 
 
-[15 <./quader.PNG>]
 
-[16] (main.aux)
+[19]
+<diagramme/prototypKomponentendiagramm.png, id=215, 421.575pt x 411.5375pt>
+File: diagramme/prototypKomponentendiagramm.png Graphic file (type png)
+<use diagramme/prototypKomponentendiagramm.png>
+Package pdftex.def Info: diagramme/prototypKomponentendiagramm.png  used on input line 71.
+(pdftex.def)             Requested size: 352.6793pt x 344.2888pt.
+<prototyp.PNG, id=216, 517.935pt x 591.71063pt>
+File: prototyp.PNG Graphic file (type png)
+<use prototyp.PNG>
+Package pdftex.def Info: prototyp.PNG  used on input line 86.
+(pdftex.def)             Requested size: 352.6793pt x 402.93575pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[20 <./diagramme/prototypKomponentendiagramm.png (PNG copy)>]
+
+[21 <./prototyp.PNG>]
+
+[22] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A2A8805C1AC658BAF8F4A87260DDD35E;2682.
+(rerunfilecheck)             Checksum: 0C75C24214F3C50BE1005BDE1E512CF4;3123.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18984 strings out of 473522
- 343547 string characters out of 5713642
- 1291552 words of memory out of 5000000
- 41951 multiletter control sequences out of 15000+600000
+ 19037 strings out of 473522
+ 344824 string characters out of 5713642
+ 1291825 words of memory out of 5000000
+ 41983 multiletter control sequences out of 15000+600000
  567046 words of font info for 68 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  66i,11n,81p,1960b,7177s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (16 pages, 432682 bytes).
+Output written on main.pdf (22 pages, 475823 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
- 175 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 304 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 209 words of extra memory for PDF output out of 10000 (max. 10000000)
 
