@@ -1,6 +1,23 @@
-\section{Aufbau}
+\section{Aufbau des Frameworks}
 
-\subsection{Technischer Aufbau}
+\subsection{System- und Softwareumgebung}
+Das Framework wurde für die Nutzung in der JupyterLab-Umgebung entwickelt, um eine plattformunabhängige und benutzerfreundliche Arbeitsumgebung zu bieten. Durch den Einsatz von Tools wie Poetry zur Verwaltung von Abhängigkeiten und Bibliotheken wie ipywidgets und pythreejs zur interaktiven 3D-Visualisierung wird eine stabile und effiziente Nutzung ermöglicht.
+
+Abbildung~\ref{fig:verteilungsdiagramm} visualisiert das Zusammenspiel der einzelnen Softwarekomponenten innerhalb des Frameworks.
+Dabei wird deutlich, wie die verschiedenen Technologien – von der Serverbereitstellung über die Paketverwaltung bis hin zur 3D-Visualisierung
+und interaktiven Steuerung – ineinandergreifen, um eine stabile, plattformunabhängige und benutzerfreundliche Entwicklungsumgebung bereitzustellen.
+
+\vspace{1em}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.9\textwidth]{images/diagramme/komponentendiagramm.png}
+        \caption{Verteilungsdiagramm des Frameworks}
+        \label{fig:verteilungsdiagramm}
+    \end{figure}
+
+\vspace{1em}
+
 Das Framework ist, wie gefordert für die Nutzung innerhalb der JupyterLab-Umgebung ausgelegt.
 Die Fachhochschule Dortmund stellt hierfür einen eigenen JupyterLab-Server bereit,
 auf den sowohl über eine VPN-Verbindung als auch direkt im Hochschulnetz zugegriffen werden kann.
@@ -20,6 +37,10 @@ Eine der zentralen Bibliotheken innerhalb des Projekts ist NumPy, eine weit verb
 NumPy wird im Kontext dieses Projekts hauptsächlich für erweiterte mathematische Operationen im Bereich der linearen Algebra eingesetzt.
 Außerdem ist NumPy mit der Bibliothek SymPy, die für symbolische Mathematik verwendet wird gut kompatibel.
 Diese Kompatibilität ist ebenfalls eine Anforderung im Projekt.
+Obwohl NumPy eine leistungsfähige Grundlage für numerische Berechnungen bietet,
+enthält es keine Funktionen für spezielle geometrische Transformationen wie die Umwandlung von Euler-Winkeln in Quaternionen oder Rotationsmatrizen – oder deren Umkehrung.
+Daher wurde ergänzend die Bibliothek scipy.spatial verwendet, die solche Operationen effizient bereitstellt.
+
 
 Darüber hinaus ist pythreejs als weitere wichtige Abhängigkeit integriert.
 Es handelt sich hierbei um eine Python-Wrapper-Bibliothek für die JavaScript-Bibliothek three.js, die auf WebGL basiert.
@@ -32,18 +53,6 @@ Außerdem können auf diese weise Geometrien mit Grafikbeschleunigung gerendert 
 Durch den Einsatz dieser Technologien wird eine effiziente und plattformunabhängige Darstellung sowie Manipulation komplexer
 geometrischer Strukturen innerhalb des Frameworks ermöglicht.
 
-Abbildung~\ref{fig:verteilungsdiagramm} visualisiert das Zusammenspiel der einzelnen Softwarekomponenten innerhalb des Frameworks. Dabei wird deutlich, wie die verschiedenen Technologien – von der Serverbereitstellung über die Paketverwaltung bis hin zur 3D-Visualisierung und interaktiven Steuerung – ineinandergreifen, um eine stabile, plattformunabhängige und benutzerfreundliche Entwicklungsumgebung bereitzustellen.
-
-\vspace{1em}
-
-    \begin{figure}[h!]
-        \centering
-        \includegraphics[width=0.8\textwidth]{diagramme/komponentendiagramm.png}
-        \caption{Verteilungsdiagramm des Frameworks}
-        \label{fig:verteilungsdiagramm}
-    \end{figure}
-
-\vspace{1em}
 
 
 \newpage
@@ -54,7 +63,7 @@ die für die Implementierung des Frameworks verwendet wurden. Diese Komponenten 
 interaktive Steuerung und 3D-Visualisierung.
 
 \vspace{1em}
-    \begin{table}[h!]
+    \begin{table}[H]
         \centering
         \begin{tabular}{|p{3.5cm}|p{2cm}|p{8cm}|}
         \hline
@@ -74,7 +83,7 @@ interaktive Steuerung und 3D-Visualisierung.
 \newpage
 
 
-\subsection{Framework-Library}
+\subsection{Framework-Library (Implementierungsdetails)}
 Die Bibliothek des Frameworks besteht aus einer zentralen Datei, util.py.
 In dieser Datei sind sämtliche Kernfunktionen implementiert, die zur Erstellung, Transformation und Animation geometrischer Formen benötigt werden.
 Darüber hinaus enthält util.py eine Reihe von Hilfsfunktionen,
@@ -111,8 +120,8 @@ Das Notebook Orientiert sich an einer Übungsaufgabe der Fachhochschule Dortmund
 
     \vspace{1em}
 
-        \begin{center}
-        \includegraphics[width=1.0\textwidth]{uebung_robot.PNG}
+        \begin{center}[H]
+        \includegraphics[width=1.0\textwidth]{images/uebung_robot.PNG}
         \end{center}
 
     \vspace{1em}
@@ -134,11 +143,21 @@ Die Nutzerin bzw. der Nutzer kann dabei direkt im Jupyter Notebook beobachten, o
 
 \vspace{1em}
 
-    \begin{center}
-    \includegraphics[width=1.0\textwidth]{robot.PNG}
-    \end{center}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1.0\textwidth]{images/robot.PNG}
+        \caption{Verteilungsdiagramm des Frameworks (robot.ipynb während der Ausführung)}
+        \label{fig:Roboter mit Differentialantrieb}
+    \end{figure}
 
 \vspace{1em}
+
+
+
+
+
+
+
 
 \subsubsection{rotations.ipynb}
 Ein weiteres Beispiel-Notebook trägt den Namen rotations.ipynb.
@@ -150,13 +169,18 @@ Ziel dieses Notebooks ist es, die Möglichkeiten des Frameworks zur Darstellung 
 Die direkte visuelle Rückmeldung innerhalb des Jupyter Notebooks ermöglicht es dem Lernenden,
 die Auswirkungen der jeweiligen Transformationen unmittelbar nachzuvollziehen und ein besseres Verständnis für deren Wirkung im dreidimensionalen Raum zu entwickeln.
 
-\vspace{1em}
-
-    \begin{center}
-    \includegraphics[width=1.0\textwidth]{rotations.PNG}
-    \end{center}
 
 \vspace{1em}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1.0\textwidth]{images/rotations.PNG}
+        \caption{Würfel mit Schiebereglern für die Rotation (rotation.ipynb während der Ausführung)}
+        \label{fig:Würfel mit Schiebereglern für die Rotation}
+    \end{figure}
+
+\vspace{1em}
+
 
 
 \subsubsection{quader.ipynb}
@@ -172,8 +196,8 @@ die jeweiligen Rotationsmatrizen aufgestellt und zu einer Gesamtrotationsmatrix 
 
     \vspace{1em}
 
-        \begin{center}
-        \includegraphics[width=0.6\textwidth]{klausur_quader.PNG}
+        \begin{center}[H]
+        \includegraphics[width=0.6\textwidth]{images/klausur_quader.PNG}
         \end{center}
 
     \vspace{1em}
@@ -205,10 +229,16 @@ Anschließend werden die Matrizen als Variablen aufgestellt, zusammengefasst und
 die Rotation des Quaders anhand der Rotationsmatrix betrachtet und mit der vorrangegangegen Transformation vergleichen werden kann. Dieses Notebook kann vom Aufgabensteller so modifiziert werden,
 dass die Matrizen von den Lernenden ausgefüllt werden müssen.
 
-\vspace{1em}
 
-    \begin{center}
-    \includegraphics[width=1.0\textwidth]{quader.PNG}
-    \end{center}
 
 \vspace{1em}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1.0\textwidth]{images/quader.PNG}
+        \caption{Quader aus der Klausuraufgabe (robot.ipynb während der Ausführung)}
+        \label{fig:Quader aus der Klausuraufgabe}
+    \end{figure}
+
+\vspace{1em}
+

@@ -1,4 +1,5 @@
 import numpy as np
+import sympy as sp
 import pythreejs as three
 from ipywidgets import *
 from IPython.display import display
@@ -17,7 +18,8 @@ def rot_axis_from_rot_mat(rot_mat):
 
     :return: Rotationsachse als normalisierter Vektor z.B [x,y,z].
     '''
-    # Beispiel: eine 3x3 Rotationsmatrix
+    if isinstance(rot_mat,(sp.Basic, sp.MatrixBase)):
+        rot_mat.evalf()
     R = np.array(rot_mat)
 
     # Eigenwerte und Eigenvektoren berechnen
@@ -62,6 +64,8 @@ def euler_to_rot_mat(angles, order="ZYZ"):
 
     :return: Die Rotationsmatrix als mehrdimensionales Array.
     '''
+    if isinstance(angles,(sp.Basic, sp.MatrixBase)):
+        angles.evalf()
     r = R.from_euler(order, angles, degrees=True)
     return r.as_matrix()
 
@@ -76,6 +80,8 @@ def rot_matrix_to_euler(rot_mat, order="ZYZ"):
 
     :return: Die Eulerwinkel. Diese werden in der Reihenfolge zurueckgegeben, wie es order vorgibt z.B order="ZXY" rueckgabe->[Z,X,Y].
     '''
+    if isinstance(rot_mat,(sp.Basic, sp.MatrixBase)):
+        rot_mat.evalf()
     r = R.from_matrix(rot_mat)
     return r.as_euler(order, degrees=True)
 
@@ -90,6 +96,8 @@ def rot_matrix_to_quaternion(rot_mat):
 
     :return: das Quaternion als Array.
     '''
+    if isinstance(rot_mat,(sp.Basic, sp.MatrixBase)):
+        rot_mat.evalf()
     r = R.from_matrix(rot_mat).as_quat()
     return r
 
@@ -106,6 +114,8 @@ def euler_to_quaternion(angles, order='ZYZ'):
 
     :return: Das Quaternion als Array.
     '''
+    if isinstance(angles,(sp.Basic, sp.MatrixBase)):
+        angles.evalf()
     r = R.from_euler(order, angles, degrees=True)
     quat = r.as_quat()
     return quat
@@ -200,6 +210,10 @@ def quaternion_multiply(q1, q2):
 
     :return: Das Ergebnis der Quaternion-Multiplikation als Liste [x, y, z, w].
     '''
+    if isinstance(q1,(sp.Basic, sp.MatrixBase)):
+        q1.evalf()
+    if isinstance(q2,(sp.Basic, sp.MatrixBase)):
+        q2.evalf()
     x1, y1, z1, w1 = q1
     x2, y2, z2, w2 = q2
     
@@ -377,6 +391,8 @@ def apply_rot_matrix(mesh, rot_mat):
     :param mesh: Das Mesh-Objekt, auf das die Rotation angewendet werden soll. Erwartet wird, dass das Mesh ein `quaternion`-Attribut besitzt.
     :param rot_mat: Die Rotationsmatrix, die auf das Mesh angewendet werden soll. Muss eine 3x3 Matrix sein.
     '''
+    if isinstance(rot_mat,(sp.Basic, sp.MatrixBase)):
+        rot_mat.evalf()
     # Konvertiere Matrix in Quaternion
     r = R.from_matrix(rot_mat)
     q = r.as_quat()  # Reihenfolge: [x, y, z, w]
@@ -402,6 +418,8 @@ def createQuad(pos, width, height, depth, color=[0,255,0], transparent=True):
 
     :return: Ein Mesh-Objekt, das den Quader darstellt, mit der angegebenen Position, Größe und Farbe.
     '''
+    if isinstance(pos,(sp.Basic, sp.MatrixBase)):
+        pos.evalf()
     # Erstelle die Geometrie (Breite, Höhe, Tiefe)
     geometry = three.BoxGeometry(width=width, height=height, depth=depth)
     # Material (Farbe & Eigenschaften)
@@ -432,6 +450,8 @@ def create_cylinder(pos, radiusTop=1, radiusBottom=1, height=2, radialSegments=3
 
     :return: Ein Mesh-Objekt, das den Zylinder darstellt, mit der angegebenen Position, Größe und Farbe.
     '''
+    if isinstance(pos,(sp.Basic, sp.MatrixBase)):
+        pos.evalf()
     # Erstelle eine CylinderGeometry
     geometry = CylinderGeometry(
     radiusTop=radiusTop,     # Radius oben
@@ -466,6 +486,8 @@ def apply_rot_matrix_animated(mesh, rot_mat, speed=100, show_rot_axis=True):
     :param speed: Die Geschwindigkeit der Animation, angegeben als Anzahl der Frames pro Sekunde. Standardwert ist 100.
     :param show_rot_axis: Ein Boolean-Wert, der angibt, ob die Rotationsachse angezeigt werden soll. Standardwert ist `True`.
     '''
+    if isinstance(rot_mat,(sp.Basic, sp.MatrixBase)):
+        rot_mat.evalf()
     if show_rot_axis==True:
         a = rot_axis_from_rot_mat(rot_mat)
         material_axis = three.LineBasicMaterial(color='black')
@@ -507,6 +529,10 @@ def slerp_quaternion(q1, q2, t):
     
     :raises ValueError: Wenn der Interpolationswert t nicht zwischen 0 und 1 liegt.
     '''
+    if isinstance(q1,(sp.Basic, sp.MatrixBase)):
+        q1.evalf()
+    if isinstance(q2,(sp.Basic, sp.MatrixBase)):
+        q2.evalf()
     if not (0.0 <= t <= 1.0):
         raise ValueError("Der Interpolationswert t muss zwischen 0 und 1 liegen.")
     
@@ -540,6 +566,8 @@ def line_wheel_driven_robot(dummy, vel, steps):
 
     :return: Eine `three.Group`, die alle erzeugten Liniensegmente enthält (als Trajektorie).
     '''
+    if isinstance(vel,(sp.Basic, sp.MatrixBase)):
+        vel.evalf()
     lines = []
     points = []
     for i in range(steps):
@@ -614,6 +642,8 @@ def rotate_animated(mesh, angles, order="ZYZ"):
     :param angles: Eine Liste mit Rotationswinkeln (in Grad), die in der Reihenfolge `order` angegeben sind.
     :param order: Die Rotationsreihenfolge (z. B. "ZYZ", "YXZ", etc.)
     '''
+    if isinstance(angles,(sp.Basic, sp.MatrixBase)):
+        angles.evalf()
     q_final = quaternion_multiply(mesh.quaternion, euler_to_quaternion(angles, order))
     time.sleep(0.5)
     delta = 0.5
@@ -665,6 +695,8 @@ def rotate_global_animated(mesh, angles, order="ZYZ"):
     :param angles: Eine Liste von Rotationswinkeln (in Grad), entsprechend der Reihenfolge in `order`.
     :param order: Die Rotationsreihenfolge als String, z. B. "ZYZ", "YXZ", etc.
     '''
+    if isinstance(angles,(sp.Basic, sp.MatrixBase)):
+        angles.evalf()
     time.sleep(0.5)
     delta = 0.5
     if angles[0] < 0:
@@ -715,6 +747,8 @@ def move(robot, vel, steps=1):
 
     :return: Die finale Position des Roboters nach der Bewegung.
     '''
+    if isinstance(vel,(sp.Basic, sp.MatrixBase)):
+        vel.evalf()
     for i in range(steps):
         rot_mat_z = np.array([
         [np.cos(vel[2]), -np.sin(vel[2]), 0],
@@ -814,6 +848,8 @@ def translate(mesh, vec):
     :param mesh: Das Mesh-Objekt, das verschoben werden soll.
     :param vec: Der Verschiebungsvektor als Array oder Liste [x, y, z], der die Verschiebung in den jeweiligen Raumachsen angibt.
     '''
+    if isinstance(vec,(sp.Basic, sp.MatrixBase)):
+        vec.evalf()
     mesh.position = (mesh.position[0]+vec[0], mesh.position[1]+vec[1], mesh.position[2]+vec[2])
 
 
@@ -828,6 +864,8 @@ def set_translation(mesh, vec):
     :param mesh: Das Mesh-Objekt, dessen Position gesetzt werden soll.
     :param vec: Der Ziel-Vektor als Array oder Liste [x, y, z], der die neue Position des Meshs im Raum angibt.
     '''
+    if isinstance(vec,(sp.Basic, sp.MatrixBase)):
+        vec.evalf()
     mesh.position = vec
 
 
@@ -843,6 +881,8 @@ def set_translation_animated(mesh, vec, speed=50.0):
     :param vec: Der Ziel-Vektor als Array oder Liste [x, y, z], zu dem die Position des Meshs bewegt werden soll.
     :param speed: Die Geschwindigkeit der Animation. Ein höherer Wert bedeutet eine schnellere Bewegung.
     '''
+    if isinstance(vec,(sp.Basic, sp.MatrixBase)):
+        vec.evalf()
     t = 0
     delta = 0.01
     old_x = mesh.position[0]
@@ -873,6 +913,8 @@ def translate_animated(mesh, vec, speed=50.0):
     :param vec: Der Verschiebungs-Vektor als Array oder Liste [dx, dy, dz], um den die Position des Meshs verändert werden soll.
     :param speed: Die Geschwindigkeit der Animation. Ein höherer Wert bedeutet eine schnellere Bewegung.
     '''
+    if isinstance(vec,(sp.Basic, sp.MatrixBase)):
+        vec.evalf()
     t = 0
     delta = 0.01
     old_x = mesh.position[0]

@@ -1,12 +1,17 @@
 \documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage[letterpaper, top=0.8in, bottom=1.0in, left=1.20in, right=1.20in, heightrounded]{geometry}
-\usepackage{amsfonts}
-\usepackage[style=apa]{biblatex}
-\usepackage{hyperref}
+\usepackage{glossaries}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{ltablex}
+\usepackage[pass]{geometry}
+\usepackage[backend=biber, style=alphabetic]{biblatex}
 \usepackage[ngerman]{babel}
 \usepackage{csquotes}
+\usepackage{amsfonts}
+\usepackage[utf8]{inputenc}
 \usepackage{graphicx} %für bilder
+\usepackage{algorithm} %für pseudocode
+\usepackage{algpseudocode} %für pseudocode
 \addbibresource{quellen.bib}
 \title{Visualisierung kinematischer Kennwerte}
 \author{Philipp Mikos}
@@ -14,12 +19,14 @@
 
 \renewcommand{\baselinestretch}{1.667}
 
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0.8em}
+%\setlength{\parindent}{0pt}
+%\setlength{\parskip}{0.8em}
 
 \begin{document}
 
 \maketitle
+
+\tableofcontents
 
 \input{einleitung.tex}
 
@@ -33,65 +40,17 @@
 
 \input{aufbau.tex}
 
+\input{entwicklungsprozess.tex}
+
 \input{evaluation.tex}
 
 \input{ausblick_auf_bachelor.tex}
 
 
-\section{Entwicklungsprozess}
-Zu Beginn des Entwicklungsprozesses wurden verschiedene Technologien zur Darstellung und Manipulation von 3D-Grafiken miteinander verglichen. Dabei standen insbesondere OpenGL, WebGL, Babylon und ThreeJS im Fokus. Jede dieser Technologien bringt spezifische Vor- und Nachteile mit sich, die im Hinblick auf die Anforderungen des Projekts sorgfältig abgewogen wurden.
-
-OpenGL überzeugte durch seine Plattformunabhängigkeit, da es auf verschiedenen Betriebssystemen eingesetzt werden kann. Allerdings bringt OpenGL auch einige Einschränkungen mit sich: Es muss lokal auf dem Gerät installiert werden und benötigt ein eigenes Anwendungsfenster, was die Integration in Webanwendungen erschwert.
-
-WebGL stellt eine moderne, browserbasierte Alternative dar. Es läuft in jedem aktuellen Webbrowser und ist dadurch ebenfalls plattformunabhängig. Der große Vorteil liegt darin, dass keine zusätzliche Software installiert werden muss. Jedoch ist WebGL relativ generisch und abstrakt aufgebaut, was bedeutet, dass viele Funktionalitäten manuell implementiert werden müssen. Außerdem erfordert es ebenfalls die Darstellung in einem separaten Browser-Tab.
-
-Babylon basiert auf WebGL und stellt eine höher abstrahierte, fertige Lösung für die Entwicklung von 3D-Anwendungen bereit. Es ermöglicht die Erstellung komplexer Szenen, ohne dass tiefgehende Kenntnisse über das zugrunde liegende Rendering-System notwendig sind. Diese umfangreiche Funktionalität kann jedoch auch nachteilig sein, insbesondere wenn man nur bestimmte Teilaspekte benötigt – so enthält Babylon beispielsweise bereits ein vollständiges Physiksystem, das nicht in jedem Projekt erforderlich ist. Auch Babylon benötigt einen eigenen Tab zur Darstellung der Anwendung.
-
-ThreeJS ist ebenfalls auf WebGL aufgebaut und bietet wie Babylon eine abstrahierte Schnittstelle zur Erstellung von 3D-Inhalten. Im Vergleich ist ThreeJS allerdings etwas näher an der Low-Level-Programmierung und bietet dadurch größere Flexibilität bei der Anpassung. Es ist somit ein guter Kompromiss zwischen einfacher Nutzung und individueller Erweiterbarkeit. Auch bei dieser Lösung erfolgt die Darstellung in einem eigenen Browser-Tab.
-
-Im weiteren Verlauf des Entwicklungsprozesses wurde ein einfacher Prototyp mithilfe der JavaScript-Bibliothek Three.js erstellt, um zu überprüfen, ob die grundlegenden Funktionalitäten, die zur Erfüllung der Anforderungen notwendig sind, in Three.js enthalten sind.
-Dafür wurde über den Node Package Manager (npm) das Paket live-server installiert, welches benötigt wird, um eine HTML-Seite lokal zu hosten. Auf dieser Seite wurde der Prototyp eingebunden.
-
-Im Prototyp werden zunächst eine Kamera, ein Punktlicht sowie ein Würfel erzeugt. Diese Objekte werden anschließend einer Szene hinzugefügt. Ergänzend integriert die Datei index.html Schieberegler, mit denen die Rotation des Würfels über eine Benutzeroberfläche interaktiv gesteuert werden kann.
-Der Prototyp erfüllt somit die grundlegenden Anforderungen, indem er die zentrale Funktion – die interaktive Rotation eines 3D-Objekts – erlebbar macht.
-
-Ein offensichtlicher Nachteil dieses Ansatzes ist jedoch, dass die visuelle Darstellung des Würfels in einem separaten Browser-Tab läuft, während die Python-Schnittstelle, die für das eigentliche Framework vorgesehen ist, in der JupyterLab-Umgebung und somit ebenfalls in einem eigenen Tab ausgeführt wird.
-Trotz dieser Einschränkung bestätigt der Prototyp, dass Three.js die benötigten Basisfunktionalitäten bereitstellt.
-
-Der Nachteil, dass die Visuelle Darstellung in einem separaten Browser-Tab läuft, lässt sich umgehen, indem man einen Wrapper für ThreeJS nutzt, der eine Python-API zuf verfügung stellt, welche JavaScript-Code generiert und ausführt.
-Nach weiterer Recherche ergab sich, dass es bereits einen solchen Wrapper namens ThreeJS gibt.
 
 
 
 
-\vspace{1em}
-
-    \begin{figure}[h!]
-        \centering
-        \includegraphics[width=0.8\textwidth]{diagramme/prototypKomponentendiagramm.png}
-        \caption{Verteilungsdiagramm des Frameworks}
-        \label{fig:Verteilungsdiagramm-Prototyp}
-    \end{figure}
-
-\vspace{1em}
-
-
-
-
-
-\vspace{1em}
-
-    \begin{figure}[h!]
-        \centering
-        \includegraphics[width=0.8\textwidth]{prototyp.PNG}
-        \caption{Prototyp während der Ausführung im Browserfenster}
-        \label{fig:Prototyp}
-    \end{figure}
-
-\vspace{1em}
-
-
-
-
+\newpage
 \printbibliography
 \end{document}

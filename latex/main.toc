@@ -1,0 +1,22 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Einleitung}{2}{section.1}%
+\contentsline {section}{\numberline {2}Motivation}{3}{section.2}%
+\contentsline {section}{\numberline {3}Ziel}{3}{section.3}%
+\contentsline {section}{\numberline {4}Theoretischer Hintergrund}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Darstellung der Position und Orientierung eines Roboters}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Euler-Winkel und Roll-Pitch-Yaw-Winkel}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Rotationsmatrizen}{6}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Quaternionen und Unit-Quaternionen}{7}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Differentialantrieb}{8}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}JupyterLab}{9}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Anforderungen}{9}{section.5}%
+\contentsline {section}{\numberline {6}Aufbau des Frameworks}{11}{section.6}%
+\contentsline {subsection}{\numberline {6.1}System- und Softwareumgebung}{11}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Framework-Library (Implementierungsdetails)}{16}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Beispiel-Notebooks}{17}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}robot.ipynb}{17}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}rotations.ipynb}{19}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}quader.ipynb}{20}{subsubsection.6.3.3}%
+\contentsline {section}{\numberline {7}Entwicklungsprozess}{23}{section.7}%
+\contentsline {section}{\numberline {8}Evaluation}{33}{section.8}%
+\contentsline {section}{\numberline {9}Ausblick auf die Bachelorarbeit}{35}{section.9}%
