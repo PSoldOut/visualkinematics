@@ -109,7 +109,7 @@ Sie sollen dem Aufgabensteller als Orientierung dienen um mithilfe des Framework
 
 \subsubsection{robot.ipynb}
 Eines dieser Notebooks trägt den Namen robot.ipynb und dient der Veranschaulichung einer einfachen Steuerungsaufgabe.
-Abbildung \ref{fig:Roboter mit Differentialantrieb} zeigt die Ausgabe des Notebooks während des Ausführung.
+Abbildung \ref{fig:Roboter mit Differentialantrieb} zeigt die Ausgabe des Notebooks während der Ausführung.
 \vspace{1em}
 
     \begin{figure}[H]
@@ -191,8 +191,8 @@ die Auswirkungen der jeweiligen Transformationen unmittelbar nachzuvollziehen un
 
 
 \subsubsection{quader.ipynb}
-das letzte Beispiel-Notebook trägt den Namen quader.ipynb.
-Es Orientiert sich an einer Klausuraufgabe der Fachhochschule Dortmund im Modul Robotik aus dem Jahr 2010,
+Das letzte Beispiel-Notebook trägt den Namen quader.ipynb.
+Es orientiert sich an einer Klausuraufgabe der Fachhochschule Dortmund im Modul Robotik aus dem Jahr 2010,
 in der ein Quader um die Achsen des Basis-Koordinatensystems rotiert,
 die jeweiligen Rotationsmatrizen aufgestellt und zu einer Gesamtrotationsmatrix zusammengefasst werden sollen.
 
@@ -249,11 +249,11 @@ Abbildung \ref{fig:Würfel mit Schiebereglern für die Rotation} zeigt das Noteb
 
 \vspace{1em}
 Mit der Funktion rotate\_global\_animated(mesh, angles, order) wird der Quader zunächst wie in der Aufgabe beschrieben
-um die Achsen des Koordinatensystems $B$ Rotiert. Diese Transformation wird Visuell dargestellt um ein gefühl für die Rotation zu vermitteln und die Endposition aufzuzeigen.
-Danach wird mit der Funktion rotate\_animated(mesh, angles, order) der Quader um sein Körpereigenes Koordinatensystem rotiert, wobei jedoch die Rotationsreihenfolge invertiert wird.
-Diese beiden Rotationen führen den Quader in die gleiche Endposition und sollen den Lernenden diesen Zusammenhang Visuell näherbringen.
+um die Achsen des Koordinatensystems $B$ Rotiert. Diese Transformation wird Visuell dargestellt, um ein Gefühl für die Rotation zu vermitteln und die Endposition aufzuzeigen.
+Danach wird mit der Funktion rotate\_animated(mesh, angles, order) der Quader um sein körpereigenes Koordinatensystem rotiert, wobei jedoch die Rotationsreihenfolge invertiert wird.
+Diese beiden Rotationen führen den Quader in die gleiche Endposition und sollen den Lernenden diesen Zusammenhang visuell näherbringen.
 Anschließend werden die Matrizen als Variablen aufgestellt, zusammengefasst und an die Funktion apply\_rot\_matrix\_animated(mesh, rot\_mat, speed, show\_rot\_mat) übergeben, sodass
-die Rotation des Quaders anhand der Rotationsmatrix betrachtet und mit der vorrangegangegen Transformation vergleichen werden kann. Dieses Notebook kann vom Aufgabensteller so modifiziert werden,
+die Rotation des Quaders anhand der Rotationsmatrix betrachtet und mit der vorangegangenen Transformation vergleichen werden kann. Dieses Notebook kann vom Aufgabensteller so modifiziert werden,
 dass die Matrizen von den Lernenden ausgefüllt werden müssen.
 
 
