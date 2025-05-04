@@ -19,6 +19,7 @@ document.body.appendChild(renderer.domElement);
 const geometry = new THREE.BoxGeometry();
 const material = new THREE.MeshStandardMaterial({ color: 0x0077ff });
 const cube = new THREE.Mesh(geometry, material);
+geometry.scale(2,2,2)
 scene.add(cube);
 
 //Kanten hinzufügen

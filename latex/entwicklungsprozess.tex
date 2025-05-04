@@ -1,8 +1,10 @@
 \section{Entwicklungsprozess}
+\subsection{Wahl der Rendering-API}
 Zu Beginn des Entwicklungsprozesses wurden verschiedene Technologien zur Darstellung und Manipulation von 3D-Grafiken miteinander verglichen.
 Dabei standen insbesondere OpenGL, WebGL, Babylon und ThreeJS im Fokus.
 Jede dieser Technologien bringt spezifische Vor- und Nachteile mit sich, die im Hinblick auf die Anforderungen des Projekts sorgfältig abgewogen wurden.
 
+\subsubsection{OpenGL}
 OpenGL überzeugte durch seine Plattformunabhängigkeit, da es auf verschiedenen Betriebssystemen wie Windows, macOS und Linux eingesetzt werden kann.
 Dies ermöglichte Entwicklern, grafisch anspruchsvolle Anwendungen zu erstellen, die auf unterschiedlichen Systemen laufen, ohne dass spezifische Anpassungen nötig sind.
 Es war besonders beliebt in Bereichen wie der 3D-Grafik, CAD-Software und der Spieleentwicklung.
@@ -12,6 +14,7 @@ was zusätzliche Anforderungen an die Systemkonfiguration stellt und potenziell 
 Zudem benötigt es ein eigenes Anwendungsfenster, was die Integration in Webanwendungen erheblich erschwert,
 da moderne Webanwendungen typischerweise ohne lokale Installation auskommen wollen \cite{opengl_doc}.
 
+\subsubsection{WebGL}
 WebGL stellt eine moderne, browserbasierte Alternative zu OpenGL dar, die auf denselben grundlegenden Prinzipien von OpenGL basiert.
 WebGL läuft direkt in aktuellen Webbrowsern, ohne dass zusätzliche Software installiert werden muss, was einen entscheidenden Vorteil hinsichtlich der Zugänglichkeit bietet.
 Durch die Nutzung von WebGL können Entwickler 3D-Inhalte in Webseiten einbinden, was besonders für interaktive Webanwendungen von Bedeutung ist.
@@ -21,17 +24,19 @@ Dies bedeutet, dass viele der für eine vollständige 3D-Anwendung notwendigen F
 erheblich steigern kann. Zudem erfordert WebGL die Darstellung in einem separaten Browser-Tab,
 was die Integration von 3D-Grafiken in eine bestehende Webanwendung erschwert \cite{webgl_wiki}.
 
+\subsubsection{Babylon.js}
 Babylon.js ist eine leistungsstarke 3D-Engine, die auf WebGL aufbaut und eine höher abstrahierte, fertige Lösung für die Entwicklung von 3D-Anwendungen bietet.
 Babylon ermöglicht die schnelle Erstellung komplexer 3D-Szenen, ohne dass tiefgehende Kenntnisse über das zugrunde liegende Rendering-System notwendig sind.
 Dies macht Babylon zu einer guten Wahl für Entwickler, die schnell funktionale 3D-Anwendungen erstellen möchten.
 Jedoch kann diese umfangreiche Funktionalität auch nachteilig sein, insbesondere wenn nur bestimmte Teilaspekte einer 3D-Anwendung benötigt werden.
-Babylon enthält beispielsweise ein vollständiges Physiksystem sowie ein Soundsystem, die für viele Projekte nicht erforderlich sind, was unnötige Komplexität hinzufügt.
-Ein weiterer Nachteil von Babylon.js ist, dass auch es ein eigenes Browser-Tab benötigt,
+Babylon enthält beispielsweise ein vollständiges Physiksystem sowie ein Soundsystem, die für dieses Projekt nicht erforderlich sind und unnötige Komplexität hinzufügen.
+Ein weiterer Nachteil von Babylon.js ist, dass es auch ein eigenen Browser-Tab benötigt,
 um die Anwendung darzustellen,
 was die Benutzererfahrung und Integration in Webanwendungen einschränkt \cite{BabylonJS, BabylonJS_specification, BabylonJS_Documentation_Physics}.
 
+\subsubsection{Three.js}
 Three.js, ebenfalls auf WebGL basierend, bietet eine abstrahierte Schnittstelle zur Erstellung von 3D-Inhalten,
-geht jedoch einen Schritt weiter und bietet im Vergleich zu Babylon eine größere Flexibilität und Kontrolle.
+geht dabei jedoch nicht so weit wie Babylon und bietet daher eine größere Flexibilität und Kontrolle.
 Three.js liegt etwas näher an der Low-Level-Programmierung und ermöglicht es Entwicklern, die Details des Renderings anzupassen und zu optimieren.
 Dies macht Three.js zu einem guten Kompromiss zwischen einfacher Nutzung und individueller Erweiterbarkeit,
 da es eine gute Balance zwischen abstrahierter Funktionalität und den Möglichkeiten zur Anpassung von 3D-Szenen bietet.
@@ -43,21 +48,12 @@ was die Entwicklung beschleunigt und vereinfacht.
 Wie bei den anderen Lösungen erfolgt die Darstellung auch in einem eigenen Browser-Tab, was eine ähnliche Einschränkung wie bei WebGL und Babylon darstellt.
 Dennoch bietet Three.js aufgrund seiner Flexibilität und einfacheren Handhabung die beste Grundlage für dieses Projekt \cite{threeJS_manual}.
 
+\subsection{Three.js-Prototyp}
 Auf Basis dieser Überlegungen wurde im weiteren Verlauf des Entwicklungsprozesses ein einfacher Prototyp mithilfe der JavaScript-Bibliothek Three.js erstellt,
 um zu überprüfen, ob die grundlegenden Funktionalitäten, die zur Erfüllung der Projektanforderungen notwendig sind, in Three.js enthalten sind.
 Zu diesem Zweck wurde über den Node Package Manager (npm) das Paket live-server installiert, das es ermöglicht, eine HTML-Seite lokal zu hosten.
 Auf dieser Seite wurde der Prototyp eingebunden und interaktiv getestet.
-
-Der Prototyp umfasst zunächst eine Kamera, ein Punktlicht sowie einen Würfel, die alle zu einer Szene hinzugefügt werden.
-Ergänzend dazu sind in der index.html-Datei Schieberegler integriert, mit denen die Rotation des Würfels über eine Benutzeroberfläche interaktiv gesteuert werden kann.
-Dies stellt die grundlegende Funktion des Prototyps dar: die interaktive Steuerung eines 3D-Objekts.
-Der Prototyp erfüllt damit die zentralen Anforderungen, indem er eine dynamische 3D-Visualisierung bietet,
-bei der der Benutzer in Echtzeit Einfluss auf die Darstellung nehmen kann.
-Diese erste Version des Prototyps ist ein wichtiger Schritt, um die Funktionalität und Flexibilität von Three.js für das Projekt zu validieren.
-
-
-\newpage
-
+Abbildung \ref{fig:Verteilungsdiagramm-Prototyp} zeigt die Softwareumgebung und Einbettung des Prototypen in form eines Verteilungsdiagramms.
 \vspace{1em}
 
     \begin{figure}[H]
@@ -69,9 +65,7 @@ Diese erste Version des Prototyps ist ein wichtiger Schritt, um die Funktionalit
 
 \vspace{1em}
 
-
-\newpage
-
+Abbildung \ref{fig:Prototyp1} zeigt den Prototypen während der Ausführung im Browserfenster.
 
 \vspace{1em}
 
@@ -85,11 +79,24 @@ Diese erste Version des Prototyps ist ein wichtiger Schritt, um die Funktionalit
 \vspace{1em}
 
 
+Der Prototyp umfasst zunächst eine Kamera, ein Punktlicht sowie einen Würfel, die alle zu einer Szene hinzugefügt werden.
+Ergänzend dazu sind in der index.html-Datei Schieberegler integriert, mit denen die Rotation des Würfels über eine Benutzeroberfläche interaktiv gesteuert werden kann.
+Dies stellt die grundlegende Funktion des Prototyps dar: die interaktive Steuerung eines 3D-Objekts.
+Der Prototyp erfüllt damit die zentralen Anforderungen, indem er eine dynamische 3D-Visualisierung bietet,
+bei der der Benutzer in Echtzeit Einfluss auf die Darstellung nehmen kann.
+Diese erste Version des Prototyps ist ein wichtiger Schritt, um die Funktionalität und Flexibilität von Three.js für das Projekt zu validieren.
+
+
+
+
+
+
 
 Ein offensichtlicher Nachteil dieses Ansatzes ist jedoch, dass die visuelle Darstellung des Würfels in einem separaten Browser-Tab läuft,
 während die Python-Schnittstelle, die für das eigentliche Framework vorgesehen ist, in der JupyterLab-Umgebung und somit ebenfalls in einem eigenen Tab ausgeführt wird.
 Trotz dieser Einschränkung bestätigt der Prototyp, dass Three.js die benötigten Basisfunktionalitäten bereitstellt.
 
+\subsection{Pythreejs-Prototyp}
 Der Nachteil, dass die visuelle Darstellung in einem separaten Browser-Tab erfolgt,
 lässt sich umgehen, indem man eine Python-basierte Schnittstelle verwendet, die direkt im JupyterLab-Umfeld arbeitet.
 Hierzu bietet sich die Bibliothek pythreejs an, ein Wrapper für Three.js, der eine Python-API zur Verfügung stellt,
@@ -113,12 +120,26 @@ die Euler-Winkel in Quaternionen umrechnen. Dieser Schritt ist jedoch unproblema
 
 
 Auf Basis dieser Erkenntnisse wurde ein erweiterter Prototyp mit pythreejs erstellt,
-bei dem die entwickelten Hilfsfunktionen aus der Datei util.py zum Einsatz kommen. Dieser Prototyp zeigte erfolgreich,
-dass die für das Framework essenziellen Grundfunktionen – insbesondere die Animation und Rotation von Objekten – umsetzbar sind.
+bei dem die entwickelten Hilfsfunktionen aus der Datei util.py zum Einsatz kommen.
+Abbildung \ref{fig:Prototyp2} zeigt den Visuellen Output des Renderers innerhalb des Prototypen,
+wobei es sich bei dem Prototypen um ein Jupyter-Notebook handelt.
+\vspace{1em}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\textwidth]{images/prototyp2.PNG}
+        \caption{Notebook-Prototyp mit pythreejs während der Ausführung in JupyterLab}
+        \label{fig:Prototyp2}
+    \end{figure}
+
+\vspace{1em}
+Dieser Prototyp zeigte erfolgreich, dass die für das Framework essenziellen Grundfunktionen – insbesondere die Animation und Rotation von Objekten – umsetzbar sind.
 Interaktive elemente konnten hier nicht mehr wie im vorherigen Prototyp durch HTML-Elemente hinzugefügt werden.
 Dafür wurde hier die Python-Bibliothek ipywidgets genutzt.
 
 
+
+\subsection{Numpy als Mathematik-Library}
 Da der Prototyp verschiedene numerische Berechnungen zur Transformation und Animation von Objekten durchführt,
 stellte sich die Frage, welche Bibliothek für die linearen Algebraoperationen am besten geeignet ist.
 Obwohl das Framework so gestaltet ist, dass es mit sympy.Matrix-Objekten umgehen kann,
@@ -138,6 +159,7 @@ Daher wurde sichergestellt, dass solche Eingaben akzeptiert und automatisch in e
 sodass auch bei Verwendung von SymPy eine korrekte und performante Ausführung gewährleistet bleibt – vorausgesetzt,
 die übergebenen sympy.Matrix-Objekte lassen sich auf konkrete Werte oder annäherungen zurückführen.
 
+\subsection{Animationslogik}
 Darauf aufbauend wurden die Notebooks rotation.ipynb, quader.ipynb und robot.ipynb entwickelt. Parallel dazu wurde die Bibliothek util.py
 schrittweise um zusätzliche Funktionen ergänzt, um komplexere Abläufe und Animationen realisieren zu können.
 Ein zentrales Prinzip bei der Animationslogik in util.py ist die Verwendung eines zeitbasierten Interpolationsschemas.
@@ -167,8 +189,8 @@ Dies liegt vermutlich an dem overhead der Funktion. Auch wenn kleinere Werte üb
 wird faktisch immer eine Mindestwartezeit eingehalten, die sich technisch nicht weiter reduzieren lässt.
 Dadurch war die Steuerung der Animationsgeschwindigkeit unterhalb dieser Grenze nicht mehr differenzierbar.
 
-
-Zum Ende der Programmierarbeit hin wurde klar, welche gemeinsamkeiten die Szenarien in rotation.ipynb, quader.ipynb und robot.ipynb und womöglich auch in zukünftigen Aufgabentypen haben.
+\subsection{Environment-Klasse}
+Zum Ende der Programmierarbeit hin wurde klar, welche gemeinsamkeiten die Szenarien in rotation.ipynb, quader.ipynb und robot.ipynb und womöglich auch zukünftige Aufgabentypen haben.
 So wurde die Klasse Environment entworfen, die wiederkehrende Elemente in einer flexiblen und erweiterbaren Struktur zusammenfasst.
 
 Die Klasse Environment kapselt die Erstellung und Verwaltung einer dreidimensionalen Szene.
@@ -189,17 +211,3 @@ Erweiterungen wie die Entwicklung aufgabenbezogener Rotationsszenarien oder die 
 komplexerer Bewegungsabläufe lassen sich auf dieser Basis modular und interaktiv umsetzen.
 
 
-
-
-
-
-\vspace{1em}
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.7\textwidth]{images/prototyp2.PNG}
-        \caption{Notebook-Prototyp mit pythreejs während der Ausführung in JupyterLab}
-        \label{fig:Prototyp2}
-    \end{figure}
-
-\vspace{1em}

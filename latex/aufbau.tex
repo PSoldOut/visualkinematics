@@ -3,6 +3,33 @@
 \subsection{System- und Softwareumgebung}
 Das Framework wurde für die Nutzung in der JupyterLab-Umgebung entwickelt, um eine plattformunabhängige und benutzerfreundliche Arbeitsumgebung zu bieten. Durch den Einsatz von Tools wie Poetry zur Verwaltung von Abhängigkeiten und Bibliotheken wie ipywidgets und pythreejs zur interaktiven 3D-Visualisierung wird eine stabile und effiziente Nutzung ermöglicht.
 
+
+Tabelle \ref{tab:technologien} gibt einen Überblick über die zentralen Softwaretechnologien,
+die für die Implementierung des Frameworks verwendet wurden. Diese Komponenten unterstützen verschiedene Aspekte wie numerische Berechnungen,
+interaktive Steuerung und 3D-Visualisierung.
+
+\vspace{1em}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|p{3.5cm}|p{2cm}|p{8cm}|}
+        \hline
+        Kategorie                   & Technologie                   & Beschreibung  \\ \hline
+        Programmiersprache          & Python                        & Hochsprachige, interpretierte Programmiersprache mit Fokus auf Lesbarkeit und Einfachheit – ideal für wissenschaftliches Rechnen, Datenanalyse und Prototyping.        \\ \hline
+        Laufzeitumgebung            & JupyterLab                    & Web-basierte Entwicklungsumgebung für interaktive Notebooks        \\ \hline
+        Paketmanager                & Poetry                        & Verwaltung von Abhängigkeiten und virtuellen Umgebungen        \\ \hline
+        Mathe-Bibliothek            & Numpy                         & Bibliothek für numerische Berechnungen und lineare Algebra        \\ \hline
+        Mathe-Bibliothek            & Sympy                         & Bibliothek für symbolische Berechnungen        \\ \hline
+        Mathe-Bibliothek            & Scipy                         & Erweiterte Funktionen für wissenschaftliches Rechnen z.B Umwanldung von Rotationsdarstellungen        \\ \hline
+        3D-Rendering                & pythreejs                     & Python-Wrapper für three.js zur Darstellung von 3D-Geometrien in Notebooks        \\ \hline
+        Interaktivität              & ipywidgets                    & Erlaubt die Erstellung interaktiver GUI-Elemente wie Schieberegler, Dropdowns und Buttons in Jupyter-Notebooks        \\ \hline
+        \end{tabular}
+        \caption{Überblick über die im Projekt verwendeten Softwaretechnologien}
+        \label{tab:technologien}
+    \end{table}
+\vspace{1em}
+
+
+
 Abbildung~\ref{fig:verteilungsdiagramm} visualisiert das Zusammenspiel der einzelnen Softwarekomponenten innerhalb des Frameworks.
 Dabei wird deutlich, wie die verschiedenen Technologien – von der Serverbereitstellung über die Paketverwaltung bis hin zur 3D-Visualisierung
 und interaktiven Steuerung – ineinandergreifen, um eine stabile, plattformunabhängige und benutzerfreundliche Entwicklungsumgebung bereitzustellen.
@@ -55,33 +82,6 @@ geometrischer Strukturen innerhalb des Frameworks ermöglicht.
 
 
 
-\newpage
-
-
-Tabelle \ref{tab:technologien} gibt einen Überblick über die zentralen Softwaretechnologien,
-die für die Implementierung des Frameworks verwendet wurden. Diese Komponenten unterstützen verschiedene Aspekte wie numerische Berechnungen,
-interaktive Steuerung und 3D-Visualisierung.
-
-\vspace{1em}
-    \begin{table}[H]
-        \centering
-        \begin{tabular}{|p{3.5cm}|p{2cm}|p{8cm}|}
-        \hline
-        Kategorie                   & Technologie                   & Beschreibung  \\ \hline
-        Programmiersprache          & Python                        & Hochsprachige, interpretierte Programmiersprache mit Fokus auf Lesbarkeit und Einfachheit – ideal für wissenschaftliches Rechnen, Datenanalyse und Prototyping.        \\ \hline
-        Laufzeitumgebung            & JupyterLab                    & Web-basierte Entwicklungsumgebung für interaktive Notebooks        \\ \hline
-        Paketmanager                & Poetry                        & Verwaltung von Abhängigkeiten und virtuellen Umgebungen        \\ \hline
-        Mathe-Bibliothek            & Numpy                         & Bibliothek für numerische Berechnungen und lineare Algebra        \\ \hline
-        3D-Rendering                & pythreejs                     & Python-Wrapper für three.js zur Darstellung von 3D-Geometrien in Notebooks        \\ \hline
-        Interaktivität              & ipywidgets                    & Erlaubt die Erstellung interaktiver GUI-Elemente wie Schieberegler, Dropdowns und Buttons in Jupyter-Notebooks        \\ \hline
-        \end{tabular}
-        \caption{Überblick über die im Projekt verwendeten Softwaretechnologien}
-        \label{tab:technologien}
-    \end{table}
-\vspace{1em}
-
-\newpage
-
 
 \subsection{Framework-Library (Implementierungsdetails)}
 Die Bibliothek des Frameworks besteht aus einer zentralen Datei, util.py.
@@ -109,6 +109,17 @@ Sie sollen dem Aufgabensteller als Orientierung dienen um mithilfe des Framework
 
 \subsubsection{robot.ipynb}
 Eines dieser Notebooks trägt den Namen robot.ipynb und dient der Veranschaulichung einer einfachen Steuerungsaufgabe.
+Abbildung \ref{fig:Roboter mit Differentialantrieb} zeigt die Ausgabe des Notebooks während des Ausführung.
+\vspace{1em}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1.0\textwidth]{images/robot.PNG}
+        \caption{Roboter mit Differentialantrieb (robot.ipynb während der Ausführung)}
+        \label{fig:Roboter mit Differentialantrieb}
+    \end{figure}
+
+\vspace{1em}
 In diesem Notebook wird ein dreidimensional visualisierter Roboter mit Differentialantrieb dargestellt.
 Zusätzlich wird ein vorgegebener Pfad angezeigt, den der Roboter abfahren soll. Die Aufgabe besteht darin,
 die entsprechenden Antriebsgeschwindigkeiten zu berechnen und anschließend die Funktion move(robot, vel, steps) mit diesen Werten aufzurufen.
@@ -118,13 +129,19 @@ Das Notebook Orientiert sich an einer Übungsaufgabe der Fachhochschule Dortmund
     \textit{Gegeben ist ein mobiler Roboter mit Differentialantrieb, der den im Weltkoordinatensystem abgebildeten Kurs von $A$ nach $C$ vorwärts abfährt.
     Der Kurs besteht aus einem Halbkreis zwischen den Punkten $A=(4,9)$ und $B=(11,2)$ und zwischen $B$ und $C=(18,9)$ aus einer Geraden. Die Positionen der Punkte sind in $m$ angegeben.}
 
-    \vspace{1em}
 
-        \begin{center}[H]
-        \includegraphics[width=1.0\textwidth]{images/uebung_robot.PNG}
-        \end{center}
 
     \vspace{1em}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=1.0\textwidth]{images/uebung_robot.PNG}
+            \caption{Roboter mit Differentialantrieb (Bild aus der Übungsaufgabe)}
+            \label{fig:Roboter mit Differentialantrieb aus Übung}
+        \end{figure}
+
+    \vspace{1em}
+
 
     \textit{Der Roboter soll den gesamten Kurs mit einer konstanten Lineargeschwindigkeit von $\dot{x_R}=1\frac{m}{s}$ abfahren.
     Beschleunigungs- und Verzögerungsvorgänge sollen vernachlässigt werden. Der Roboter hat einen halben Radabstand von $b=0.5m$ und Radradius von $0,25m$.}
@@ -141,16 +158,6 @@ Das Notebook Orientiert sich an einer Übungsaufgabe der Fachhochschule Dortmund
 Nach Ausführung der jeweiligen Zelle beginnt der Roboter mit der Bewegung.
 Die Nutzerin bzw. der Nutzer kann dabei direkt im Jupyter Notebook beobachten, ob der Roboter dem gewünschten Pfad korrekt folgt.
 
-\vspace{1em}
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=1.0\textwidth]{images/robot.PNG}
-        \caption{Verteilungsdiagramm des Frameworks (robot.ipynb während der Ausführung)}
-        \label{fig:Roboter mit Differentialantrieb}
-    \end{figure}
-
-\vspace{1em}
 
 
 
@@ -162,29 +169,29 @@ Die Nutzerin bzw. der Nutzer kann dabei direkt im Jupyter Notebook beobachten, o
 \subsubsection{rotations.ipynb}
 Ein weiteres Beispiel-Notebook trägt den Namen rotations.ipynb.
 In diesem Notebook wird ein dreidimensionaler Würfel visualisiert, der vom Nutzer interaktiv transformiert werden kann.
-
-Über integrierte Schieberegler lassen sich Translation, Rotation und Skalierung des Würfels in Echtzeit anpassen.
-Ziel dieses Notebooks ist es, die Möglichkeiten des Frameworks zur Darstellung und Simulation geometrischer Transformationen zu veranschaulichen.
-
-Die direkte visuelle Rückmeldung innerhalb des Jupyter Notebooks ermöglicht es dem Lernenden,
-die Auswirkungen der jeweiligen Transformationen unmittelbar nachzuvollziehen und ein besseres Verständnis für deren Wirkung im dreidimensionalen Raum zu entwickeln.
-
+Abbildung \ref{fig:Würfel mit Schiebereglern für die Rotation} illustriert das Notebook rotation.ipynb während der Ausführung und veranschaulicht die Sicht des Nutzers.
 
 \vspace{1em}
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1.0\textwidth]{images/rotations.PNG}
-        \caption{Würfel mit Schiebereglern für die Rotation (rotation.ipynb während der Ausführung)}
+        \caption{Würfel mit Schiebereglern für die Transformation (rotation.ipynb während der Ausführung)}
         \label{fig:Würfel mit Schiebereglern für die Rotation}
     \end{figure}
 
 \vspace{1em}
 
+Über integrierte Schieberegler lassen sich Translation, Rotation und Skalierung des Würfels in Echtzeit anpassen.
+Ziel dieses Notebooks ist es, die Möglichkeiten des Frameworks zur Darstellung und Simulation geometrischer Transformationen zu veranschaulichen.
+Die direkte visuelle Rückmeldung innerhalb des Jupyter Notebooks ermöglicht es dem Lernenden,
+die Auswirkungen der jeweiligen Transformationen unmittelbar nachzuvollziehen und ein besseres Verständnis für deren Wirkung im dreidimensionalen Raum zu entwickeln.
+
+
 
 
 \subsubsection{quader.ipynb}
-das andere Beispiel-Notebook trägt den Namen quader.ipynb.
+das letzte Beispiel-Notebook trägt den Namen quader.ipynb.
 Es Orientiert sich an einer Klausuraufgabe der Fachhochschule Dortmund im Modul Robotik aus dem Jahr 2010,
 in der ein Quader um die Achsen des Basis-Koordinatensystems rotiert,
 die jeweiligen Rotationsmatrizen aufgestellt und zu einer Gesamtrotationsmatrix zusammengefasst werden sollen.
@@ -194,11 +201,15 @@ die jeweiligen Rotationsmatrizen aufgestellt und zu einer Gesamtrotationsmatrix 
     Quaderecke befindet sich, wie in der nachfolgenden Abbildung dargestellt, im Ursprung eines
     ortsfesten Koordinatensystems $B$. In der Quaderecke $K$ ist ein körperfestes Koordinatensystem $K$ angebracht.}
 
+
     \vspace{1em}
 
-        \begin{center}[H]
-        \includegraphics[width=0.6\textwidth]{images/klausur_quader.PNG}
-        \end{center}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.6\textwidth]{images/klausur_quader.PNG}
+            \caption{Quader aus Klausuraufgabe}
+            \label{fig:Quader aus Klausuraufgabe}
+        \end{figure}
 
     \vspace{1em}
 
@@ -223,11 +234,7 @@ die jeweiligen Rotationsmatrizen aufgestellt und zu einer Gesamtrotationsmatrix 
 \end{quote}
 
 Das Notebook dient der Visuellen Simulation der Rotationen.
-Mit der Funktion rotate\_global\_animated(mesh, angles, order) wird der Quader zunächst wie in der Aufgabe beschrieben
-um die Achsen des Koordinatensystems $B$ Rotiert. Diese Transformation wird Visuell dargestellt um ein gefühl für die Rotation zu vermitteln und die Endposition aufzuzeigen.
-Anschließend werden die Matrizen als Variablen aufgestellt, zusammengefasst und an die Funktion apply\_rot\_matrix\_animated(mesh, rot\_mat, speed, show\_rot\_mat) übergeben, sodass
-die Rotation des Quaders anhand der Rotationsmatrix betrachtet und mit der vorrangegangegen Transformation vergleichen werden kann. Dieses Notebook kann vom Aufgabensteller so modifiziert werden,
-dass die Matrizen von den Lernenden ausgefüllt werden müssen.
+Abbildung \ref{fig:Würfel mit Schiebereglern für die Rotation} zeigt das Notebook quader.ipynb während der Ausführung.
 
 
 
@@ -241,4 +248,12 @@ dass die Matrizen von den Lernenden ausgefüllt werden müssen.
     \end{figure}
 
 \vspace{1em}
+Mit der Funktion rotate\_global\_animated(mesh, angles, order) wird der Quader zunächst wie in der Aufgabe beschrieben
+um die Achsen des Koordinatensystems $B$ Rotiert. Diese Transformation wird Visuell dargestellt um ein gefühl für die Rotation zu vermitteln und die Endposition aufzuzeigen.
+Danach wird mit der Funktion rotate\_animated(mesh, angles, order) der Quader um sein Körpereigenes Koordinatensystem rotiert, wobei jedoch die Rotationsreihenfolge invertiert wird.
+Diese beiden Rotationen führen den Quader in die gleiche Endposition und sollen den Lernenden diesen Zusammenhang Visuell näherbringen.
+Anschließend werden die Matrizen als Variablen aufgestellt, zusammengefasst und an die Funktion apply\_rot\_matrix\_animated(mesh, rot\_mat, speed, show\_rot\_mat) übergeben, sodass
+die Rotation des Quaders anhand der Rotationsmatrix betrachtet und mit der vorrangegangegen Transformation vergleichen werden kann. Dieses Notebook kann vom Aufgabensteller so modifiziert werden,
+dass die Matrizen von den Lernenden ausgefüllt werden müssen.
+
 
