@@ -92,8 +92,8 @@ Die virtuelle Kamera stellt die Perspektive aus der die Szene gerendert werden s
 Die Ambiente Lichtquelle sorgt dafür, dass der Würfel bei der Farbberechnung seine Blaue Farbe beibehält und nicht Schwarz gerendert wird und ist ebenfalls
 nicht als Objekt in der Szene zu sehen. Ergänzend dazu sind in der index.html-Datei Schieberegler integriert,
 mit denen die Rotation des Würfels über eine Benutzeroberfläche interaktiv gesteuert werden kann.
-Der würfel wird pro Animationsframe ein kleines bischen um die x- und y-Achse des körpereigenen Koordinatensystems rotiert.
-Dies stellt die grundlegenden Funktion des Prototyps dar: die interaktive Steuerung sowie Animation eines 3D-Objekts.
+Der würfel wird pro Animationsframe ein kleines bisschen um die x- und y-Achse des körpereigenen Koordinatensystems rotiert.
+Dies stellt die grundlegenden Funktionen des Prototyps dar: die interaktive Steuerung sowie Animation eines 3D-Objekts.
 Der Prototyp erfüllt damit die zentralen Anforderungen, indem er eine dynamische 3D-Visualisierung bietet,
 bei der der Benutzer in Echtzeit Einfluss auf die Darstellung nehmen kann.
 Diese erste Version des Prototyps ist ein wichtiger Schritt, um die Funktionalität und Flexibilität von Three.js für das Projekt zu validieren.
@@ -121,7 +121,7 @@ was die Entwicklung komplexer, interaktiver Visualisierungen erheblich erleichte
 
 Die API von Pythreejs orientiert sich dabei stark an der von Three.js,
 sodass vorhandene Dokumentationen und Ressourcen weitgehend übertragbar sind.
-Ein wesentlicher Unterschied liegt im sogenannten Render-Loop: Während Three.js typischerweise kontinuierlich \textit{Frames}\footnote{frame = Einzelnes Bild innerhalb einer Bildsequenz, das z.\,B. bei Animationen oder beim Rendering erzeugt und angezeigt wird.} rendert,
+Ein wesentlicher Unterschied liegt im sogenannten Render-Loop: Während Three.js typischerweise kontinuierlich \textit{Frames}\footnote{Frame = Einzelnes Bild innerhalb einer Bildsequenz, das z.\,B. bei Animationen oder beim Rendering erzeugt und angezeigt wird.} rendert,
 erlaubt Pythreejs sowohl eine gezielte Einzelbilddarstellung per Aufruf als auch interaktive Darstellungen über spezielle Renderer-Klassen.
 Diese ermöglichen Funktionen wie OrbitControls (für das Schwenken, Zoomen und Drehen der Kamera) direkt innerhalb des Notebooks,
 ohne dass ein separater Browser-Tab erforderlich ist \doublecite{pythreejs_doc_intro}.
@@ -135,7 +135,7 @@ die Euler-Winkel in Quaternionen umrechnen. Dieser Schritt ist jedoch unproblema
 Auf Basis dieser Erkenntnisse wurde ein erweiterter Prototyp mit Pythreejs erstellt,
 bei dem die entwickelten Hilfsfunktionen aus der Datei util.py zum Einsatz kommen.
 Abbildung \ref{fig:Prototyp2} zeigt den visuellen Output des Renderers innerhalb des Prototyps,
-wobei es sich bei dem Prototypen um ein Jupyter-Notebook handelt.
+wobei es sich bei dem Prototyp um ein Jupyter-Notebook handelt.
 \vspace{1em}
 
     \begin{figure}[H]
@@ -147,13 +147,13 @@ wobei es sich bei dem Prototypen um ein Jupyter-Notebook handelt.
 
 \vspace{1em}
 Dieser Prototyp zeigte erfolgreich, dass die für das Framework essenziellen Grundfunktionen – insbesondere die Animation und Rotation von Objekten – umsetzbar sind.
-Interaktive elemente konnten hier nicht mehr wie im vorherigen Prototyp durch HTML-Elemente hinzugefügt werden.
+Interaktive Elemente konnten hier nicht mehr wie im vorherigen Prototyp durch HTML-Elemente hinzugefügt werden.
 Dafür wurde hier die Python-Bibliothek ipywidgets genutzt. 
 
 
 
 \subsection{Numpy als Mathematik-Library}
-Da der Prototyp verschiedene \textit{numerische}\footnote{Im mathematischen Sinn bedeutet numerisch, dass ein Problem mit Hilfe von Zahlenwerten und Näherungsverfahren gelöst wird,
+Da der Prototyp verschiedene \textit{numerische}\footnote{Im mathematischen Sinn bedeutet numerisch, dass ein Problem mithilfe von Zahlenwerten und Näherungsverfahren gelöst wird,
 anstatt durch exakte symbolische Umformungen.} Berechnungen zur Transformation und Animation von Objekten durchführt,
 stellte sich die Frage, welche Bibliothek für die linearen Algebraoperationen am besten geeignet ist.
 Obwohl das Framework so gestaltet ist, dass es mit sympy.Matrix-Objekten umgehen kann,
@@ -177,8 +177,8 @@ während SymPy jeden Rechenschritt symbolisch verfolgt und daher deutlich langsa
 Da das Ziel des Frameworks ist, Transformationen numerisch auszuwerten und direkt auf reale Objekte anzuwenden,
 war eine symbolische Verarbeitung nicht erforderlich. Dennoch war eine der zentralen Anforderungen, dass das Framework mit sympy.Matrix-Objekten kompatibel ist.
 Daher wurde sichergestellt, dass solche Eingaben akzeptiert und automatisch in ein numerisch geeignetes Format überführt werden,
-sodass auch bei Verwendung von SymPy eine korrekte und performante Ausführung gewährleistet bleibt. Die Vorraussetzung
-dafür ist jedoch dass die übergebenen sympy.Matrix-Objekte sich auf konkrete Werte oder Annäherungen zurückführen lassen.
+sodass auch bei Verwendung von SymPy eine korrekte und performante Ausführung gewährleistet bleibt. Die Voraussetzung dafür ist jedoch,
+dass die übergebenen sympy.Matrix-Objekte sich auf konkrete Werte oder Annäherungen zurückführen lassen.
 
 \subsection{Animationslogik}
 Darauf aufbauend wurden die Notebooks rotation.ipynb, quader.ipynb und robot.ipynb entwickelt. Parallel dazu wurde die Bibliothek util.py
@@ -203,7 +203,7 @@ Der Ablauf folgt dabei einem einfachen Muster:
 \end{algorithm}
 
 Dabei beschreibt t den Fortschritt der Interpolation von 0 bis 1, delta ist die Schrittweite.
-In jedem Schritt wird eine neue Zwischen-rotation, position oder Skalierung berechnet und auf das Objekt angewendet, sodass eine flüssige Bewegung entsteht.
+In jedem Schritt wird eine neue Zwischen-Rotation, Position oder Skalierung berechnet und auf das Objekt angewendet, sodass eine flüssige Bewegung entsteht.
 Bei der praktischen Umsetzung des Algorithmus wurde die python library time für das Warten verwendet. Es fiel auf,
 dass time.sleep() ab einem gewissen Schwellenwert (etwa <1ms) keine weiteren Verkürzungen der Wartezeit bewirkt.
 Dies liegt vermutlich an dem overhead der Funktion. Auch wenn kleinere Werte übergeben werden,

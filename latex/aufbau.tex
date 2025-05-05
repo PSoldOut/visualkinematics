@@ -1,5 +1,5 @@
 \section{Aufbau des Frameworks}
-Im folgenden Abschnitt werden die verschiedenen Technologien die für die erstellung des Frameworks verwendet worden sind
+Im folgenden Abschnitt werden die verschiedenen Technologien, die für die Erstellung des Frameworks verwendet wurden,
 aufgeführt und ihre Bedeutung für das Projekt erläutert. Danach folgt eine detaillierte Beschreibung des technischen Aufbaus,
 einschließlich der Framework-Library und ihrer wichtigsten Implementierungsdetails.
 Abschließend werden die Beispiel-Notebooks sowie deren Funktionen und Einsatzmöglichkeiten erklärt.
@@ -132,8 +132,8 @@ Abbildung \ref{fig:Roboter mit Differentialantrieb} zeigt die Ausgabe des Notebo
 \vspace{1em}
 In diesem Notebook werden zunächst in einer Codezelle ein Gitter sowie ein Koordinatensystem erstellt und zu einem Environment-Objekt hinzugefügt.
 Anschließend wird ein Roboter mit Differentialantrieb erstellt sowie zwei Linien, die einen vorgegebenen Pfad repräsentieren,
-den der Roboter abfahren soll. Zum erstellen den Pfads wird ein Dummy objekt benötigt um die Bewegung des Roboters für die Pfadgenerierung zu simulieren (siehe Anhang).
-Der Roboter und der Pfad werden zu dem Environment-Objekt hinzugefügt, welches danach mit der display() Funktion Visuell dargestellt wird.
+den der Roboter abfahren soll. Zum Erstellen des Pfads wird ein Dummy-Objekt benötigt, welches die Bewegung des Roboters für die Pfadgenerierung simuliert (siehe Anhang).
+Der Roboter und der Pfad werden zu dem Environment-Objekt hinzugefügt, welches danach mit der display() Funktion visuell dargestellt wird.
 
 
 \begin{center}
@@ -153,9 +153,9 @@ Der Roboter und der Pfad werden zu dem Environment-Objekt hinzugefügt, welches 
 \end{center}
 
     
-Nach Ausführung dieser Zelle wird dem Benutzer die Interaktive Szene wie in Abbildung \ref{fig:Roboter mit Differentialantrieb} dargestellt präsentiert.
+Nach Ausführung dieser Zelle wird dem Benutzer die interaktive Szene wie in Abbildung \ref{fig:Roboter mit Differentialantrieb} dargestellt präsentiert.
 Die Aufgabe besteht darin, die entsprechenden Antriebsgeschwindigkeiten zu berechnen und anschließend die Funktion move(robot, vel, steps) mit diesen Werten aufzurufen.
-Das Notebook Orientiert sich an einer Übungsaufgabe der Fachhochschule Dortmund im Modul Robotik aus dem Jahr 2024
+Das Notebook orientiert sich an einer Übungsaufgabe der Fachhochschule Dortmund im Modul Robotik aus dem Jahr 2024
 
 \begin{quote}
     \textit{Gegeben ist ein mobiler Roboter mit Differentialantrieb, der den im Weltkoordinatensystem abgebildeten Kurs von $A$ nach $C$ vorwärts abfährt.
@@ -186,8 +186,8 @@ Das Notebook Orientiert sich an einer Übungsaufgabe der Fachhochschule Dortmund
 
 \end{quote}
 
-in der nächsten Codezelle wird die Pose des Roboters zurückgesetzt damit wiederholte aufrufe dieser Zelle möglich sind.
-Anschließend wird die move() Funktion für jeden Abschnitt der Bahn aufgerufen. Dabei werden in diesem Beispielnotebook bereits
+In der nächsten Codezelle wird die Pose des Roboters zurückgesetzt damit wiederholte Aufrufe dieser Zelle möglich sind.
+Anschließend wird die move() Funktion für jeden Abschnitt der Bahn aufgerufen. Dabei werden in diesem Beispiel-Notebook bereits
 die korrekten Werte für die Antriebsgeschwindigkeiten an move() übergeben, was vom Aufgabensteller geändert werden kann.
 
 
