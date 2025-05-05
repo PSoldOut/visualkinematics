@@ -15,18 +15,18 @@
 \contentsline {subsection}{\numberline {4.2}Framework-Library (Implementierungsdetails)}{13}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Beispiel-Notebooks}{13}{subsection.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}robot.ipynb}{14}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}rotations.ipynb}{15}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}quader.ipynb}{17}{subsubsection.4.3.3}%
-\contentsline {section}{\numberline {5}Entwicklungsprozess}{19}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Wahl der Rendering-API}{19}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}OpenGL}{20}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}WebGL}{20}{subsubsection.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.3}Babylon.js}{20}{subsubsection.5.1.3}%
-\contentsline {subsubsection}{\numberline {5.1.4}Three.js}{21}{subsubsection.5.1.4}%
-\contentsline {subsection}{\numberline {5.2}Three.js-Prototyp}{22}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Pythreejs-Prototyp}{24}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Numpy als Mathematik-Library}{26}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Animationslogik}{27}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Environment-Klasse}{28}{subsection.5.6}%
-\contentsline {section}{\numberline {6}Evaluation}{28}{section.6}%
-\contentsline {section}{\numberline {7}Ausblick auf die Bachelorarbeit}{30}{section.7}%
+\contentsline {subsubsection}{\numberline {4.3.2}rotations.ipynb}{17}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}quader.ipynb}{18}{subsubsection.4.3.3}%
+\contentsline {section}{\numberline {5}Entwicklungsprozess}{22}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Wahl der Rendering-API}{23}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}OpenGL}{23}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}WebGL}{23}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Babylon.js}{24}{subsubsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.4}Three.js}{24}{subsubsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.2}Three.js-Prototyp}{25}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Pythreejs-Prototyp}{28}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Numpy als Mathematik-Library}{30}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Animationslogik}{31}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Environment-Klasse}{32}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Evaluation}{32}{section.6}%
+\contentsline {section}{\numberline {7}Ausblick auf die Bachelorarbeit}{34}{section.7}%
