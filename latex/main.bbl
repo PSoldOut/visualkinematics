@@ -18,14 +18,15 @@
 
 
 \refsection{0}
-  \datalist[entry]{anyt/global//global/global/global}
+  \datalist[entry]{nyt/global//global/global/global}
     \entry{BabylonJS}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=ced81e0fa3181689ee24faf98990646c}{%
+        {{un=0,uniquepart=base,hash=ced81e0fa3181689ee24faf98990646c}{%
            family={BabylonJS},
            familyi={B\bibinitperiod},
            given={Project},
-           giveni={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{ced81e0fa3181689ee24faf98990646c}
       \strng{fullhash}{ced81e0fa3181689ee24faf98990646c}
@@ -36,10 +37,11 @@
       \strng{authorfullhash}{ced81e0fa3181689ee24faf98990646c}
       \strng{authorfullhashraw}{ced81e0fa3181689ee24faf98990646c}
       \field{extraname}{1}
-      \field{labelalpha}{Bab25}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extraalpha}{1}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{BabylonJS}
@@ -57,11 +59,12 @@
     \endentry
     \entry{BabylonJS_Documentation_Physics}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=ced81e0fa3181689ee24faf98990646c}{%
+        {{un=0,uniquepart=base,hash=ced81e0fa3181689ee24faf98990646c}{%
            family={BabylonJS},
            familyi={B\bibinitperiod},
            given={Project},
-           giveni={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{ced81e0fa3181689ee24faf98990646c}
       \strng{fullhash}{ced81e0fa3181689ee24faf98990646c}
@@ -72,10 +75,11 @@
       \strng{authorfullhash}{ced81e0fa3181689ee24faf98990646c}
       \strng{authorfullhashraw}{ced81e0fa3181689ee24faf98990646c}
       \field{extraname}{2}
-      \field{labelalpha}{Bab25}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extraalpha}{2}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{BabylonJS Dokumentation Physics}
@@ -93,11 +97,12 @@
     \endentry
     \entry{BabylonJS_specification}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=ced81e0fa3181689ee24faf98990646c}{%
+        {{un=0,uniquepart=base,hash=ced81e0fa3181689ee24faf98990646c}{%
            family={BabylonJS},
            familyi={B\bibinitperiod},
            given={Project},
-           giveni={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{ced81e0fa3181689ee24faf98990646c}
       \strng{fullhash}{ced81e0fa3181689ee24faf98990646c}
@@ -108,10 +113,11 @@
       \strng{authorfullhash}{ced81e0fa3181689ee24faf98990646c}
       \strng{authorfullhashraw}{ced81e0fa3181689ee24faf98990646c}
       \field{extraname}{3}
-      \field{labelalpha}{Bab25}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extraalpha}{3}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{BabylonJS Specification}
@@ -127,13 +133,47 @@
       \verb https://www.babylonjs.com/specifications/
       \endverb
     \endentry
+    \entry{coppeliaSim_manual}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d0a08affc2ffbda3cb539391daa8f954}{%
+           family={CoppeliaRobotics},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d0a08affc2ffbda3cb539391daa8f954}
+      \strng{fullhash}{d0a08affc2ffbda3cb539391daa8f954}
+      \strng{fullhashraw}{d0a08affc2ffbda3cb539391daa8f954}
+      \strng{bibnamehash}{d0a08affc2ffbda3cb539391daa8f954}
+      \strng{authorbibnamehash}{d0a08affc2ffbda3cb539391daa8f954}
+      \strng{authornamehash}{d0a08affc2ffbda3cb539391daa8f954}
+      \strng{authorfullhash}{d0a08affc2ffbda3cb539391daa8f954}
+      \strng{authorfullhashraw}{d0a08affc2ffbda3cb539391daa8f954}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Manual}
+      \field{urlday}{5}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://manual.coppeliarobotics.com/
+      \endverb
+      \verb{url}
+      \verb https://manual.coppeliarobotics.com/
+      \endverb
+    \endentry
     \entry{Robotics_Vision_and_Control}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=c0e503339314930d140b67b5e7c55c3e}{%
+        {{un=0,uniquepart=base,hash=c0e503339314930d140b67b5e7c55c3e}{%
            family={Corke},
            familyi={C\bibinitperiod},
            given={Peter},
-           giveni={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
       \list{language}{1}{%
         {eng}%
@@ -152,9 +192,10 @@
       \strng{authornamehash}{c0e503339314930d140b67b5e7c55c3e}
       \strng{authorfullhash}{c0e503339314930d140b67b5e7c55c3e}
       \strng{authorfullhashraw}{c0e503339314930d140b67b5e7c55c3e}
-      \field{labelalpha}{Cor23}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This textbook provides a comprehensive, but tutorial, introduction to robotics, computer vision, and control. It is written in a light but informative conversational style, weaving text, figures, mathematics, and lines of code into a narrative that covers robotics and computer vision-separately, and together as robotic vision. Over 1600 code examples show how complex problems can be decomposed and solved using just a few simple lines of code.This edition is based on Python and is accompanied by fully open-source Python-based Toolboxes for robotics and machine vision.  The new Toolboxes enable the reader to easily bring the algorithmic concepts into practice and work with real, non-trivial, problems on a broad range of computing platforms. For the beginning student the book makes the algorithms accessible, the Toolbox code can be read to gain understanding, and the examples illustrate how it can be used. The code can also be the starting point for new work, for practitioners, students, or researchers, by writing programs based on Toolbox functions, or modifying the Toolbox code itself.}
@@ -169,16 +210,18 @@
     \endentry
     \entry{python3_das_umfassende_handbuch}{book}{}{}
       \name{author}{2}{}{%
-        {{hash=6156fc5cb7213bd41c6ff3ac8bcbc7ab}{%
+        {{un=0,uniquepart=base,hash=6156fc5cb7213bd41c6ff3ac8bcbc7ab}{%
            family={Ernesti},
            familyi={E\bibinitperiod},
            given={Johannes},
-           giveni={J\bibinitperiod}}}%
-        {{hash=4dc05d10b5dc185241ec9b41eadc2e46}{%
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4dc05d10b5dc185241ec9b41eadc2e46}{%
            family={Kaiser},
            familyi={K\bibinitperiod},
            given={Peter},
-           giveni={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
       \list{language}{1}{%
         {ger}%
@@ -197,9 +240,10 @@
       \strng{authornamehash}{82054b18b6cde7f1e5313be588fad181}
       \strng{authorfullhash}{82054b18b6cde7f1e5313be588fad181}
       \strng{authorfullhashraw}{82054b18b6cde7f1e5313be588fad181}
-      \field{labelalpha}{EK17}
       \field{sortinit}{E}
       \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Python 3 das umfassende Handbuch}
@@ -212,11 +256,12 @@
     \endentry
     \entry{webgl_wiki}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=638160ae56a17712d83fafc12a740c80}{%
+        {{un=0,uniquepart=base,hash=638160ae56a17712d83fafc12a740c80}{%
            family={Group},
            familyi={G\bibinitperiod},
            given={Khronos},
-           giveni={K\bibinitperiod}}}%
+           giveni={K\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{638160ae56a17712d83fafc12a740c80}
       \strng{fullhash}{638160ae56a17712d83fafc12a740c80}
@@ -227,10 +272,11 @@
       \strng{authorfullhash}{638160ae56a17712d83fafc12a740c80}
       \strng{authorfullhashraw}{638160ae56a17712d83fafc12a740c80}
       \field{extraname}{1}
-      \field{labelalpha}{Gro25}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extraalpha}{1}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Getting Started}
@@ -248,11 +294,12 @@
     \endentry
     \entry{opengl_doc}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=638160ae56a17712d83fafc12a740c80}{%
+        {{un=0,uniquepart=base,hash=638160ae56a17712d83fafc12a740c80}{%
            family={Group},
            familyi={G\bibinitperiod},
            given={Khronos},
-           giveni={K\bibinitperiod}}}%
+           giveni={K\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{638160ae56a17712d83fafc12a740c80}
       \strng{fullhash}{638160ae56a17712d83fafc12a740c80}
@@ -263,10 +310,11 @@
       \strng{authorfullhash}{638160ae56a17712d83fafc12a740c80}
       \strng{authorfullhashraw}{638160ae56a17712d83fafc12a740c80}
       \field{extraname}{2}
-      \field{labelalpha}{Gro25}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extraalpha}{2}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Industry's Foundation for High Performance Graphics}
@@ -284,36 +332,42 @@
     \endentry
     \entry{The_Second_Handbook_of_Research_on_the_Psychology_of_Mathematics_Education}{book}{}{}
       \name{author}{6}{}{%
-        {{hash=e757f28e1ec32466b4cadca58fd45f6c}{%
+        {{un=0,uniquepart=base,hash=e757f28e1ec32466b4cadca58fd45f6c}{%
            family={Gutiérrez},
            familyi={G\bibinitperiod},
            given={Ángel},
-           giveni={Á\bibinitperiod}}}%
-        {{hash=2d78789a2a81407fb71284dac890d986}{%
+           giveni={Á\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d78789a2a81407fb71284dac890d986}{%
            family={Leder},
            familyi={L\bibinitperiod},
            given={Gilah\bibnamedelima C},
-           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=abee34255591c0ce8a7dd90ce1304889}{%
+           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=abee34255591c0ce8a7dd90ce1304889}{%
            family={Boero},
            familyi={B\bibinitperiod},
            given={Paolo},
-           giveni={P\bibinitperiod}}}%
-        {{hash=abee34255591c0ce8a7dd90ce1304889}{%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=abee34255591c0ce8a7dd90ce1304889}{%
            family={Boero},
            familyi={B\bibinitperiod},
            given={Paolo},
-           giveni={P\bibinitperiod}}}%
-        {{hash=e757f28e1ec32466b4cadca58fd45f6c}{%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e757f28e1ec32466b4cadca58fd45f6c}{%
            family={Gutiérrez},
            familyi={G\bibinitperiod},
            given={Ángel},
-           giveni={Á\bibinitperiod}}}%
-        {{hash=2d78789a2a81407fb71284dac890d986}{%
+           giveni={Á\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d78789a2a81407fb71284dac890d986}{%
            family={Leder},
            familyi={L\bibinitperiod},
            given={Gilah\bibnamedelima C.},
-           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
       }
       \list{language}{1}{%
         {eng}%
@@ -332,9 +386,10 @@
       \strng{authornamehash}{8f6b0ed16da2f709f4da432a0d6cbd4b}
       \strng{authorfullhash}{8305095fcd79e02dcf6ab5e8a223b5bf}
       \strng{authorfullhashraw}{8305095fcd79e02dcf6ab5e8a223b5bf}
-      \field{labelalpha}{Gut+16}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The book is divided into four main sections: Cognitive aspects of learning and teaching content areas; Cognitive aspects of learning and teaching transverse areas; Social aspects of learning and teaching mathematics; and Professional aspects of teaching mathematics. The selection for each chapter of a team of at least two authors, mostly located in different parts of the world, ensured effective coverage of each field. High quality was further enhanced by the scrupulous review of early chapter drafts by two leaders in the relevant field.}
@@ -346,21 +401,24 @@
     \endentry
     \entry{mobile_roboter}{book}{}{}
       \name{author}{3}{}{%
-        {{hash=5f79246010f00cdea0dbdcaefb39b516}{%
+        {{un=0,uniquepart=base,hash=5f79246010f00cdea0dbdcaefb39b516}{%
            family={Hertzberg},
            familyi={H\bibinitperiod},
            given={Joachim},
-           giveni={J\bibinitperiod}}}%
-        {{hash=1a464426cc06d2f425acc3d58f05e34c}{%
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a464426cc06d2f425acc3d58f05e34c}{%
            family={Lingemann},
            familyi={L\bibinitperiod},
            given={Kai},
-           giveni={K\bibinitperiod}}}%
-        {{hash=490c7a8d6199fbc87b6ea4dff87f8c54}{%
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=490c7a8d6199fbc87b6ea4dff87f8c54}{%
            family={Nüchter},
            familyi={N\bibinitperiod},
            given={Andreas},
-           giveni={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod},
+           givenun=0}}%
       }
       \list{language}{1}{%
         {ger}%
@@ -379,9 +437,10 @@
       \strng{authornamehash}{dd55f65f84b3dae7491f7d9f6056ad45}
       \strng{authorfullhash}{dd55f65f84b3dae7491f7d9f6056ad45}
       \strng{authorfullhashraw}{dd55f65f84b3dae7491f7d9f6056ad45}
-      \field{labelalpha}{HLN12}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Mobile Roboter eine Einführung aus Sicht der Informatik}
@@ -393,11 +452,12 @@
     \endentry
     \entry{jupyterlab_docs}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=04455645f6d0f265d82db1f3f715e4eb}{%
+        {{un=0,uniquepart=base,hash=04455645f6d0f265d82db1f3f715e4eb}{%
            family={Jupyter},
            familyi={J\bibinitperiod},
            given={Project},
-           giveni={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{04455645f6d0f265d82db1f3f715e4eb}
       \strng{fullhash}{04455645f6d0f265d82db1f3f715e4eb}
@@ -407,9 +467,10 @@
       \strng{authornamehash}{04455645f6d0f265d82db1f3f715e4eb}
       \strng{authorfullhash}{04455645f6d0f265d82db1f3f715e4eb}
       \strng{authorfullhashraw}{04455645f6d0f265d82db1f3f715e4eb}
-      \field{labelalpha}{Jup24}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{JupyterLab Documentation}
@@ -427,11 +488,12 @@
     \endentry
     \entry{Quaternions_and_Rotation_Sequences_A_Primer_with_Applications_to_Orbits_Aerospace_and_Virtual_Reality}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=335a82a938fdcb41f9aaf97184bfaffb}{%
+        {{un=0,uniquepart=base,hash=335a82a938fdcb41f9aaf97184bfaffb}{%
            family={Kuipers},
            familyi={K\bibinitperiod},
            given={J.\bibnamedelimi B.},
-           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
       }
       \list{language}{1}{%
         {eng}%
@@ -450,9 +512,10 @@
       \strng{authornamehash}{335a82a938fdcb41f9aaf97184bfaffb}
       \strng{authorfullhash}{335a82a938fdcb41f9aaf97184bfaffb}
       \strng{authorfullhashraw}{335a82a938fdcb41f9aaf97184bfaffb}
-      \field{labelalpha}{Kui99}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Ever since the Irish mathematician William Rowan Hamilton introduced quaternions in the nineteenth century--a feat he celebrated by carving the founding equations into a stone bridge--mathematicians and engineers have been fascinated by these mathematical objects. Today, they are used in applications as various as describing the geometry of spacetime, guiding the Space Shuttle, and developing computer applications in virtual reality. In this book, J. B. Kuipers introduces quaternions for scientists and engineers who have not encountered them before and shows how they can be used in a variety of practical situations. The book is primarily an exposition of the quaternion, a 4-tuple, and its primary application in a rotation operator. But Kuipers also presents the more conventional and familiar 3 x 3 (9-element) matrix rotation operator. These parallel presentations allow the reader to judge which approaches are preferable for specific applications. The volume is divided into three main parts. The opening chapters present introductory material and establish the book's terminology and notation. The next part presents the mathematical properties of quaternions, including quaternion algebra and geometry. It includes more advanced special topics in spherical trigonometry, along with an introduction to quaternion calculus and perturbation theory, required in many situations involving dynamics and kinematics. In the final section, Kuipers discusses state-of-the-art applications. He presents a six degree-of-freedom electromagnetic position and orientation transducer and concludes by discussing the computer graphics necessary for the development of applications in virtual reality}
@@ -464,11 +527,12 @@
     \endentry
     \entry{numpy_doc}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=4b57d6850d541546a96ca9eb7d096314}{%
+        {{un=0,uniquepart=base,hash=4b57d6850d541546a96ca9eb7d096314}{%
            family={Numpy},
            familyi={N\bibinitperiod},
            given={Project},
-           giveni={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{4b57d6850d541546a96ca9eb7d096314}
       \strng{fullhash}{4b57d6850d541546a96ca9eb7d096314}
@@ -478,9 +542,10 @@
       \strng{authornamehash}{4b57d6850d541546a96ca9eb7d096314}
       \strng{authorfullhash}{4b57d6850d541546a96ca9eb7d096314}
       \strng{authorfullhashraw}{4b57d6850d541546a96ca9eb7d096314}
-      \field{labelalpha}{Num25}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{what is numpy}
@@ -496,23 +561,102 @@
       \verb https://numpy.org/devdocs/user/whatisnumpy.html
       \endverb
     \endentry
+    \entry{pythreejs_doc_intro}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=af03a166de57a212370ead6ad3a91963}{%
+           family={Pythreejs},
+           familyi={P\bibinitperiod},
+           given={Project},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{af03a166de57a212370ead6ad3a91963}
+      \strng{fullhash}{af03a166de57a212370ead6ad3a91963}
+      \strng{fullhashraw}{af03a166de57a212370ead6ad3a91963}
+      \strng{bibnamehash}{af03a166de57a212370ead6ad3a91963}
+      \strng{authorbibnamehash}{af03a166de57a212370ead6ad3a91963}
+      \strng{authornamehash}{af03a166de57a212370ead6ad3a91963}
+      \strng{authorfullhash}{af03a166de57a212370ead6ad3a91963}
+      \strng{authorfullhashraw}{af03a166de57a212370ead6ad3a91963}
+      \field{extraname}{1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://pythreejs.readthedocs.io/en/stable/introduction.html
+      \endverb
+      \verb{url}
+      \verb https://pythreejs.readthedocs.io/en/stable/introduction.html
+      \endverb
+    \endentry
+    \entry{pythreejs_doc}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=af03a166de57a212370ead6ad3a91963}{%
+           family={Pythreejs},
+           familyi={P\bibinitperiod},
+           given={Project},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{af03a166de57a212370ead6ad3a91963}
+      \strng{fullhash}{af03a166de57a212370ead6ad3a91963}
+      \strng{fullhashraw}{af03a166de57a212370ead6ad3a91963}
+      \strng{bibnamehash}{af03a166de57a212370ead6ad3a91963}
+      \strng{authorbibnamehash}{af03a166de57a212370ead6ad3a91963}
+      \strng{authornamehash}{af03a166de57a212370ead6ad3a91963}
+      \strng{authorfullhash}{af03a166de57a212370ead6ad3a91963}
+      \strng{authorfullhashraw}{af03a166de57a212370ead6ad3a91963}
+      \field{extraname}{2}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{pythreejs}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://pythreejs.readthedocs.io/en/stable/index.html
+      \endverb
+      \verb{url}
+      \verb https://pythreejs.readthedocs.io/en/stable/index.html
+      \endverb
+    \endentry
     \entry{autonomous_mobile_robots}{book}{}{}
       \name{author}{3}{}{%
-        {{hash=6ee8958bbf32527489012d8ca7c95ee3}{%
+        {{un=0,uniquepart=base,hash=6ee8958bbf32527489012d8ca7c95ee3}{%
            family={Siegwart},
            familyi={S\bibinitperiod},
            given={Roland},
-           giveni={R\bibinitperiod}}}%
-        {{hash=1ba5776eed1d9ff0afe0bb5fbfa0c473}{%
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ba5776eed1d9ff0afe0bb5fbfa0c473}{%
            family={Nourbakhsh},
            familyi={N\bibinitperiod},
            given={Illah\bibnamedelima Reza},
-           giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=dac21ab4ede215439fcc6b051be53a11}{%
+           giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dac21ab4ede215439fcc6b051be53a11}{%
            family={Scaramuzza},
            familyi={S\bibinitperiod},
            given={Davide},
-           giveni={D\bibinitperiod}}}%
+           giveni={D\bibinitperiod},
+           givenun=0}}%
       }
       \list{language}{1}{%
         {eng}%
@@ -531,9 +675,10 @@
       \strng{authornamehash}{d3875fcd18d3abff99854ffcc032ec96}
       \strng{authorfullhash}{d3875fcd18d3abff99854ffcc032ec96}
       \strng{authorfullhashraw}{d3875fcd18d3abff99854ffcc032ec96}
-      \field{labelalpha}{SNS11}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{2. ed.}
@@ -545,11 +690,12 @@
     \endentry
     \entry{sympy_doc_advanced_usage}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=f6fc9a1da4c08029fdc5cf2b77ec004d}{%
+        {{un=0,uniquepart=base,hash=f6fc9a1da4c08029fdc5cf2b77ec004d}{%
            family={Sympy},
            familyi={S\bibinitperiod},
            given={Project},
-           giveni={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{f6fc9a1da4c08029fdc5cf2b77ec004d}
       \strng{fullhash}{f6fc9a1da4c08029fdc5cf2b77ec004d}
@@ -559,9 +705,10 @@
       \strng{authornamehash}{f6fc9a1da4c08029fdc5cf2b77ec004d}
       \strng{authorfullhash}{f6fc9a1da4c08029fdc5cf2b77ec004d}
       \strng{authorfullhashraw}{f6fc9a1da4c08029fdc5cf2b77ec004d}
-      \field{labelalpha}{Sym25}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{advanced usage}
@@ -579,11 +726,12 @@
     \endentry
     \entry{threeJS_manual}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=8912096386bdaf6c0b0e2958505873b8}{%
+        {{un=0,uniquepart=base,hash=8912096386bdaf6c0b0e2958505873b8}{%
            family={ThreeJS},
            familyi={T\bibinitperiod},
            given={Project},
-           giveni={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{8912096386bdaf6c0b0e2958505873b8}
       \strng{fullhash}{8912096386bdaf6c0b0e2958505873b8}
@@ -593,9 +741,10 @@
       \strng{authornamehash}{8912096386bdaf6c0b0e2958505873b8}
       \strng{authorfullhash}{8912096386bdaf6c0b0e2958505873b8}
       \strng{authorfullhashraw}{8912096386bdaf6c0b0e2958505873b8}
-      \field{labelalpha}{Thr25}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{ThreeJS Manual Fundamentals}

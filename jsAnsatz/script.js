@@ -42,10 +42,6 @@ cubeGroup.add(verticesPoints);
 scene.add(cubeGroup);
 
 //Beleuchtung
-const light = new THREE.PointLight(0xffffff, 1, 100);
-light.position.set(5, 5, 5);
-scene.add(light);
-
 const ambientLight = new THREE.AmbientLight(0x404040, 2);
 scene.add(ambientLight);
 
@@ -71,8 +67,8 @@ function animate() {
     requestAnimationFrame(animate);
 
     // Rotation des Würfels
-    //cube.rotation.x += 0.01;
-    //cube.rotation.y += 0.01;
+    cubeGroup.rotation.x += 0.01;
+    cubeGroup.rotation.y += 0.01;
     
 
     renderer.render(scene, camera);

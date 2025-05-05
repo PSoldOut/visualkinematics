@@ -1,7 +1,14 @@
 \section{Aufbau des Frameworks}
+Im folgenden Abschnitt werden die verschiedenen Technologien die für die erstellung des Frameworks verwendet worden sind
+aufgeführt und ihre Bedeutung für das Projekt erläutert. Danach folgt eine detaillierte Beschreibung des technischen Aufbaus,
+einschließlich der Framework-Library und ihrer wichtigsten Implementierungsdetails.
+Abschließend werden die Beispiel-Notebooks sowie deren Funktionen und Einsatzmöglichkeiten erklärt.
+
 
 \subsection{System- und Softwareumgebung}
-Das Framework wurde für die Nutzung in der JupyterLab-Umgebung entwickelt, um eine plattformunabhängige und benutzerfreundliche Arbeitsumgebung zu bieten. Durch den Einsatz von Tools wie Poetry zur Verwaltung von Abhängigkeiten und Bibliotheken wie ipywidgets und pythreejs zur interaktiven 3D-Visualisierung wird eine stabile und effiziente Nutzung ermöglicht.
+Das Framework wurde für die Nutzung in der JupyterLab-Umgebung entwickelt, um eine plattformunabhängige und benutzerfreundliche Arbeitsumgebung zu bieten.
+Durch den Einsatz von Tools wie Poetry zur Verwaltung von Abhängigkeiten und Bibliotheken wie ipywidgets und pythreejs zur
+interaktiven 3D-Visualisierung wird eine stabile und effiziente Nutzung ermöglicht.
 
 
 Tabelle \ref{tab:technologien} gibt einen Überblick über die zentralen Softwaretechnologien,
@@ -31,8 +38,8 @@ interaktive Steuerung und 3D-Visualisierung.
 
 
 Abbildung~\ref{fig:verteilungsdiagramm} visualisiert das Zusammenspiel der einzelnen Softwarekomponenten innerhalb des Frameworks.
-Dabei wird deutlich, wie die verschiedenen Technologien – von der Serverbereitstellung über die Paketverwaltung bis hin zur 3D-Visualisierung
-und interaktiven Steuerung – ineinandergreifen, um eine stabile, plattformunabhängige und benutzerfreundliche Entwicklungsumgebung bereitzustellen.
+Dabei wird deutlich, wie die verschiedenen Technologien von der Serverbereitstellung über die Paketverwaltung bis hin zur 3D-Visualisierung
+und interaktiven Steuerung ineinandergreifen, um eine stabile, plattformunabhängige und benutzerfreundliche Entwicklungsumgebung bereitzustellen.
 
 \vspace{1em}
 
@@ -65,7 +72,8 @@ NumPy wird im Kontext dieses Projekts hauptsächlich für erweiterte mathematisc
 Außerdem ist NumPy mit der Bibliothek SymPy, die für symbolische Mathematik verwendet wird gut kompatibel.
 Diese Kompatibilität ist ebenfalls eine Anforderung im Projekt.
 Obwohl NumPy eine leistungsfähige Grundlage für numerische Berechnungen bietet,
-enthält es keine Funktionen für spezielle geometrische Transformationen wie die Umwandlung von Euler-Winkeln in Quaternionen oder Rotationsmatrizen – oder deren Umkehrung.
+enthält es keine Funktionen für spezielle geometrische Transformationen wie beispielsweise die Umwandlung von Euler-Winkeln in Quaternionen,
+die Umwandlung von Quaternionen in Rotationsmatrizen oder deren Umkehrung.
 Daher wurde ergänzend die Bibliothek scipy.spatial verwendet, die solche Operationen effizient bereitstellt.
 
 
@@ -90,13 +98,15 @@ Darüber hinaus enthält util.py eine Reihe von Hilfsfunktionen,
 die unter anderem die Umrechnung zwischen verschiedenen Darstellungsformen von Rotationen ermöglichen sowie die Erstellung von Koordinatensystemen unterstützen.
 
 Ergänzend dazu stellt die Bibliothek eine Klasse namens Environment bereit.
-Environment repräsentiert den Renderer mit einer Szene, die eine Kamera, Beleuchtung,
+Environment repräsentiert den Renderer mit einer Szene, die eine virtuelle Kamera, ein Punktlicht,
 ein Standardkoordinatensystem sowie ein Gitter enthält. Ein Objekt dieser Klasse kann vom Nutzer individuell angepasst werden.
-So lässt sich beispielsweise festlegen, ob – abweichend vom Standard – nicht die z-Achse, sondern die y-Achse nach oben zeigt.
-Auch das Gitter kann in seiner Auflösung verändert werden, indem die Größe der einzelnen Zellen angepasst wird – das Gitter kann somit feiner oder gröber dargestellt werden.
+So lässt sich beispielsweise festlegen, ob die z-Achse oder die y-Achse nach oben zeigt.
+Auch das Gitter kann in seiner Auflösung verändert werden, indem die Größe der einzelnen Zellen angepasst wird.
+Das Gitter kann somit feiner oder gröber dargestellt werden.
 
 Zur Darstellung innerhalb eines Jupyter Notebooks kann ein Environment-Objekt über die dort übliche display()-Funktion gerendert werden.
-Darüber hinaus besteht die Möglichkeit, interaktive Widgets für beliebige Objekte hinzuzufügen, etwa zur Steuerung der Rotation über Schieberegler.
+Darüber hinaus besteht die Möglichkeit, interaktive \textit{Widgets}\footnote{Widgets sind grafische Bedienelemente in einer Benutzeroberfläche,
+wie z.\,B. Buttons, Schieberegler oder Textfelder, die der Interaktion mit dem Nutzer dienen.} für beliebige Objekte hinzuzufügen, zum Beispiel zur Steuerung der Rotation über Schieberegler.
 Diese Widgets werden unterhalb des Renderers angezeigt und ermöglichen eine benutzerfreundliche Interaktion mit der Szene.
 
 Zusätzlich enthält die Bibliothek eine Funktion move(robot, vel, steps),

@@ -936,6 +936,33 @@ def translate_animated(mesh, vec, speed=50.0):
 
 
 
+def create_differential_robot():
+    robot_group = three.Group()
+
+    wheel_height = 0.2
+    wheel_radius = 0.4
+    robot_radius = 1
+    chassis = create_cylinder([0, 0, wheel_radius], robot_radius, robot_radius, 0.5, 32, [0,255,0], True)
+
+    w0 = create_cylinder([0, 0, 1+wheel_height/2], wheel_radius, wheel_radius, wheel_height, 32, [255,0,0], True)
+    rotate(w0, [90,0,0], "XYZ")
+    w1 = create_cylinder([0, 0, -1-wheel_height/2], wheel_radius, wheel_radius, wheel_height, 32, [255,0,0], True)
+    rotate(w1, [90,0,0], "XYZ")
+
+    w0_axis = create_axes(2)
+    w1_axis = create_axes(2)
+
+    #w0.add([w0, w0_axis])
+    #w1.add([w1, w1_axis])
+
+    chassis.add([w0, w1])
+    rotate(chassis, [-90,0,0], "XYZ")
+    robot_axis = create_axes(2)
+    robot_group.add([chassis, robot_axis])
+    return robot_group
+
+
+
 
 class Environment:
     '''

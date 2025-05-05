@@ -1,12 +1,14 @@
 \section{Einleitung}
 
 Die Grundlagen der Kinematik stellen einen wesentlichen Bestandteil der Robotik dar und sind sowohl für mobile als auch für stationäre Roboter von zentraler Bedeutung.
-Während es bei stationären Robotern häufig darum geht, die Position des Endeffektors präzise zu berechnen,
+Während es bei stationären Robotern häufig darum geht, die Position des \textit{Endeffektors}\footnote{In der Robotik bezeichnet der Endeffektor das letzte Glied eines Roboters, das direkt mit der Umgebung interagiert. Häufig handelt es sich dabei um Werkzeuge oder Greifer} präzise zu berechnen,
 konzentriert sich die Kinematik bei mobilen Robotern vor allem darauf, deren Position zuverlässig bestimmen zu können.
 Ein fundiertes Verständnis der erforderlichen kinematischen Modelle ist unerlässlich, um diese Größen korrekt zu berechnen.
-\cite[57]{autonomous_mobile_robots}
+\doublecite[57]{autonomous_mobile_robots}
 
-Im Rahmen dieser Projektarbeit wird ein Framework entwickelt, das die Visualisierung kinematischer Kennwerte ermöglicht.
+Im Rahmen dieser Projektarbeit wird ein \textit{Framework}\footnote{Ein Framework ist ein vorgefertigtes Gerüst aus Softwarekomponenten, das bei der Entwicklung von Anwendungen hilft,
+indem es wiederverwendbare Strukturen und Funktionen bereitstellt.
+Es legt meist einen Rahmen für die Programmstruktur und den Ablauf fest, innerhalb dessen eigene Komponenten integriert werden können.} entwickelt, das die Visualisierung kinematischer Kennwerte ermöglicht.
 Das Ziel dieses Frameworks ist es, unterstützend in der Lehre eingesetzt zu werden, um das Verständnis der Kinematik zu fördern und die praktische Anwendung dieser Konzepte zu erleichtern.
 Ein besonderer Fokus dieser Arbeit liegt auf der Rotation von Körpern im Raum. Dabei wird insbesondere erläutert,
 was unter Eulerwinkeln sowie Roll-Pitch-Yaw-Winkeln zu verstehen ist und worin die Unterschiede zwischen beiden Darstellungen bestehen.
@@ -15,9 +17,9 @@ Darüber hinaus werden auch Rotationsmatrizen sowie Quaternionen behandelt, um d
 
 \subsection{Motivation}
 Obwohl kinematische Modelle in vielen Bereichen der Robotik eine zentrale Rolle spielen, fällt es Studierenden häufig schwer,
-diese abstrakten mathematischen Konzepte vollständig zu durchdringen. Besonders Rotationen im dreidimensionalen Raum – etwa durch Eulerwinkel,
-Roll-Pitch-Yaw-Darstellungen, Rotationsmatrizen oder Quaternionen beschrieben – wirken in der Theorie oft wenig anschaulich und sind ohne visuelle
-Unterstützung schwer intuitiv erfassbar \cite[94-95]{The_Second_Handbook_of_Research_on_the_Psychology_of_Mathematics_Education}.
+diese abstrakten mathematischen Konzepte vollständig zu durchdringen. Besonders Rotationen im dreidimensionalen Raum, die durch Eulerwinkel,
+Roll-Pitch-Yaw-Darstellungen, Rotationsmatrizen oder Quaternionen beschrieben werden wirken in der Theorie oft wenig anschaulich und sind ohne visuelle
+Unterstützung schwer intuitiv erfassbar \doublecite[94-95]{The_Second_Handbook_of_Research_on_the_Psychology_of_Mathematics_Education}.
 
 In der Hochschullehre entsteht dadurch eine Lücke zwischen theoretischem Wissen und praktischem Verständnis.
 Lehrende stehen vor der Herausforderung, komplexe Zusammenhänge nicht nur formal korrekt, sondern auch nachvollziehbar und greifbar zu vermitteln.
@@ -25,7 +27,7 @@ Gleichzeitig benötigen Studierende Möglichkeiten, das Gelernte interaktiv zu e
 
 Moderne Lehrmethoden, die auf Visualisierung und Interaktion setzen, können hier entscheidend zur Verbesserung des Lernerfolgs beitragen.
 Insbesondere browserbasierte und plattformunabhängige Lösungen, wie sie in JupyterLab realisierbar sind,
-eröffnen neue Perspektiven für eine zeitgemäße und praxisnahe Vermittlung technischer Inhalte \cite[239-240,407]{The_Second_Handbook_of_Research_on_the_Psychology_of_Mathematics_Education}.
+eröffnen neue Perspektiven für eine zeitgemäße und praxisnahe Vermittlung technischer Inhalte \doublecite[239-240,407]{The_Second_Handbook_of_Research_on_the_Psychology_of_Mathematics_Education}.
 
 
 \subsection{Ziel}

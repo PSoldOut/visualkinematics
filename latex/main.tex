@@ -1,56 +1,99 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage{glossaries}
 \usepackage[hidelinks]{hyperref}
 \usepackage{tabularx}
 \usepackage{ltablex}
-\usepackage[pass]{geometry}
-\usepackage[backend=biber, style=alphabetic]{biblatex}
-\usepackage[ngerman]{babel}
+%\usepackage[pass]{geometry}
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=3.5cm, right=2.0cm]{geometry}
+%\usepackage[backend=biber, style=alphabetic]{biblatex}
+\usepackage[backend=biber, style=authoryear, language=english]{biblatex}
+\usepackage[english]{babel}
 \usepackage{csquotes}
 \usepackage{amsfonts}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx} %für bilder
 \usepackage{algorithm} %für pseudocode
 \usepackage{algpseudocode} %für pseudocode
+\usepackage{ragged2e}
+
+\usepackage{color} %für deckblatt
+\usepackage{lmodern} %für deckblatt
+\usepackage{setspace} %für deckblatt
+\usepackage{textpos,xcolor,rawfonts,latexsym,graphicx,epsf,verbatim} %für deckblatt
+
+\definecolor{fh_orange}{rgb}{0.953,0.201,0}
+\definecolor{fh_grau}{rgb}{0.76,0.75,0.76}
+
 \addbibresource{quellen.bib}
 \title{Visualisierung kinematischer Kennwerte}
 \author{Philipp Mikos}
 \date{April 2025}
 
-\renewcommand{\baselinestretch}{1.667}
+\renewcommand{\baselinestretch}{1.5}
+\newcommand{\doublecite}[2][]{(\textcite[#1]{#2})}
 
 %\setlength{\parindent}{0pt}
 %\setlength{\parskip}{0.8em}
+\setlength{\skip\footins}{10mm}
 
 \begin{document}
 
-\maketitle
 
+\begin{titlepage}
+	\begin{textblock}{6.5}(-1.5,-3)
+		\begin{color}{fh_grau}
+			\rule{6.3cm}{33cm}    
+		\end{color}
+	\end{textblock}
+	\begin{textblock}{6.5}(-1.2,-0.7)
+	\end{textblock}
+	\begin{textblock}{6.5}(-1.3,1)
+		{\large \textsf{Projektarbeit}}            
+	\end{textblock}
+	
+	\begin{textblock}{7}(4.1,2)
+		{\noindent \huge 
+			\textsf{\textbf{Visualisierung kinematischer Kennwerte\\[0.3cm] 
+					} }}
+	\end{textblock}
+	
+	
+	\begin{textblock}{6}(4.1,6.5)\noindent
+		\textsf{An der Fachhochschule Dortmund\\
+			im Fachbereich Informatik\\
+			Studiengang BA Informatik \\
+			5. Fachsemester}
+	\end{textblock}
+	
+	\begin{textblock}{6.5}(-0.9,10.8)
+		\noindent
+		\textsf{von \\
+			Philipp Jan Mikos \\
+			geb.\ am 18.02.1993  \\
+			Betreuer: Prof.\ Dr.\ Christof Röhrig \\[0.5cm]
+			Dortmund, \today}    
+	\end{textblock}
+	
+\end{titlepage}
+
+\justifying
+\pagenumbering{roman}
 \tableofcontents
-
+\newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
+\clearpage
+\pagenumbering{arabic}
 \input{einleitung.tex}
-
-%\input{motivation.tex}
-
-%\input{ziel.tex}
-
 \input{theoretischer_hintergrund.tex}
-
 \input{anforderungen.tex}
-
 \input{aufbau.tex}
-
 \input{entwicklungsprozess.tex}
-
 \input{evaluation.tex}
-
 \input{ausblick_auf_bachelor.tex}
-
-
-
-
-
-
 \newpage
 \printbibliography
+
 \end{document}
