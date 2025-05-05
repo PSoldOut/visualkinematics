@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  5 MAY 2025 15:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  5 MAY 2025 17:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -816,37 +816,37 @@ Package: listings 2024/09/23 1.10c (Carsten Heinz)
 Package biblatex Warning: Load 'inputenc' before biblatex.
 
 
-Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 55.
+Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 97.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 55.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 97.
 (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-Package hyperref Info: Link coloring OFF on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+Package hyperref Info: Link coloring OFF on input line 97.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -899,8 +899,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 55.
-Package biblatex Info: Reference segment=0 on input line 55.
+Package biblatex Info: Reference section=0 on input line 97.
+Package biblatex Info: Reference segment=0 on input line 97.
  (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count483
@@ -921,16 +921,16 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@lstlisting=\count489
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 67.
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 109.
  (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (16.8218pt too wide) in paragraph at lines 71--74
+Overfull \hbox (16.8218pt too wide) in paragraph at lines 113--116
 \OT1/lmss/bx/n/24.88 Visualisierung kine-ma-tis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
+Underfull \hbox (badness 10000) in paragraph at lines 113--116
 
  []
 
@@ -1082,7 +1082,7 @@ Underfull \hbox (badness 1558) in paragraph at lines 31--31
 
 
 [9]
-<images/diagramme/komponentendiagramm.png, id=285, 672.5125pt x 732.7375pt>
+<images/diagramme/komponentendiagramm.png, id=295, 672.5125pt x 732.7375pt>
 File: images/diagramme/komponentendiagramm.png Graphic file (type png)
 <use images/diagramme/komponentendiagramm.png>
 Package pdftex.def Info: images/diagramme/komponentendiagramm.png  used on input line 48.
@@ -1121,7 +1121,7 @@ Overfull \hbox (4.30392pt too wide) in paragraph at lines 88--90
 [12]
 
 [13]
-<images/robot.PNG, id=305, 528.47438pt x 402.75468pt>
+<images/robot.PNG, id=315, 528.47438pt x 402.75468pt>
 File: images/robot.PNG Graphic file (type png)
 <use images/robot.PNG>
 Package pdftex.def Info: images/robot.PNG  used on input line 127.
@@ -1142,7 +1142,7 @@ Overfull \hbox (15.9325pt too wide) in paragraph at lines 147--147
 []        \OT1/lmtt/m/n/12 l1 = util.line_wheel_driven_robot(dummy, [0.01, 0, 0.00202], 1555)[] 
  []
 
-<images/uebung_robot.PNG, id=314, 601.4972pt x 231.86626pt>
+<images/uebung_robot.PNG, id=324, 601.4972pt x 231.86626pt>
 File: images/uebung_robot.PNG Graphic file (type png)
 <use images/uebung_robot.PNG>
 Package pdftex.def Info: images/uebung_robot.PNG  used on input line 170.
@@ -1167,7 +1167,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has
                                                   \__shipout_drop_firstpage_...
 l.216 \subsubsection
                     {rotations.ipynb} <./images/uebung_robot.PNG>]
-<images/rotations.PNG, id=326, 673.76718pt x 504.38437pt>
+<images/rotations.PNG, id=336, 673.76718pt x 504.38437pt>
 File: images/rotations.PNG Graphic file (type png)
 <use images/rotations.PNG>
 Package pdftex.def Info: images/rotations.PNG  used on input line 225.
@@ -1184,7 +1184,7 @@ Overfull \hbox (120.90755pt too wide) in paragraph at lines 244--244
 []        \OT1/lmtt/m/n/12 env = util.Environment(grid=util.create_grid_XY(10,0.4), frame=util.create_axes(4))[] 
  []
 
-<images/klausur_quader.PNG, id=332, 277.035pt x 196.48407pt>
+<images/klausur_quader.PNG, id=342, 277.035pt x 196.48407pt>
 File: images/klausur_quader.PNG Graphic file (type png)
 <use images/klausur_quader.PNG>
 Package pdftex.def Info: images/klausur_quader.PNG  used on input line 270.
@@ -1204,7 +1204,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has
                                                   \__shipout_drop_firstpage_...
 l.303 
        <./images/klausur_quader.PNG>]
-<images/quader.PNG, id=343, 525.46312pt x 401.24907pt>
+<images/quader.PNG, id=353, 525.46312pt x 401.24907pt>
 File: images/quader.PNG Graphic file (type png)
 <use images/quader.PNG>
 Package pdftex.def Info: images/quader.PNG  used on input line 306.
@@ -1239,7 +1239,7 @@ Overfull \hbox (25.94075pt too wide) in paragraph at lines 60--66
 \OT1/lmr/m/n/12 ein ein-facher Pro-to-typ mithilfe der JavaScript-Bibliothek Three.js er-stellt, um zu ^^?uberpr^^?ufen,
  []
 
-<images/diagramme/prototypKomponentendiagramm.png, id=378, 421.575pt x 411.5375pt>
+<images/diagramme/prototypKomponentendiagramm.png, id=388, 421.575pt x 411.5375pt>
 File: images/diagramme/prototypKomponentendiagramm.png Graphic file (type png)
 <use images/diagramme/prototypKomponentendiagramm.png>
 Package pdftex.def Info: images/diagramme/prototypKomponentendiagramm.png  used on input line 69.
@@ -1247,7 +1247,7 @@ Package pdftex.def Info: images/diagramme/prototypKomponentendiagramm.png  used 
 
 
 [25]
-<images/prototyp.PNG, id=385, 492.33937pt x 577.40718pt>
+<images/prototyp.PNG, id=395, 492.33937pt x 577.40718pt>
 File: images/prototyp.PNG Graphic file (type png)
 <use images/prototyp.PNG>
 Package pdftex.def Info: images/prototyp.PNG  used on input line 84.
@@ -1269,7 +1269,7 @@ l.107 E
        in offensichtlicher Nachteil dieses Ansatzes ist jedoch, dass die vis... <./images/prototyp.PNG>]
 
 [28]
-<images/prototyp2.PNG, id=409, 249.18094pt x 268.75406pt>
+<images/prototyp2.PNG, id=419, 249.18094pt x 268.75406pt>
 File: images/prototyp2.PNG Graphic file (type png)
 <use images/prototyp2.PNG>
 Package pdftex.def Info: images/prototyp2.PNG  used on input line 143.
@@ -1336,34 +1336,531 @@ Overfull \hbox (7.19084pt too wide) in paragraph at lines 17--20
 []\OT1/lmr/m/n/12 Auch die beste-hen-den in-ter-ak-tiven El-e-mente sollen weit-er-en-twick-elt wer-den. Beispiel-
  []
 
-)
+) (text/anhang.tex
 
 [34]
-Overfull \hbox (26.0579pt too wide) in paragraph at lines 114--114
+LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 12.
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 19.
+(C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+
+[35{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
+
+ []
+
+
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
+
+ []
+
+
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+
+ []
+
+
+Overfull \hbox (14.44986pt too wide) in paragraph at lines 204--205
+[]\OT1/lmtt/m/n/12 show[]labels\OT1/lmr/m/n/12 : Boo-lescher Wert, der an-gibt, ob die Achsenbeschrif-tun-gen angezeigt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
+
+ []
+
+
+Overfull \hbox (1.24338pt too wide) in paragraph at lines 212--213
+[]\OT1/lmr/m/n/12 Ein 3D-Objekt (Group), das das Ko-or-di-naten-sys-tem mit Achsen und op-tionalen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+ []
+
+
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
+
+ []
+
+
+
+[39]
+Overfull \hbox (62.6813pt too wide) in paragraph at lines 277--277
+[][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
+
+ []
+
+
+Overfull \hbox (319.21681pt too wide) in paragraph at lines 301--301
+[][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
+
+ []
+
+
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
+
+ []
+
+
+Overfull \hbox (33.19739pt too wide) in paragraph at lines 326--326
+[][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
+
+ []
+
+
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
+
+ []
+
+
+Overfull \hbox (7.81458pt too wide) in paragraph at lines 386--387
+[]\OT1/lmtt/m/n/12 vel\OT1/lmr/m/n/12 : Ein Geschwindigkeitsvek-tor $[\OML/lmm/m/it/12 v[]; v[]; ![]\OT1/lmr/m/n/12 ]$, beste-hend aus Trans-la-tion in lokaler
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
+
+ []
+
+
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 403--404
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 431--432
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
+
+ []
+
+
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 456--457
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 472--473
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
+
+ []
+
+
+
+[44]
+Overfull \hbox (31.47136pt too wide) in paragraph at lines 490--491
+\OT1/lmr/m/n/12 Bewegt ein Roboter-ob-jekt in mehreren Schrit-ten entsprechend der gegebe-nen Geschwindigkeit
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--501
+
+ []
+
+
+Overfull \hbox (8.78581pt too wide) in paragraph at lines 503--504
+[]\OT1/lmtt/m/n/12 robot\OT1/lmr/m/n/12 : Das Ob-jekt (z.B. ein Mesh), das be-wegt wer-den soll. Es muss \OT1/lmtt/m/n/12 quaternion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 509--510
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--522
+
+ []
+
+
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 542--543
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 551--552
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--564
+
+ []
+
+
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 572--573
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--594
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 605--606
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 613--614
+
+ []
+
+
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 625--626
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 633--634
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 645--646
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 654--655
+
+ []
+
+
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 666--667
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 675--676
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--688
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--695
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 708--709
+
+ []
+
+
+
+[49]
+Overfull \hbox (48.03145pt too wide) in paragraph at lines 714--715
+[]\OT1/lmtt/m/n/12 grid\OT1/lmr/m/n/12 : Ein Git-ter-ob-jekt, das in der Szene angezeigt wird (Stan-dard: \OT1/lmtt/m/n/12 create[]grid[]XY(14,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 718--719
+
+ []
+
+
+Overfull \hbox (5.69896pt too wide) in paragraph at lines 722--723
+[]\OT1/lmr/m/n/12 Interaktive Wid-gets f^^?ur Ob-jekte zu er-stellen (Trans-la-tion, Ro-ta-tion, Skalierung). 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 727--728
+
+ []
+
+
+Overfull \hbox (1.06682pt too wide) in paragraph at lines 731--732
+[]\OT1/lmr/m/n/12 Widgets f^^?ur die Ma-nip-u-la-tion von Ob-jek-ten (Trans-la-tion, Ro-ta-tion, Skalierung)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 743--744
+
+ []
+
+
+Overfull \hbox (7.83047pt too wide) in paragraph at lines 746--747
+[]\OT1/lmtt/m/n/12 change\OT1/lmr/m/n/12 : Das Ereig-nis, das diese Funk-tion ausl^^?ost (wird nicht genutzt). 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 755--756
+
+ []
+
+
+
+[50]
+Overfull \hbox (7.83047pt too wide) in paragraph at lines 758--759
+[]\OT1/lmtt/m/n/12 change\OT1/lmr/m/n/12 : Das Ereig-nis, das diese Funk-tion ausl^^?ost (wird nicht genutzt). 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 767--768
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--792
+
+ []
+
+
+Overfull \hbox (92.31528pt too wide) in paragraph at lines 799--799
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (0.29684pt too wide) in paragraph at lines 800--801
+\OT1/lmr/m/n/12 F^^?ugt ein Gizmo-Steuerelement zur Ma-nip-u-la-tion eines Ob-jekts in der Umge-
+ []
+
+
+
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 803--804
+
+ []
+
+
+Overfull \hbox (16.84879pt too wide) in paragraph at lines 808--809
+[]\OT1/lmtt/m/n/12 rotation\OT1/lmr/m/n/12 : Wenn True, wer-den Schiebere-gler f^^?ur die Ro-ta-tion angezeigt. 
+ []
+
+
+Overfull \hbox (6.9759pt too wide) in paragraph at lines 809--810
+[]\OT1/lmtt/m/n/12 scale\OT1/lmr/m/n/12 : Wenn True, wer-den Schiebere-gler f^^?ur die Skalierung angezeigt. 
+ []
+
+)
+
+[52]
+Overfull \hbox (26.0579pt too wide) in paragraph at lines 157--157
 [][][]\OT1/lmr/m/n/12 (2025c). \OT1/lmr/m/it/12 Baby-lonJS Spec-i-fi-ca-tion\OT1/lmr/m/n/12 . \OT1/lmr/m/sc/12 url\OT1/lmr/m/n/12 : []$\OT1/lmtt/m/n/12 https : / / www . babylonjs . com / specifications/$[]
  []
 
 
 
-[35{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmsc.enc}]
+[53{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmsc.enc}]
 
-[36] (main.aux)
+[54] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F3C826537BF6811675530480AC99467C;4791.
+(rerunfilecheck)             Checksum: 927C54B73E6EED4F3844E63E944443CB;5157.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29017 strings out of 473522
- 542746 string characters out of 5713642
- 1424861 words of memory out of 5000000
- 51686 multiletter control sequences out of 15000+600000
- 642820 words of font info for 140 fonts, out of 8000000 for 9000
+ 29130 strings out of 473522
+ 544602 string characters out of 5713642
+ 1425100 words of memory out of 5000000
+ 51731 multiletter control sequences out of 15000+600000
+ 643505 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  78i,10n,81p,2442b,2222s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -1390,10 +1887,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
-<C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (41 pages, 687072 bytes).
+<C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (59 pages, 763186 bytes).
 PDF statistics:
- 577 PDF objects out of 1000 (max. 8388607)
- 113 named destinations out of 1000 (max. 500000)
- 294 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 721 PDF objects out of 1000 (max. 8388607)
+ 172 named destinations out of 1000 (max. 500000)
+ 310 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -40,6 +40,48 @@
 \definecolor{fh_orange}{rgb}{0.953,0.201,0}
 \definecolor{fh_grau}{rgb}{0.76,0.75,0.76}
 
+\definecolor{lightgray}{rgb}{0.9, 0.9, 0.9}
+\definecolor{green}{rgb}{0.0, 0.5, 0.0}
+\definecolor{blue}{rgb}{0.0, 0.0, 1.0}
+
+
+
+
+
+
+
+% Funktionseintrag (öffnet Umgebung)
+\newenvironment{functiondoc}[2]{%
+  \subsubsection*{\texttt{\textbf{\color{green} def} \color{blue} #1}\texttt{(...):}}%
+  #2
+
+  \vspace{0.5ex}
+  \noindent \textbf{Parameter:} \vspace{-2ex} \\
+  \begin{itemize}
+    \setlength{\itemindent}{1em}
+}{%
+  \end{itemize}
+}
+
+% Einzelner Parametereintrag
+\newcommand{\param}[2]{\item \texttt{#1}: #2}
+
+% Rückgabewert (optional)
+\newcommand{\returnsection}[1]{%
+  \noindent \textbf{Rückgabewert:} \vspace{-2ex} \\
+  \begin{itemize}
+    \setlength{\itemindent}{1em}
+    \item #1
+  \end{itemize}
+  \noindent\rule{\linewidth}{0.4pt}
+}
+
+
+
+
+
+
+
 \addbibresource{quellen.bib}
 \title{Visualisierung kinematischer Kennwerte}
 \author{Philipp Mikos}
@@ -109,6 +151,7 @@
 \input{text/entwicklungsprozess.tex}
 \input{text/evaluation.tex}
 \input{text/ausblick_auf_bachelor.tex}
+\input{text/anhang.tex}
 \newpage
 \printbibliography
 

@@ -937,6 +937,12 @@ def translate_animated(mesh, vec, speed=50.0):
 
 
 def create_differential_robot():
+    '''
+    Erzeugt einen Cylinderförmigen Roboter mit Differentialantrieb.
+    Der Roboter hat zwei Räder
+
+    :return: Ein 3D-Objekt (Mesh) das den Differentialroboter darstellt.
+    '''
     robot_group = three.Group()
 
     wheel_height = 0.2
