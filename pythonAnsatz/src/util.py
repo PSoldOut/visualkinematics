@@ -405,7 +405,7 @@ def apply_rot_matrix(mesh, rot_mat):
 
 
 
-def createQuad(pos, width, height, depth, color=[0,255,0], transparent=True):
+def create_quad(pos, width, height, depth, color=[0,255,0], transparent=True):
     '''
     Erzeugt ein Quader-Mesh (Box) mit der angegebenen Position, Größe und Farbe.
 

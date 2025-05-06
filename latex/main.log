@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  5 MAY 2025 17:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  6 MAY 2025 15:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -588,17 +588,14 @@ Package: babel 2025/03/27 v25.6 The multilingual framework for pdfLaTeX, LuaLaTe
 *
 (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: Hyphen rules for 'canadian' set to \l@english
-(babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language73). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language73). Reported on input line 108.
-)) (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-english.tex
-Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 11.
+) (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\german.ldf
+Language: german 2024/12/10 v2.15 German support for babel (pre-1996 orthography)
+ (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\germanb.ldf
+Language: germanb 2024/12/10 v2.15 German support for babel (pre-1996 orthography)
+Package babel Info: Making " an active character on input line 139.
+))) (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/de\babel-german.tex
+Package babel Info: Importing font and identification data for german
+(babel)             from babel-de-1901.ini. Reported on input line 25.
 ) (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
 \csq@reset=\count460
@@ -821,11 +818,14 @@ Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 97.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
-Package csquotes Info: Redefining alias 'default' -> 'english'.
+Package csquotes Info: Redefining alias 'default' -> 'german'.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 97.
 (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (main.aux)
+) (main.aux
+Package babel Info: 'german' activates 'german' shorthands.
+(babel)             Reported  on input line 11.
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
@@ -886,10 +886,10 @@ Package hyperref Info: Link coloring OFF on input line 97.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
-(C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
-File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'german'...
+Package biblatex Info: ... file 'german.lbx' found.
+(C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\german.lbx
+File: german.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -925,8 +925,8 @@ LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 1
  (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (16.8218pt too wide) in paragraph at lines 113--116
-\OT1/lmss/bx/n/24.88 Visualisierung kine-ma-tis-
+Overfull \hbox (6.33075pt too wide) in paragraph at lines 113--116
+\OT1/lmss/bx/n/24.88 Visualisierung ki-ne-ma-ti-
  []
 
 
@@ -974,7 +974,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [2] (main.lof
 Overfull \hbox (8.34993pt too wide) in paragraph at lines 5--5
- [][] [][]\OT1/lmr/m/n/12 W^^?urfel mit Schiebere-glern f^^?ur die Trans-for-ma-tion (ro-ta-tion.ipynb w^^?ahrend 
+ [][] [][]\OT1/lmr/m/n/12 W[]urfel mit Schie-be-reg-lern f[]ur die Trans-for-ma-ti-on (ro-ta-ti-on.ipynb w[]ahrend 
  []
 
 )
@@ -991,11 +991,11 @@ Overfull \hbox (8.34993pt too wide) in paragraph at lines 5--5
 
 [4] (text/einleitung.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 4.
+(Font)              <10> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 4.
+(Font)              <7> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 4.
+(Font)              <5> on input line 3.
 
 
 
@@ -1012,49 +1012,19 @@ l.27
 [3]
 
 [4{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
-Overfull \hbox (14.89508pt too wide) in paragraph at lines 62--68
-\OT1/lmr/m/n/12 Quaternionen bi-eten bei der Darstel-lung von Ro-ta-tio-nen mehrere Vorteile. Sie erm^^?oglichen
+Overfull \hbox (12.72697pt too wide) in paragraph at lines 66--72
+\OT1/lmr/m/n/12 Quaternionen bie-ten bei der Dar-stel-lung von Ro-ta-tio-nen meh-re-re Vor-tei-le. Sie erm[]oglichen
  []
 
 
 
 [5{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
-Overfull \hbox (11.0212pt too wide) in paragraph at lines 74--77
-[]\OT1/lmr/m/n/12 Die Steuerung des Robot-ers er-folgt durch die un-ter-schiedliche Antrieb-s-geschwindigkeit
- []
 
-
-Overfull \hbox (50.5824pt too wide) in paragraph at lines 88--89
-[]\OT1/lmr/m/n/12 Ein com-pu-ta-tional note-book ist ein Doku-ment, das Computer-Code, Freitext-Beschreibungen,
- []
-
-) (text/anforderungen.tex
-
-[6]
-Overfull \hbox (8.863pt too wide) in paragraph at lines 26--32
-[]\OT1/lmr/m/n/12 Zwar ex-istieren bere-its etablierte Werkzeuge wie beispiel-sweise Pe-ter Corke's Robotics
- []
-
-
+[6]) (text/anforderungen.tex
 
 [7]
-Overfull \hbox (41.21732pt too wide) in paragraph at lines 33--42
-\OT1/lmr/m/n/12 Robot-er-sys-teme, inklu-sive physik-basierter Mod-el-lierung, Sen-sorik und kom-plexer Steuerungsar-
- []
 
-) (text/aufbau.tex
-Overfull \hbox (21.95468pt too wide) in paragraph at lines 2--6
-\OT1/lmr/m/n/12 schlie^^Yend wer-den die Beispiel-Notebooks sowie deren Funk-tio-nen und Ein-satzm^^?oglichkeiten
- []
-
-
-
-[8]
-Overfull \hbox (1.35452pt too wide) in paragraph at lines 9--12
-\OT1/lmr/m/n/12 eine plat-tfor-munabh^^?angige und be-nutzer-fre-undliche Ar-beit-sumge-bung zu bi-eten. Durch
- []
-
-
+[8]) (text/aufbau.tex
 Overfull \hbox (3.14978pt too wide) in paragraph at lines 23--23
 []|\OT1/lmr/m/n/12 Technologie| 
  []
@@ -1070,19 +1040,14 @@ Overfull \hbox (2.16669pt too wide) in paragraph at lines 25--25
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
-[]|\OT1/lmr/m/n/12 Verwaltung von Abh^^?angigkeiten und
- []
-
-
 Underfull \hbox (badness 1558) in paragraph at lines 31--31
-[]|\OT1/lmr/m/n/12 Erlaubt die Er-stel-lung in-ter-ak-tiver GUI-
+[]|\OT1/lmr/m/n/12 Erlaubt die Er-stel-lung in-ter-ak-ti-ver GUI-
  []
 
 
 
 [9]
-<images/diagramme/komponentendiagramm.png, id=295, 672.5125pt x 732.7375pt>
+<images/diagramme/komponentendiagramm.png, id=297, 672.5125pt x 732.7375pt>
 File: images/diagramme/komponentendiagramm.png Graphic file (type png)
 <use images/diagramme/komponentendiagramm.png>
 Package pdftex.def Info: images/diagramme/komponentendiagramm.png  used on input line 48.
@@ -1095,11 +1060,6 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has 
                                                   \__shipout_drop_firstpage_...
 l.52 
      ]
-Overfull \hbox (14.66931pt too wide) in paragraph at lines 55--59
-[]\OT1/lmr/m/n/12 Das Frame-work ist, wie gefordert f^^?ur die Nutzung in-ner-halb der JupyterLab-Umgebung
- []
-
-
 
 [11
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
@@ -1107,21 +1067,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has
                                                   \__shipout_drop_firstpage_...
 l.65 
       <./images/diagramme/komponentendiagramm.png (PNG copy)>]
-Overfull \hbox (12.09215pt too wide) in paragraph at lines 66--69
-\OT1/lmr/m/n/12 tio-nen der geren-derten Ob-jekte in we-icher Echtzeit an-passen. Dar^^?uber hin-aus erm^^?oglichen
- []
-
-
-Overfull \hbox (4.30392pt too wide) in paragraph at lines 88--90
-[]\OT1/lmr/m/n/12 Durch den Ein-satz dieser Tech-nolo-gien wird eine ef-fiziente und plat-tfor-munabh^^?angige
- []
-
-
 
 [12]
 
 [13]
-<images/robot.PNG, id=315, 528.47438pt x 402.75468pt>
+<images/robot.PNG, id=317, 528.47438pt x 402.75468pt>
 File: images/robot.PNG Graphic file (type png)
 <use images/robot.PNG>
 Package pdftex.def Info: images/robot.PNG  used on input line 127.
@@ -1132,31 +1082,26 @@ Package pdftex.def Info: images/robot.PNG  used on input line 127.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.139 \begin{center}
+l.140 \begin{center}
                      <./images/robot.PNG>]
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 140.
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 141.
  (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (15.9325pt too wide) in paragraph at lines 147--147
+Overfull \hbox (15.9325pt too wide) in paragraph at lines 148--148
 []        \OT1/lmtt/m/n/12 l1 = util.line_wheel_driven_robot(dummy, [0.01, 0, 0.00202], 1555)[] 
  []
 
-<images/uebung_robot.PNG, id=324, 601.4972pt x 231.86626pt>
+<images/uebung_robot.PNG, id=328, 601.4972pt x 231.86626pt>
 File: images/uebung_robot.PNG Graphic file (type png)
 <use images/uebung_robot.PNG>
-Package pdftex.def Info: images/uebung_robot.PNG  used on input line 170.
+Package pdftex.def Info: images/uebung_robot.PNG  used on input line 171.
 (pdftex.def)             Requested size: 441.01773pt x 170.011pt.
 
 
 [15{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}]
-Overfull \hbox (19.48622pt too wide) in paragraph at lines 179--180
-[]\OT1/lmr/m/it/12 Der Roboter soll den gesamten Kurs mit einer kon-stan-ten Lin-eargeschwindigkeit
- []
-
-
-Overfull \hbox (9.60933pt too wide) in paragraph at lines 183--184
-[]\OT1/lmr/m/it/12 Welche Geschwindigkeiten in Roboterko-or-di-naten $\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 v[] \OT1/lmr/m/n/12 = [] = ([]\OML/lmm/m/it/12 ; dot[]; []\OT1/lmr/m/n/12 )[])$
+Overfull \hbox (9.60933pt too wide) in paragraph at lines 184--185
+[]\OT1/lmr/m/it/12 Welche Ge-schwin-dig-kei-ten in Ro-bo-ter-ko-or-di-na-ten $\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 v[] \OT1/lmr/m/n/12 = [] = ([]\OML/lmm/m/it/12 ; dot[]; []\OT1/lmr/m/n/12 )[])$
  []
 
 
@@ -1165,49 +1110,49 @@ Overfull \hbox (9.60933pt too wide) in paragraph at lines 183--184
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.216 \subsubsection
+l.217 \subsubsection
                     {rotations.ipynb} <./images/uebung_robot.PNG>]
-<images/rotations.PNG, id=336, 673.76718pt x 504.38437pt>
+<images/rotations.PNG, id=340, 673.76718pt x 504.38437pt>
 File: images/rotations.PNG Graphic file (type png)
 <use images/rotations.PNG>
-Package pdftex.def Info: images/rotations.PNG  used on input line 225.
+Package pdftex.def Info: images/rotations.PNG  used on input line 226.
 (pdftex.def)             Requested size: 441.01773pt x 330.15483pt.
+
+Underfull \hbox (badness 1014) in paragraph at lines 227--227
+[]\OT1/lmr/m/n/12 Abbildung 4: []W[]urfel mit Schie-be-reg-lern f[]ur die Trans-for-ma-ti-on (ro-ta-ti-on.ipynb
+ []
+
 
 
 [17
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.236 
+l.237 
        <./images/rotations.PNG>]
-Overfull \hbox (120.90755pt too wide) in paragraph at lines 244--244
-[]        \OT1/lmtt/m/n/12 env = util.Environment(grid=util.create_grid_XY(10,0.4), frame=util.create_axes(4))[] 
+Overfull \hbox (3.58249pt too wide) in paragraph at lines 247--247
+[]            \OT1/lmtt/m/n/12 grid=util.create_grid_XY(10,0.4), frame=util.create_axes(4))[] 
  []
 
-<images/klausur_quader.PNG, id=342, 277.035pt x 196.48407pt>
+<images/klausur_quader.PNG, id=347, 277.035pt x 196.48407pt>
 File: images/klausur_quader.PNG Graphic file (type png)
 <use images/klausur_quader.PNG>
-Package pdftex.def Info: images/klausur_quader.PNG  used on input line 270.
+Package pdftex.def Info: images/klausur_quader.PNG  used on input line 273.
 (pdftex.def)             Requested size: 264.61333pt x 187.67516pt.
 
 
 [18]
-Overfull \hbox (10.64723pt too wide) in paragraph at lines 289--290
-[]\OT1/lmr/m/it/12 e) Berech-nen Sie die Eu-ler-schen Winkel der Ro-ta-tion-s-ma-trix vor der Drehung. 
- []
-
-
 
 [19
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.303 
+l.302 
        <./images/klausur_quader.PNG>]
-<images/quader.PNG, id=353, 525.46312pt x 401.24907pt>
+<images/quader.PNG, id=359, 525.46312pt x 401.24907pt>
 File: images/quader.PNG Graphic file (type png)
 <use images/quader.PNG>
-Package pdftex.def Info: images/quader.PNG  used on input line 306.
+Package pdftex.def Info: images/quader.PNG  used on input line 309.
 (pdftex.def)             Requested size: 441.01773pt x 336.77751pt.
 
 
@@ -1215,31 +1160,27 @@ Package pdftex.def Info: images/quader.PNG  used on input line 306.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.321         b = three.Group()
+l.324         b = three.Group()
                                 <./images/quader.PNG>]
-Overfull \hbox (1.06221pt too wide) in paragraph at lines 352--354
-\OT1/lmr/m/n/12 an die Funk-tion ap-ply[]rot[]matrix[]animated(mesh, rot[]mat, speed, show[]rot[]mat) (siehe
- []
-
-
 
 [21]) (text/entwicklungsprozess.tex
-Overfull \hbox (1.44173pt too wide) in paragraph at lines 2--6
-\OT1/lmr/m/n/12 Es wur-den ver-schiedene Tech-nolo-gien zur 3D-Darstellung ver-glichen, darunter OpenGL,
+Overfull \hbox (1.18193pt too wide) in paragraph at lines 2--6
+\OT1/lmr/m/n/12 Es wur-den ver-schie-de-ne Tech-no-lo-gi-en zur 3D-Darstellung ver-gli-chen, dar-un-ter OpenGL,
  []
 
 
 
 [22]
+Overfull \hbox (9.46385pt too wide) in paragraph at lines 16--24
+\OT1/lmr/m/n/12 triebs-sy-ste-men wie Win-dows, ma-cOS und Li-nux ein-ge-setzt wer-den kann. Dies erm[]oglichte
+ []
+
+
 
 [23]
 
 [24]
-Overfull \hbox (25.94075pt too wide) in paragraph at lines 60--66
-\OT1/lmr/m/n/12 ein ein-facher Pro-to-typ mithilfe der JavaScript-Bibliothek Three.js er-stellt, um zu ^^?uberpr^^?ufen,
- []
-
-<images/diagramme/prototypKomponentendiagramm.png, id=388, 421.575pt x 411.5375pt>
+<images/diagramme/prototypKomponentendiagramm.png, id=400, 421.575pt x 411.5375pt>
 File: images/diagramme/prototypKomponentendiagramm.png Graphic file (type png)
 <use images/diagramme/prototypKomponentendiagramm.png>
 Package pdftex.def Info: images/diagramme/prototypKomponentendiagramm.png  used on input line 69.
@@ -1247,7 +1188,7 @@ Package pdftex.def Info: images/diagramme/prototypKomponentendiagramm.png  used 
 
 
 [25]
-<images/prototyp.PNG, id=395, 492.33937pt x 577.40718pt>
+<images/prototyp.PNG, id=407, 492.33937pt x 577.40718pt>
 File: images/prototyp.PNG Graphic file (type png)
 <use images/prototyp.PNG>
 Package pdftex.def Info: images/prototyp.PNG  used on input line 84.
@@ -1269,10 +1210,10 @@ l.107 E
        in offensichtlicher Nachteil dieses Ansatzes ist jedoch, dass die vis... <./images/prototyp.PNG>]
 
 [28]
-<images/prototyp2.PNG, id=419, 249.18094pt x 268.75406pt>
+<images/prototyp2.PNG, id=433, 249.18094pt x 268.75406pt>
 File: images/prototyp2.PNG Graphic file (type png)
 <use images/prototyp2.PNG>
-Package pdftex.def Info: images/prototyp2.PNG  used on input line 143.
+Package pdftex.def Info: images/prototyp2.PNG  used on input line 144.
 (pdftex.def)             Requested size: 308.71106pt x 332.98914pt.
 
 
@@ -1280,259 +1221,245 @@ Package pdftex.def Info: images/prototyp2.PNG  used on input line 143.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.152 
+l.153 
        <./images/prototyp2.PNG>]
-Underfull \hbox (badness 2261) in paragraph at lines 162--162
-[][]\OT1/lmr/m/n/10 Im math-e-ma-tis-chen Sinn beze-ich-net sym-bol-isch die Ve-r-ar-beitung von Gle-ichun-gen und
- []
-
-
-Overfull \hbox (8.69563pt too wide) in paragraph at lines 177--182
-\OT1/lmr/m/n/12 sympy.Matrix-Objekten kom-pat-i-bel ist. Da-her wurde sichergestellt, dass solche Eingaben
- []
-
-
-Overfull \hbox (30.39735pt too wide) in paragraph at lines 177--182
-\OT1/lmr/m/n/12 gew^^?ahrleis-tet bleibt. Die Vo-raus-set-zung daf^^?ur ist je-doch, dass die ^^?ubergebe-nen sympy.Matrix-
+Overfull \hbox (9.36528pt too wide) in paragraph at lines 178--183
+\OT1/lmr/m/n/12 gew[]ahrleistet bleibt. Die Vor-aus-set-zung daf[]ur ist je-doch, dass die []uber-gebenen sympy.Ma-
  []
 
 
 
 [30]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 191.
-
-Overfull \hbox (1.6752pt too wide) in paragraph at lines 214--216
-\OT1/lmr/m/n/12 Auf-gaben-typen haben. So wurde die Klasse En-vi-ron-ment ent-wor-fen, die wiederkehrende
- []
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 192.
 
 
-
-[31]
-Overfull \hbox (17.28859pt too wide) in paragraph at lines 225--228
-\OT1/lmr/m/n/12 En-twick-lung und Darstel-lung von Auf-gaben in den Note-books ro-ta-tion.ipynb, quader.ipynb
- []
-
-) (text/evaluation.tex
+[31]) (text/evaluation.tex
 
 [32]
-Overfull \hbox (1.74908pt too wide) in paragraph at lines 10--14
-\OT1/lmr/m/n/12 An-forderung nach einer in-ter-ak-tiven Au-seinan-der-set-zung mit kine-ma-tis-chen Konzepten. 
- []
-
-
-Overfull \hbox (1.09085pt too wide) in paragraph at lines 28--31
-\OT1/lmr/m/n/12 wurde, ist die Mod-el-lierung sta-tion^^?arer Roboter (z.B. Knickarm-roboter) samt Vorw^^?arts-
+Overfull \hbox (0.83105pt too wide) in paragraph at lines 28--31
+\OT1/lmr/m/n/12 wur-de, ist die Mo-del-lie-rung sta-ti-on[]arer Ro-bo-ter (z.B. Knickarm-ro-bo-ter) samt Vorw[]arts-
  []
 
 ) (text/ausblick_auf_bachelor.tex
 
-[33]
-Overfull \hbox (18.5292pt too wide) in paragraph at lines 12--16
-\OT1/lmr/m/n/12 JupyterLab-Server der Fach-hochschule Dort-mund bere-itzustellen, so-dass es f^^?ur Studierende
- []
-
-
-Overfull \hbox (7.19084pt too wide) in paragraph at lines 17--20
-[]\OT1/lmr/m/n/12 Auch die beste-hen-den in-ter-ak-tiven El-e-mente sollen weit-er-en-twick-elt wer-den. Beispiel-
- []
-
-) (text/anhang.tex
+[33])
 
 [34]
-LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 12.
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+[35]
+Overfull \hbox (26.0579pt too wide) in paragraph at lines 157--157
+[][][]\OT1/lmr/m/n/12 (2025c). \OT1/lmr/m/it/12 Ba-by-lon-JS Spe-ci-fi-ca-ti-on\OT1/lmr/m/n/12 . \OT1/lmr/m/sc/12 url\OT1/lmr/m/n/12 : []$\OT1/lmtt/m/n/12 https : / / www . babylonjs . com / specifications/$[]
+ []
+
+
+
+[36{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmsc.enc}]
+
+[37] (text/anhang.tex
+LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 20.
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 19.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 27.
 (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
+Overfull \hbox (18.0pt too wide) in paragraph at lines 48--48
+[][] [][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-
- []
-
-
-
-[35{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
 
 
-[36]
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.72 \subsubsection
+                   *{\colorbox{lightgray}{\texttt{\textbf{\color{green} def}... [1{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\OT1/lmtt/b/n/12 (pos, radiusTop=1, radiusBottom=1, height=2, radialSegments=32,
+ []
 
+
+Overfull \hbox (18.0pt too wide) in paragraph at lines 124--124
+[][] [][][][][][] 
  []
 
 
 
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.129 \noindent
+                \textbf{Parameter:} \vspace{-6ex} \\ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
-
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
+[][]\OT1/lmtt/b/n/12 def[] []create[]quad[](pos, width, height, depth, color=[0, 255, 0],
  []
 
 
-Overfull \hbox (14.44986pt too wide) in paragraph at lines 204--205
-[]\OT1/lmtt/m/n/12 show[]labels\OT1/lmr/m/n/12 : Boo-lescher Wert, der an-gibt, ob die Achsenbeschrif-tun-gen angezeigt
+Overfull \hbox (18.0pt too wide) in paragraph at lines 157--157
+[][] [][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
-
- []
-
-
-Overfull \hbox (1.24338pt too wide) in paragraph at lines 212--213
-[]\OT1/lmr/m/n/12 Ein 3D-Objekt (Group), das das Ko-or-di-naten-sys-tem mit Achsen und op-tionalen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
-
- []
-
-
-
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--262
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
 
 
-[39]
-Overfull \hbox (62.6813pt too wide) in paragraph at lines 277--277
-[][][][][][][][] 
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.169     \item \texttt
+                       {transparent}: Ein Boolean-Wert, der angibt, ob das M... [3]
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
 
-Overfull \hbox (319.21681pt too wide) in paragraph at lines 301--301
-[][][][][][][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
-[40]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.225 \noindent
+                \textbf{Parameter:} \vspace{-6ex} \\ [4]
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+
+ []
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.286 B
+       ei jedem Schritt wird das Dummy-Objekt gemäß der gegebenen Geschwin... [5]
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 318--319
 
  []
 
 
-Overfull \hbox (33.19739pt too wide) in paragraph at lines 326--326
-[][][][][][][][] 
+Overfull \hbox (4.4035pt too wide) in paragraph at lines 321--322
+[]\OT1/lmtt/m/n/12 robot\OT1/lmr/m/n/12 : Das Ob-jekt (z.B. ein Mesh), das be-wegt wer-den soll. Es muss \OT1/lmtt/m/n/12 quaternion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323     \item \texttt
+                       {steps}: Die Anzahl der Schritte, die die Bewegung au... [6]
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
 
  []
 
@@ -1542,68 +1469,71 @@ Underfull \hbox (badness 10000) in paragraph at lines 340--341
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--353
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
 
 
-[41]
-Underfull \hbox (badness 10000) in paragraph at lines 361--362
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.385 \noindent
+                \textbf{Parameter:} \vspace{-6ex} \\ [7]
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--369
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--383
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
 
  []
 
 
-Overfull \hbox (7.81458pt too wide) in paragraph at lines 386--387
-[]\OT1/lmtt/m/n/12 vel\OT1/lmr/m/n/12 : Ein Geschwindigkeitsvek-tor $[\OML/lmm/m/it/12 v[]; v[]; ![]\OT1/lmr/m/n/12 ]$, beste-hend aus Trans-la-tion in lokaler
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 391--392
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
 
  []
 
 
-
-[42]
-Underfull \hbox (badness 10000) in paragraph at lines 403--404
+Underfull \hbox (badness 10000) in paragraph at lines 430--431
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--424
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 431--432
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 447--448
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
 
  []
 
 
 
-[43]
-Underfull \hbox (badness 10000) in paragraph at lines 456--457
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.448 \subsubsection
+                    *{\colorbox{lightgray}{\texttt{\textbf{\color{green} def... [8]
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
 
  []
 
@@ -1619,89 +1549,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 481--482
 
 
 
-[44]
-Overfull \hbox (31.47136pt too wide) in paragraph at lines 490--491
-\OT1/lmr/m/n/12 Bewegt ein Roboter-ob-jekt in mehreren Schrit-ten entsprechend der gegebe-nen Geschwindigkeit
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 500--501
-
- []
-
-
-Overfull \hbox (8.78581pt too wide) in paragraph at lines 503--504
-[]\OT1/lmtt/m/n/12 robot\OT1/lmr/m/n/12 : Das Ob-jekt (z.B. ein Mesh), das be-wegt wer-den soll. Es muss \OT1/lmtt/m/n/12 quaternion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 509--510
+pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.497 
+       [9]
+Underfull \hbox (badness 10000) in paragraph at lines 499--500
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 521--522
+Underfull \hbox (badness 10000) in paragraph at lines 508--509
 
  []
 
 
-
-[45]
-Underfull \hbox (badness 10000) in paragraph at lines 530--531
+Underfull \hbox (badness 10000) in paragraph at lines 522--523
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 542--543
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 551--552
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 563--564
+Underfull \hbox (badness 10000) in paragraph at lines 531--532
 
  []
 
 
 
-[46]
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.543 
+       [10]
+Underfull \hbox (badness 10000) in paragraph at lines 549--550
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 558--559
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 572--573
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 584--585
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 593--594
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 605--606
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 613--614
+Underfull \hbox (badness 10000) in paragraph at lines 581--582
 
  []
 
 
 
-[47]
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.595 \noindent
+                \textbf{Parameter:} \vspace{-6ex} \\ [11]
+Underfull \hbox (badness 10000) in paragraph at lines 595--596
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 604--605
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--618
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 625--626
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 633--634
+Underfull \hbox (badness 10000) in paragraph at lines 637--638
 
  []
 
@@ -1711,72 +1639,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 645--646
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 654--655
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.646 \begin{itemize}
+                      [12]
+Underfull \hbox (badness 10000) in paragraph at lines 659--660
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 667--668
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 679--680
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 688--689
 
  []
 
 
 
-[48]
-Underfull \hbox (badness 10000) in paragraph at lines 666--667
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.704 \noindent
+                \textbf{Parameter:} \vspace{-6ex} \\ [13]
+Underfull \hbox (badness 10000) in paragraph at lines 704--705
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 675--676
+Underfull \hbox (badness 10000) in paragraph at lines 713--714
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 687--688
+Underfull \hbox (badness 10000) in paragraph at lines 720--721
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--695
+Underfull \hbox (badness 10000) in paragraph at lines 734--735
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 708--709
+Underfull \hbox (badness 10000) in paragraph at lines 742--743
 
- []
-
-
-
-[49]
-Overfull \hbox (48.03145pt too wide) in paragraph at lines 714--715
-[]\OT1/lmtt/m/n/12 grid\OT1/lmr/m/n/12 : Ein Git-ter-ob-jekt, das in der Szene angezeigt wird (Stan-dard: \OT1/lmtt/m/n/12 create[]grid[]XY(14,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
-
- []
-
-
-Overfull \hbox (5.69896pt too wide) in paragraph at lines 722--723
-[]\OT1/lmr/m/n/12 Interaktive Wid-gets f^^?ur Ob-jekte zu er-stellen (Trans-la-tion, Ro-ta-tion, Skalierung). 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 727--728
-
- []
-
-
-Overfull \hbox (1.06682pt too wide) in paragraph at lines 731--732
-[]\OT1/lmr/m/n/12 Widgets f^^?ur die Ma-nip-u-la-tion von Ob-jek-ten (Trans-la-tion, Ro-ta-tion, Skalierung)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 743--744
-
- []
-
-
-Overfull \hbox (7.83047pt too wide) in paragraph at lines 746--747
-[]\OT1/lmtt/m/n/12 change\OT1/lmr/m/n/12 : Das Ereig-nis, das diese Funk-tion ausl^^?ost (wird nicht genutzt). 
  []
 
 
@@ -1786,13 +1704,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 755--756
 
 
 
-[50]
-Overfull \hbox (7.83047pt too wide) in paragraph at lines 758--759
-[]\OT1/lmtt/m/n/12 change\OT1/lmr/m/n/12 : Das Ereig-nis, das diese Funk-tion ausl^^?ost (wird nicht genutzt). 
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 767--768
+pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.760     \item \texttt
+                       {speed}: Die Geschwindigkeit der Animation. Ein höhe... [14]
+Underfull \hbox (badness 10000) in paragraph at lines 764--765
 
  []
 
@@ -1802,49 +1720,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 779--780
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--792
+Overfull \hbox (43.86284pt too wide) in paragraph at lines 785--786
+[]\OT1/lmtt/m/n/12 grid\OT1/lmr/m/n/12 : Ein Git-ter-ob-jekt, das in der Sze-ne an-ge-zeigt wird (Stan-dard: \OT1/lmtt/m/n/12 create[]grid[]XY(14,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 789--790
 
  []
 
 
-Overfull \hbox (92.31528pt too wide) in paragraph at lines 799--799
-[][][][][][][][] 
- []
 
 
-Overfull \hbox (0.29684pt too wide) in paragraph at lines 800--801
-\OT1/lmr/m/n/12 F^^?ugt ein Gizmo-Steuerelement zur Ma-nip-u-la-tion eines Ob-jekts in der Umge-
- []
-
-
-
-[51]
-Underfull \hbox (badness 10000) in paragraph at lines 803--804
+pdfTeX warning (ext4): destination with the same identifier (name{page.15}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.794     \item O
+                 bjekte der Szene hinzuzufügen. [15]
+Underfull \hbox (badness 10000) in paragraph at lines 798--799
 
  []
 
 
-Overfull \hbox (16.84879pt too wide) in paragraph at lines 808--809
-[]\OT1/lmtt/m/n/12 rotation\OT1/lmr/m/n/12 : Wenn True, wer-den Schiebere-gler f^^?ur die Ro-ta-tion angezeigt. 
+Underfull \hbox (badness 10000) in paragraph at lines 815--816
+
  []
 
 
-Overfull \hbox (6.9759pt too wide) in paragraph at lines 809--810
-[]\OT1/lmtt/m/n/12 scale\OT1/lmr/m/n/12 : Wenn True, wer-den Schiebere-gler f^^?ur die Skalierung angezeigt. 
+Overfull \hbox (76.74939pt too wide) in paragraph at lines 832--832
+[][] [][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 837--838
+
+ []
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.16}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.844     \end{itemize}
+                        [16]
+Underfull \hbox (badness 10000) in paragraph at lines 853--854
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 867--868
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 881--882
+
+ []
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.17}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.895     \noindent
+                    \textbf{Parameter:} \vspace{-6ex} \\ [17]
+Underfull \hbox (badness 10000) in paragraph at lines 895--896
+
  []
 
 )
 
-[52]
-Overfull \hbox (26.0579pt too wide) in paragraph at lines 157--157
-[][][]\OT1/lmr/m/n/12 (2025c). \OT1/lmr/m/it/12 Baby-lonJS Spec-i-fi-ca-tion\OT1/lmr/m/n/12 . \OT1/lmr/m/sc/12 url\OT1/lmr/m/n/12 : []$\OT1/lmtt/m/n/12 https : / / www . babylonjs . com / specifications/$[]
- []
 
-
-
-[53{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmsc.enc}]
-
-[54] (main.aux)
+pdfTeX warning (ext4): destination with the same identifier (name{page.18}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.162 \end{document}
+                     [18] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1856,13 +1809,19 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29130 strings out of 473522
- 544602 string characters out of 5713642
- 1425100 words of memory out of 5000000
- 51731 multiletter control sequences out of 15000+600000
+ 29219 strings out of 473522
+ 545830 string characters out of 5713642
+ 1426750 words of memory out of 5000000
+ 51830 multiletter control sequences out of 15000+600000
  643505 words of font info for 142 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 78i,10n,81p,2442b,2222s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 1143 hyphenation exceptions out of 8191
+ 78i,11n,81p,2442b,2147s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist, replaced by a fixed one
 
@@ -1888,9 +1847,9 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 <C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (59 pages, 763186 bytes).
+Output written on main.pdf (60 pages, 773818 bytes).
 PDF statistics:
- 721 PDF objects out of 1000 (max. 8388607)
- 172 named destinations out of 1000 (max. 500000)
+ 714 PDF objects out of 1000 (max. 8388607)
+ 157 named destinations out of 1000 (max. 500000)
  310 words of extra memory for PDF output out of 10000 (max. 10000000)
 

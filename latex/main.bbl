@@ -381,8 +381,8 @@
       \strng{namehash}{8f6b0ed16da2f709f4da432a0d6cbd4b}
       \strng{fullhash}{8305095fcd79e02dcf6ab5e8a223b5bf}
       \strng{fullhashraw}{8305095fcd79e02dcf6ab5e8a223b5bf}
-      \strng{bibnamehash}{8f6b0ed16da2f709f4da432a0d6cbd4b}
-      \strng{authorbibnamehash}{8f6b0ed16da2f709f4da432a0d6cbd4b}
+      \strng{bibnamehash}{8305095fcd79e02dcf6ab5e8a223b5bf}
+      \strng{authorbibnamehash}{8305095fcd79e02dcf6ab5e8a223b5bf}
       \strng{authornamehash}{8f6b0ed16da2f709f4da432a0d6cbd4b}
       \strng{authorfullhash}{8305095fcd79e02dcf6ab5e8a223b5bf}
       \strng{authorfullhashraw}{8305095fcd79e02dcf6ab5e8a223b5bf}
@@ -429,12 +429,12 @@
       \list{publisher}{1}{%
         {Springer}%
       }
-      \strng{namehash}{dd55f65f84b3dae7491f7d9f6056ad45}
+      \strng{namehash}{a8a3e26b63665281f2615c472bcd2fb4}
       \strng{fullhash}{dd55f65f84b3dae7491f7d9f6056ad45}
       \strng{fullhashraw}{dd55f65f84b3dae7491f7d9f6056ad45}
       \strng{bibnamehash}{dd55f65f84b3dae7491f7d9f6056ad45}
       \strng{authorbibnamehash}{dd55f65f84b3dae7491f7d9f6056ad45}
-      \strng{authornamehash}{dd55f65f84b3dae7491f7d9f6056ad45}
+      \strng{authornamehash}{a8a3e26b63665281f2615c472bcd2fb4}
       \strng{authorfullhash}{dd55f65f84b3dae7491f7d9f6056ad45}
       \strng{authorfullhashraw}{dd55f65f84b3dae7491f7d9f6056ad45}
       \field{sortinit}{H}
@@ -667,12 +667,12 @@
       \list{publisher}{1}{%
         {MIT Press}%
       }
-      \strng{namehash}{d3875fcd18d3abff99854ffcc032ec96}
+      \strng{namehash}{5d9ef354cd4bda2a3935c6909059aea8}
       \strng{fullhash}{d3875fcd18d3abff99854ffcc032ec96}
       \strng{fullhashraw}{d3875fcd18d3abff99854ffcc032ec96}
       \strng{bibnamehash}{d3875fcd18d3abff99854ffcc032ec96}
       \strng{authorbibnamehash}{d3875fcd18d3abff99854ffcc032ec96}
-      \strng{authornamehash}{d3875fcd18d3abff99854ffcc032ec96}
+      \strng{authornamehash}{5d9ef354cd4bda2a3935c6909059aea8}
       \strng{authorfullhash}{d3875fcd18d3abff99854ffcc032ec96}
       \strng{authorfullhashraw}{d3875fcd18d3abff99854ffcc032ec96}
       \field{sortinit}{S}

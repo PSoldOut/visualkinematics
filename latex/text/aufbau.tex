@@ -2,7 +2,7 @@
 Im folgenden Abschnitt werden die verschiedenen Technologien, die für die Erstellung des Frameworks verwendet wurden,
 aufgeführt und ihre Bedeutung für das Projekt erläutert. Danach folgt eine detaillierte Beschreibung des technischen Aufbaus,
 einschließlich der Framework-Library und ihrer wichtigsten Implementierungsdetails.
-Abschließend werden die Beispiel-Notebooks sowie deren Funktionen und Einsatzmöglichkeiten erklärt.
+Abschließend werden die Beispiel-Notebooks sowie deren Funktionen und Einsatz\-möglichkeiten erklärt.
 
 
 \subsection{System- und Softwareumgebung}
@@ -21,7 +21,7 @@ interaktive Steuerung und 3D-Visualisierung.
         \begin{tabular}{|p{3.5cm}|p{2cm}|p{8cm}|}
         \hline
         Kategorie                   & Technologie                   & Beschreibung  \\ \hline
-        Programmiersprache          & Python                        & Hochsprachige, interpretierte Programmiersprache mit Fokus auf Lesbarkeit und Einfachheit – ideal für wissenschaftliches Rechnen, Datenanalyse und Prototyping.        \\ \hline
+        Programmiersprache          & Python                        & Hochsprachige, interpretierte Programmiersprache mit Fokus auf Lesbarkeit und Einfachheit. Ideal für wissenschaftliches Rechnen, Datenanalyse und Prototyping.        \\ \hline
         Laufzeitumgebung            & JupyterLab                    & Web-basierte Entwicklungsumgebung für interaktive Notebooks        \\ \hline
         Paketmanager                & Poetry                        & Verwaltung von Abhängigkeiten und virtuellen Umgebungen        \\ \hline
         Mathe-Bibliothek            & Numpy                         & Bibliothek für numerische Berechnungen und lineare Algebra        \\ \hline
@@ -52,7 +52,7 @@ und interaktiven Steuerung ineinandergreifen, um eine stabile, plattformunabhän
 
 \vspace{1em}
 
-Das Framework ist, wie gefordert für die Nutzung innerhalb der JupyterLab-Umgebung ausgelegt.
+Das Framework ist, wie gefordert für die Nutzung innerhalb der Jupyter\-Lab-Um\-ge\-bung ausgelegt.
 Die Fachhochschule Dortmund stellt hierfür einen eigenen JupyterLab-Server bereit,
 auf den sowohl über eine VPN-Verbindung als auch direkt im Hochschulnetz zugegriffen werden kann.
 Dadurch ist keine lokale Installation erforderlich, und die Arbeitsumgebung steht einheitlich auf verschiedenen Endgeräten zur Verfügung.
@@ -85,7 +85,7 @@ Die Visualisierung erfolgt somit lokal im Webbrowser innerhalb des Notebooks, wo
 Der Renderer kann daher nahtlos in der JupyterLab-Umgebung eingebettet und somit direkt in einem Jupyter Notebook visualisiert und gesteuert werden.
 Außerdem können auf diese weise Geometrien mit Grafikbeschleunigung gerendert werden. 
 
-Durch den Einsatz dieser Technologien wird eine effiziente und plattformunabhängige Darstellung sowie Manipulation komplexer
+Durch den Einsatz dieser Technologien wird eine effiziente und platt\-form\-un\-ab\-hängige Darstellung sowie Manipulation komplexer
 geometrischer Strukturen innerhalb des Frameworks ermöglicht.
 
 
@@ -132,7 +132,8 @@ Abbildung \ref{fig:Roboter mit Differentialantrieb} zeigt die Ausgabe des Notebo
 \vspace{1em}
 In diesem Notebook werden zunächst in einer Codezelle ein Gitter sowie ein Koordinatensystem erstellt und zu einem Environment-Objekt hinzugefügt.
 Anschließend wird ein Roboter mit Differentialantrieb erstellt sowie zwei Linien, die einen vorgegebenen Pfad repräsentieren,
-den der Roboter abfahren soll. Zum Erstellen des Pfads wird ein Dummy-Objekt benötigt, welches die Bewegung des Roboters für die Pfadgenerierung simuliert (siehe Anhang).
+den der Roboter abfahren soll. Zum Erstellen des Pfads wird ein Dummy-Objekt benötigt, welches die Bewegung des Roboters
+für die Pfadgenerierung in der Funktion line\_wheel\_driven\_robot(dummy, vel, steps) (siehe Anhang S.\pageref{sec:line_wheel_driven_robot}) simuliert.
 Der Roboter und der Pfad werden zu dem Environment-Objekt hinzugefügt, welches danach mit der display() Funktion visuell dargestellt wird.
 
 
@@ -235,13 +236,15 @@ Die direkte visuelle Rückmeldung innerhalb des Jupyter Notebooks ermöglicht es
 die Auswirkungen der jeweiligen Transformationen unmittelbar nachzuvollziehen und ein besseres Verständnis für deren Wirkung im dreidimensionalen Raum zu entwickeln.
 
 Um diese Ausgabe zu erreichen wurde ein Würfel sowie ein Environment-Objekt erzeugt. der Würfel wurden zu dem Environment-Objekt
-hinzugefügt und anschließend wurden mit der Funktion add\_gizmo\_controls() (siehe Anhang) Schieberegler zur Transformation des Würfels zum Environment-Objekt
+hinzugefügt und anschließend wurden mit der Funktion add\_gizmo\_controls() (siehe Anhang S.\pageref{sec:add_gizmo_controls})
+Schieberegler zur Transformation des Würfels zum Environment-Objekt
 hinzugefügt. Zum Schluss wurde das Environment-Objekt mit der display() Funktion visualisiert.
 
 \begin{center}
     \begin{verbatim}
         cube = util.createQuad([0,0,0],1,1,1)
-        env = util.Environment(grid=util.create_grid_XY(10,0.4), frame=util.create_axes(4))
+        env = util.Environment(
+            grid=util.create_grid_XY(10,0.4), frame=util.create_axes(4))
         env.camera.position=[3,3,3]
         env.add(cube)
         env.add_gizmo_controls(cube)
@@ -309,9 +312,9 @@ Abbildung \ref{fig:Würfel mit Schiebereglern für die Rotation} zeigt das Noteb
     \end{figure}
 
 \vspace{1em}
-Mit der Funktion rotate\_global\_animated(mesh, angles, order) (siehe Anhang) wird der Quader zunächst wie in der Aufgabe beschrieben
+Mit der Funktion rotate\_global\_animated(mesh, angles, order) (siehe Anhang S.\pageref{sec:rotate_global_animated}) wird der Quader zunächst wie in der Aufgabe beschrieben
 um die Achsen des Koordinatensystems $B$ Rotiert. Diese Transformation wird Visuell dargestellt, um ein Gefühl für die Rotation zu vermitteln und die Endposition aufzuzeigen.
-Danach wird mit der Funktion rotate\_animated(mesh, angles, order) (siehe Anhang) der Quader um sein körpereigenes Koordinatensystem rotiert, wobei jedoch die Rotationsreihenfolge invertiert wird.
+Danach wird mit der Funktion rotate\_animated(mesh, angles, order) (siehe Anhang S.\pageref{sec:rotate_animated}) der Quader um sein körpereigenes Koordinatensystem rotiert, wobei jedoch die Rotationsreihenfolge invertiert wird.
 Diese beiden Rotationen führen den Quader in die gleiche Endposition und sollen den Lernenden diesen Zusammenhang visuell näherbringen.
 
 \begin{center}
@@ -349,7 +352,8 @@ Diese beiden Rotationen führen den Quader in die gleiche Endposition und sollen
     \end{verbatim}
 \end{center}
 
-Anschließend werden die Matrizen als Variablen aufgestellt, zusammengefasst und an die Funktion apply\_rot\_matrix\_animated(mesh, rot\_mat, speed, show\_rot\_mat) (siehe Anhang) übergeben, sodass
+Anschließend werden die Matrizen als Variablen aufgestellt, zusammengefasst und an die Funktion
+apply\_rot\_matrix\_animated(mesh, rot\_mat, speed, show\_rot\_mat) (siehe Anhang S.\pageref{sec:apply_rot_matrix_animated}) übergeben, sodass
 die Rotation des Quaders anhand der Rotationsmatrix betrachtet und mit der vorangegangenen Transformation vergleichen werden kann.
 
 \begin{center}

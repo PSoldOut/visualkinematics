@@ -6,8 +6,8 @@
 %\usepackage[pass]{geometry}
 \usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=3.5cm, right=2.0cm]{geometry}
 %\usepackage[backend=biber, style=alphabetic]{biblatex}
-\usepackage[backend=biber, style=authoryear, language=english]{biblatex}
-\usepackage[english]{babel}
+\usepackage[backend=biber, style=authoryear, language=english, maxbibnames=99, maxcitenames=2]{biblatex}
+\usepackage[german]{babel}
 \usepackage{csquotes}
 \usepackage{amsfonts}
 \usepackage[utf8]{inputenc}
@@ -100,7 +100,7 @@
 \begin{titlepage}
 	\begin{textblock}{6.5}(-1.5,-3)
 		\begin{color}{fh_grau}
-			\rule{6.3cm}{33cm}    
+			\rule{6.35cm}{33cm}    
 		\end{color}
 	\end{textblock}
 	\begin{textblock}{6.5}(-1.2,-0.7)
@@ -120,7 +120,7 @@
 		\textsf{An der Fachhochschule Dortmund\\
 			im Fachbereich Informatik\\
 			Studiengang BA Informatik \\
-			5. Fachsemester}
+			6. Fachsemester}
 	\end{textblock}
 	
 	\begin{textblock}{6.5}(-0.9,10.8)
@@ -128,6 +128,7 @@
 		\textsf{von \\
 			Philipp Jan Mikos \\
 			geb.\ am 18.02.1993  \\
+			Matr.-Nr. 7215204	\\
 			Betreuer: Prof.\ Dr.\ Christof Röhrig \\[0.5cm]
 			Dortmund, \today}    
 	\end{textblock}
@@ -151,8 +152,11 @@
 \input{text/entwicklungsprozess.tex}
 \input{text/evaluation.tex}
 \input{text/ausblick_auf_bachelor.tex}
-\input{text/anhang.tex}
 \newpage
 \printbibliography
+\newpage
+\pagenumbering{arabic}
+\input{text/anhang.tex}
+
 
 \end{document}

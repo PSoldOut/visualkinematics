@@ -115,7 +115,8 @@ Hierzu bietet sich die Bibliothek Pythreejs an, ein Wrapper für Three.js, der e
 welche im Hintergrund JavaScript-Code generiert und ausführt.
 
 Pythreejs ist eine auf Jupyter Widgets basierende Notebook-Erweiterung,
-die es Jupyter ermöglicht, die WebGL-Fähigkeiten moderner Browser zu nutzen, indem sie Bindings zur JavaScript-Bibliothek Three.js bereitstellt.
+die es Jupyter ermöglicht, die WebGL-Fähigkeiten moderner Browser zu nutzen, indem sie \textit{Bindings}\footnote{Bindings sind Schnittstellen, die es ermöglichen,
+Funktionen oder Klassen aus einer Programmiersprache in einer anderen zu verwenden.} zur JavaScript-Bibliothek Three.js bereitstellt.
 Durch die Einbettung in die jupyter-widgets-Infrastruktur lässt sich Pythreejs nahtlos mit anderen interaktiven Werkzeugen innerhalb von Jupyter-Notebooks kombinieren,
 was die Entwicklung komplexer, interaktiver Visualisierungen erheblich erleichtert \doublecite{pythreejs_doc}.
 
@@ -178,7 +179,7 @@ Da das Ziel des Frameworks ist, Transformationen numerisch auszuwerten und direk
 war eine symbolische Verarbeitung nicht erforderlich. Dennoch war eine der zentralen Anforderungen, dass das Framework mit sympy.Matrix-Objekten kompatibel ist.
 Daher wurde sichergestellt, dass solche Eingaben akzeptiert und automatisch in ein numerisch geeignetes Format überführt werden,
 sodass auch bei Verwendung von SymPy eine korrekte und performante Ausführung gewährleistet bleibt. Die Voraussetzung dafür ist jedoch,
-dass die übergebenen sympy.Matrix-Objekte sich auf konkrete Werte oder Annäherungen zurückführen lassen.
+dass die über\-gebenen sympy.Ma\-trix-Objekte sich auf konkrete Werte oder Annäherungen zurückführen lassen.
 
 \subsection{Animationslogik}
 Darauf aufbauend wurden die Notebooks rotation.ipynb, quader.ipynb und robot.ipynb entwickelt. Parallel dazu wurde die Bibliothek util.py
