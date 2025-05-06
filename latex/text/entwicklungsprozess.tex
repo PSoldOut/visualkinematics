@@ -6,7 +6,7 @@ um den Code wiederverwendbar und verständlicher zu gestalten.
 
 \subsection{Wahl der Rendering-API}
 Zu Beginn des Entwicklungsprozesses wurden verschiedene Technologien zur Darstellung und Manipulation von 3D-Grafiken miteinander verglichen.
-Dabei standen insbesondere OpenGL, WebGL, Babylon und ThreeJS im Fokus.
+Dabei standen insbesondere OpenGL, WebGL, Babylon und Three.js im Fokus.
 Jede dieser Technologien bringt spezifische Vor- und Nachteile mit sich, die im Hinblick auf die Anforderungen des Projekts sorgfältig abgewogen wurden.
 Anschließend wurde zuerst ein Prototyp auf Basis von Three.js erstellt und anschließend ein zweiter auf Basis von Pythreejs um die Eignung dieser Tools 
 für das Projekt zu validieren. 
@@ -38,7 +38,7 @@ Babylon.js ermöglicht die schnelle Erstellung komplexer 3D-Szenen, ohne dass ti
 Dies macht Babylon zu einer guten Wahl für Entwickler, die schnell funktionale 3D-Anwendungen erstellen möchten.
 Jedoch kann diese umfangreiche Funktionalität auch nachteilig sein, insbesondere wenn nur bestimmte Teilaspekte einer 3D-Anwendung benötigt werden.
 Babylon enthält beispielsweise ein vollständiges Physiksystem sowie ein Soundsystem, die für dieses Projekt nicht erforderlich sind und unnötige Komplexität hinzufügen.
-Ein weiterer Nachteil von Babylon.js ist, dass es auch ein eigenen Browser-Tab benötigt,
+Ein weiterer Nachteil von Babylon.js ist, dass es auch einen eigenen Browser-Tab benötigt,
 um die Anwendung darzustellen,
 was die Benutzererfahrung und Integration in Webanwendungen einschränkt \doublecite{BabylonJS, BabylonJS_specification, BabylonJS_Documentation_Physics}.
 
@@ -88,8 +88,8 @@ Abbildung \ref{fig:Prototyp1} zeigt den Prototypen während der Ausführung im B
 
 \vspace{1em}
 Dabei stellt der schwarze Bereich in Abbildung \ref{fig:Prototyp1} die Szene dar.
-Die virtuelle Kamera stellt die Perspektive aus der die Szene gerendert werden soll dar und ist daher nicht als Objekt in der Abbildung zu sehen.
-Die Ambiente Lichtquelle sorgt dafür, dass der Würfel bei der Farbberechnung seine Blaue Farbe beibehält und nicht Schwarz gerendert wird und ist ebenfalls
+Die virtuelle Kamera stellt die Perspektive, aus der die Szene gerendert werden soll, dar und ist daher nicht als Objekt in der Abbildung zu sehen.
+Die ambiente Lichtquelle sorgt dafür, dass der Würfel bei der Farbberechnung seine blaue Farbe beibehält und nicht Schwarz gerendert wird und ist ebenfalls
 nicht als Objekt in der Szene zu sehen. Ergänzend dazu sind in der index.html-Datei Schieberegler integriert,
 mit denen die Rotation des Würfels über eine Benutzeroberfläche interaktiv gesteuert werden kann.
 Der würfel wird pro Animationsframe ein kleines bisschen um die x- und y-Achse des körpereigenen Koordinatensystems rotiert.

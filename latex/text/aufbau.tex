@@ -77,13 +77,13 @@ die Umwandlung von Quaternionen in Rotationsmatrizen oder deren Umkehrung.
 Daher wurde ergänzend die Bibliothek scipy.spatial verwendet, die solche Operationen effizient bereitstellt.
 
 
-Darüber hinaus ist pythreejs als weitere wichtige Abhängigkeit integriert.
+Darüber hinaus ist Pythreejs als weitere wichtige Abhängigkeit integriert.
 Es handelt sich hierbei um eine Python-Wrapper-Bibliothek für die JavaScript-Bibliothek three.js, die auf WebGL basiert.
-pythreejs ermöglicht die Darstellung und Interaktion mit 3D-Geometrien innerhalb eines WebGL-Renderers.
-Hierbei wird mithilfe von pythreejs JavaScript-Code generiert und im Hintergrund automatisch auf dem Client des Nutzers ausgeführt.
+Pythreejs ermöglicht die Darstellung und Interaktion mit 3D-Geometrien innerhalb eines WebGL-Renderers.
+Hierbei wird mithilfe von Pythreejs JavaScript-Code generiert und im Hintergrund automatisch auf dem Client des Nutzers ausgeführt.
 Die Visualisierung erfolgt somit lokal im Webbrowser innerhalb des Notebooks, wo auch die Steuerung über Python stattfindet.
 Der Renderer kann daher nahtlos in der JupyterLab-Umgebung eingebettet und somit direkt in einem Jupyter Notebook visualisiert und gesteuert werden.
-Außerdem können auf diese weise Geometrien mit Grafikbeschleunigung gerendert werden. 
+Außerdem können auf diese Weise Geometrien mit Grafikbeschleunigung gerendert werden. 
 
 Durch den Einsatz dieser Technologien wird eine effiziente und platt\-form\-un\-ab\-hängige Darstellung sowie Manipulation komplexer
 geometrischer Strukturen innerhalb des Frameworks ermöglicht.
@@ -235,7 +235,7 @@ Ziel dieses Notebooks ist es, die Möglichkeiten des Frameworks zur Darstellung 
 Die direkte visuelle Rückmeldung innerhalb des Jupyter Notebooks ermöglicht es dem Lernenden,
 die Auswirkungen der jeweiligen Transformationen unmittelbar nachzuvollziehen und ein besseres Verständnis für deren Wirkung im dreidimensionalen Raum zu entwickeln.
 
-Um diese Ausgabe zu erreichen wurde ein Würfel sowie ein Environment-Objekt erzeugt. der Würfel wurden zu dem Environment-Objekt
+Um diese Ausgabe zu erreichen wurde ein Würfel sowie ein Environment-Objekt erzeugt. Der Würfel wurden zu dem Environment-Objekt
 hinzugefügt und anschließend wurden mit der Funktion add\_gizmo\_controls() (siehe Anhang S.\pageref{sec:add_gizmo_controls})
 Schieberegler zur Transformation des Würfels zum Environment-Objekt
 hinzugefügt. Zum Schluss wurde das Environment-Objekt mit der display() Funktion visualisiert.
@@ -313,7 +313,7 @@ Abbildung \ref{fig:Würfel mit Schiebereglern für die Rotation} zeigt das Noteb
 
 \vspace{1em}
 Mit der Funktion rotate\_global\_animated(mesh, angles, order) (siehe Anhang S.\pageref{sec:rotate_global_animated}) wird der Quader zunächst wie in der Aufgabe beschrieben
-um die Achsen des Koordinatensystems $B$ Rotiert. Diese Transformation wird Visuell dargestellt, um ein Gefühl für die Rotation zu vermitteln und die Endposition aufzuzeigen.
+um die Achsen des Koordinatensystems $B$ rotiert. Diese Transformation wird Visuell dargestellt, um ein Gefühl für die Rotation zu vermitteln und die Endposition aufzuzeigen.
 Danach wird mit der Funktion rotate\_animated(mesh, angles, order) (siehe Anhang S.\pageref{sec:rotate_animated}) der Quader um sein körpereigenes Koordinatensystem rotiert, wobei jedoch die Rotationsreihenfolge invertiert wird.
 Diese beiden Rotationen führen den Quader in die gleiche Endposition und sollen den Lernenden diesen Zusammenhang visuell näherbringen.
 
