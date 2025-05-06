@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)blob:https://threejs.org/047ccdad-b3d6-486e-a6e7-d74e63fab4e9 -->
+<html class="iframe"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="https://threejs.org/manual/examples/resources/lesson-helper.css" type="text/css">
+  <script match="false">self.lessonSettings = {"glDebug":false}</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Three.js - Fundamentals</title>
+  <style>
+</style>
+<script id="hackedparams">window.hackedParams = {}
+</script>
+<script src="https://threejs.org/manual/examples/resources/webgl-debug-helper.js"></script>
+<script src="https://threejs.org/manual/examples/resources/lessons-helper.js"></script>
+  </head>
+  <body class="iframe"><canvas id="c" data-engine="three.js r176"></canvas>
+  <script type="importmap">{
+	"imports": {
+		"three": "https://threejs.org/build/three.module.js"
+	}
+}</script>
+
+
+<script type="module">import * as THREE from 'three';
+
+function main() {
+
+	const canvas = document.querySelector( '#c' );
+	const renderer = new THREE.WebGLRenderer( { antialias: true, canvas } );
+
+	const fov = 75;
+	const aspect = 2; // the canvas default
+	const near = 0.1;
+	const far = 5;
+	const camera = new THREE.PerspectiveCamera( fov, aspect, near, far );
+	camera.position.z = 2;
+
+	const scene = new THREE.Scene();
+
+	const boxWidth = 1;
+	const boxHeight = 1;
+	const boxDepth = 1;
+	const geometry = new THREE.BoxGeometry( boxWidth, boxHeight, boxDepth );
+
+	const material = new THREE.MeshBasicMaterial( { color: 0x44aa88 } ); // greenish blue
+
+	const cube = new THREE.Mesh( geometry, material );
+	scene.add( cube );
+
+	renderer.render( scene, camera );
+
+}
+
+main();
+</script>
+
+</body></html>

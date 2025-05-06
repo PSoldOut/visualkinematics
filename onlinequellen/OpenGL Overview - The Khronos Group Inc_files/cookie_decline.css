@@ -1,0 +1,27 @@
+#cookie_decline {
+	color: #b9ccdd;
+	width: 320px;
+	border: 0px; 
+	background-color: #333;
+	padding: 20px;
+	position: fixed;
+	left: 20px;
+	bottom: -1000px;
+	z-index: 9999; 
+	-webkit-box-shadow: 1px 0 12px rgba(0, 0, 0, 0.2);
+	        box-shadow: 1px 0 12px rgba(0, 0, 0, 0.2); 
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+}
+#cookie_decline p:last-child {
+	margin-bottom: 0;
+}
+#cookie_decline a {
+	color: #b9ccdd;
+}
+#cookie_decline a:hover {
+	color: #ffffff;
+}
+#cookie_decline a.btn  {
+	color: #ffffff;
+}

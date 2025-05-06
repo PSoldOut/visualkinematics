@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)https://www.babylonjs.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Babylon.js: Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best </title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="author" href="https://www.babylonjs.com/humans.txt">
+
+    <!-- FB -->
+    <meta property="og:title" content="Babylon.js: Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best">
+    <meta property="og:site_name" content="Babylon.js">
+    <meta property="og:url" content="https://www.babylonjs.com">
+    <meta property="og:description" content="Babylon.js is one of the world&#39;s leading WebGL-based graphics engines. From a new visual scene inspector, best-in-class physically-based rendering, countless performance optimizations, and much more, Babylon.js brings powerful, beautiful, simple, and open 3D to everyone on the web.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.babylonjs.com/assets/logo-babylonjs-social-twitter.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://www.babylonjs.com">
+    <meta name="twitter:title" content="Babylon.js: Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best">
+    <meta name="twitter:description" content="Babylon.js is one of the world&#39;s leading WebGL-based graphics engines. From a new visual scene inspector, best-in-class physically-based rendering, countless performance optimizations, and much more, Babylon.js brings powerful, beautiful, simple, and open 3D to everyone on the web.">
+    <meta name="twitter:image" content="https://www.babylonjs.com/assets/logo-babylonjs-social-twitter.png">
+    <meta name="" property="" content="">
+    <link rel="shortcut icon" href="https://www.babylonjs.com/assets/favicon.ico">
+    <link rel="icon" type="image/png" href="https://www.babylonjs.com/assets/favicon.ico">
+    <link href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/css" rel="stylesheet">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/cta4xsb.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/variables.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/upTriangleBlock.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/downTriangleBlock.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/header.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/footer.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/gallery.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/topBlock.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/carousel.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/textBlock.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/imageBlock.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/partnerLogo.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/twoColumns.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/imageAndTextBlock.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/linkList.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/imageList.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/styles.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/mediaQueries.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/pressRelease.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/viewer.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/viewerAndTextBlock.css">
+    <link rel="stylesheet" href="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/code.css">
+    <link rel="author" href="https://www.babylonjs.com/humans.txt">
+    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" async="" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/analytics.js.Herunterladen"></script><script type="text/javascript" async="" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/js"></script><script async="" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/js(1)"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-41767310-1");
+    </script>
+    <script>
+      // make sure we are on babylonjs.com
+      if (window.location.hostname === "www.babylonjs.com") {
+        // add a trailing slash if the browser path doesn't contain a dot
+        if (
+          !window.location.pathname.endsWith("/") &&
+          !window.location.pathname.includes(".")
+        ) {
+          window.location.pathname += "/";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container-header-background"></div>
+    <div class="header">
+      <div class="container-header">
+        <div class="menu-btn">
+          <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/HamburgerIcon.svg">
+        </div>
+        <div class="babylon-logo">
+          <a href="https://www.babylonjs.com/">
+            <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/BabylonIdentity.svg">
+          </a>
+        </div>
+        <a class="download" href="https://github.com/BabylonJS/Babylon.js"><img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/GithubIcon.svg"></a>
+        <div class="header-top-wrapper overflow">
+          <div class="header-top">
+            <div class="menu">
+              <div class="header-ul-wrapper">
+                <ul>
+                    
+                  <li class="FEATURE DEMOS user-select">
+                    <a class="FEATURE DEMOS" href="https://www.babylonjs.com/featureDemos/">FEATURE DEMOS</a>
+                         
+                  </li>
+
+                  <li class="TOOLS user-select">
+                    <a class="TOOLS">TOOLS</a>       
+                  </li>
+
+                  <li class="COMMUNITY user-select">
+                    <a class="COMMUNITY">COMMUNITY</a>      
+                  </li><li class="PARTNERS user-select">
+                    <a class="PARTNERS" href="https://www.babylonjs.com/partners/">PARTNERS</a>
+                        
+                  </li><li class="TESTIMONIALS user-select">
+                    <a class="TESTIMONIALS" href="https://www.babylonjs.com/testimonials/">TESTIMONIALS</a>
+                         
+                  </li>
+
+                  <li class="INDUSTRIES user-select">
+                    <a class="INDUSTRIES">INDUSTRIES</a>       
+                  </li>
+
+                  <li class="BABYLON NATIVE user-select">
+                    <a class="BABYLON NATIVE">BABYLON NATIVE</a>      
+                  </li><li class="VIEWER user-select">
+                    <a class="VIEWER" href="https://www.babylonjs.com/viewer/">VIEWER</a>
+                         
+                  </li>
+
+                  <li class="LEARN user-select">
+                    <a class="LEARN">LEARN</a>      
+                  </li><li class="SPECIFICATIONS user-select">
+                    <a class="SPECIFICATIONS" href="https://www.babylonjs.com/specifications/">SPECIFICATIONS</a>
+                      
+                  </li>
+                </ul>
+              </div>
+              <div class="sub-menu">
+                   
+                <ul class="TOOLS hidden">
+                   
+                  <li class="user-select">
+                    <a href="https://playground.babylonjs.com/" target="_blank">PLAYGROUND</a>
+                  </li>
+  
+                  <li class="user-select">
+                    <a href="https://sandbox.babylonjs.com/" target="_blank">SANDBOX</a>
+                  </li>
+  
+                  <li class="user-select">
+                    <a href="https://nme.babylonjs.com/" target="_blank">NODE MATERIAL EDITOR</a>
+                  </li>
+  
+                  <li class="user-select">
+                    <a href="https://nge.babylonjs.com/" target="_blank">NODE GEOMETRY EDITOR</a>
+                  </li>
+  
+                  <li class="user-select">
+                    <a href="https://sfe.babylonjs.com/" target="_blank">SMART FILTER EDITOR</a>
+                  </li>
+  
+                  <li class="user-select">
+                    <a href="https://viewerconfig.babylonjs.com/" target="_blank">VIEWER CONFIGURATOR</a>
+                  </li>
+  
+                  <li class="user-select">
+                    <a href="https://doc.babylonjs.com/" target="_blank">DOCUMENTATION</a>
+                  </li>
+  
+                  <li class="user-select">
+                    <a href="https://github.com/BabylonJS/Exporters/" target="_blank">EXPORTERS</a>
+                  </li>
+  
+                  <li class="user-select">
+                    <a href="https://spector.babylonjs.com/" target="_blank">SPECTOR.JS</a>
+                  </li>
+ 
+                </ul>
+                  
+                <ul class="COMMUNITY hidden">
+                   
+                  <li class="user-select">
+                    <a href="https://forum.babylonjs.com/" target="_blank">FORUM</a>
+                  </li>
+  
+                  <li class="user-select">
+                    <a href="https://www.babylonjs.com/community/" target="">COMMUNITY DEMOS</a>
+                  </li>
+ 
+                </ul>
+                      
+                <ul class="INDUSTRIES hidden">
+                   
+                  <li class="user-select">
+                    <a href="https://www.babylonjs.com/games/" target="">GAMES</a>
+                  </li>
+  
+                  <li class="user-select">
+                    <a href="https://www.babylonjs.com/ecommerce/" target="">ECOMMERCE</a>
+                  </li>
+  
+                  <li class="user-select">
+                    <a href="https://www.babylonjs.com/creation/" target="">CREATION AND AUTHORING</a>
+                  </li>
+  
+                  <li class="user-select">
+                    <a href="https://www.babylonjs.com/digitalTwinIot/" target="">DIGITAL TWIN AND IOT</a>
+                  </li>
+  
+                  <li class="user-select">
+                    <a href="https://www.babylonjs.com/metaverse/" target="">METAVERSE</a>
+                  </li>
+ 
+                </ul>
+                  
+                <ul class="BABYLON NATIVE hidden">
+                   
+                  <li class="user-select">
+                    <a href="https://www.babylonjs.com/native/" target="">BABYLON NATIVE RUNTIME</a>
+                  </li>
+  
+                  <li class="user-select">
+                    <a href="https://www.babylonjs.com/reactnative/" target="">BABYLON REACT NATIVE</a>
+                  </li>
+ 
+                </ul>
+                    
+                <ul class="LEARN hidden">
+                   
+                  <li class="user-select">
+                    <a href="https://doc.babylonjs.com/" target="_blank">DOCUMENTATION</a>
+                  </li>
+  
+                  <li class="user-select">
+                    <a href="https://www.youtube.com/channel/UCyOemMa5EJkIgVavJjSCLKQ" target="_blank">VIDEOS</a>
+                  </li>
+  
+                  <li class="user-select">
+                    <a href="https://medium.com/@babylonjs" target="_blank">BLOG</a>
+                  </li>
+ 
+                </ul>
+                   
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-container">
+       <div class="samples-carousel-block">
+  <div class="carousel" data-sample="">
+     
+    <div class="img-holder">
+      <a href="https://aka.ms/babylon8AreaLightsDoc" target="_blank">
+        <video src="/assets/videos/areaLights2.mp4" autoplay="" loop="" muted=""></video>
+        <img class="img-fallback-carousel img-carousel" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/areaLights2.png">
+      </a>
+
+    </div>
+       
+    <div class="img-holder">
+      <a href="https://doc.babylonjs.com/features/featuresDeepDive/mesh/gaussianSplatting" target="_blank">
+        <video src="/assets/videos/gaussianSplat.mp4" autoplay="" loop="" muted=""></video>
+        <img class="img-fallback-carousel img-carousel" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/gaussianSplat.png">
+      </a>
+
+    </div>
+       
+    <div class="img-holder">
+      <a href="https://aka.ms/babylon7Dispersion" target="_blank">
+        <video src="/assets/videos/gltfDispersion.mp4" autoplay="" loop="" muted=""></video>
+        <img class="img-fallback-carousel img-carousel" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/gltfDispersion.png">
+      </a>
+
+    </div>
+       
+    <div class="img-holder">
+      <a href="https://aka.ms/babylon8IBLShadowsDoc" target="_blank">
+        <video src="/assets/videos/iblShadow_demo.mp4" autoplay="" loop="" muted=""></video>
+        <img class="img-fallback-carousel img-carousel" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/iblShadow_demo.png">
+      </a>
+
+    </div>
+       
+    <div class="img-holder">
+      <a href="https://theplayroom.babylonjs.com/" target="_blank">
+        <video src="/assets/videos/physics.mp4" autoplay="" loop="" muted=""></video>
+        <img class="img-fallback-carousel img-carousel" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/physics.png">
+      </a>
+
+    </div>
+       
+    <div class="img-holder">
+      <a href="https://doc.babylonjs.com/setup/support/webGPU/" target="_blank">
+        <video src="/assets/videos/webGPU.mp4" autoplay="" loop="" muted=""></video>
+        <img class="img-fallback-carousel img-carousel" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/webGPU.png">
+      </a>
+
+    </div>
+      
+  </div>
+  <div class="carousel-navigate">
+    <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/CarouselActive.svg" alt="" class="caret">
+    <div class="carousel-navigate-item" data-order="0">
+      <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/CarouselBreadcrumb.svg" alt="">
+    </div>
+    <div class="carousel-navigate-item" data-order="1">
+      <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/CarouselBreadcrumb.svg" alt="">
+    </div>
+    <div class="carousel-navigate-item" data-order="2">
+      <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/CarouselBreadcrumb.svg" alt="">
+    </div>
+    <div class="carousel-navigate-item" data-order="3">
+      <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/CarouselBreadcrumb.svg" alt="">
+    </div>
+    <div class="carousel-navigate-item" data-order="4">
+      <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/CarouselBreadcrumb.svg" alt="">
+    </div>
+    <div class="carousel-navigate-item" data-order="5">
+      <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/CarouselBreadcrumb.svg" alt="">
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // iphone or chrome on iOS.
+    const isIphoneUserAgent = navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/CriOS/i);
+    if (!isIphoneUserAgent) {
+      return;
+    }
+    // replace all videos with fallback images
+    const videos = document.querySelectorAll(".carousel video");
+    videos.forEach((video) => {
+      video.style.display = "none";
+    });
+    // enable all fallback images
+    const fallbackImages = document.querySelectorAll(".img-fallback-carousel");
+    fallbackImages.forEach((img) => {
+      img.style.display = "block";
+    });
+  });
+</script>
+  <div class="text-block">
+    <div class="inner-container" style="margin-left:50px;margin-right:50px">
+        <h2>Welcome to Babylon.js 8.0</h2>
+        <p>Our mission is to build one of the most powerful, beautiful, simple, and open web rendering engines in the world. Today, web graphics and rendering hit the accelerator with the release of Babylon.js 8.0. It represents a year of new features, optimizations, and performance improvements aimed at helping you create more compelling, interactive web experiences faster than ever.</p>
+    </div>
+</div>  <section class="linkList-block" style="margin-top:;margin-bottom:30px">
+    <div class="link-part">
+        <div class="link" style="margin-left:;margin-right:">
+            <a href="https://playground.babylonjs.com/" class="link-part-link">
+                <div class="icon-back">
+                    <img class="backImage" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/HexButtonStates.svg">
+                    <img class="iconImage" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/TryIcon.svg">
+                </div>
+                <div class="link-part-desc">Playground</div>
+            </a>
+        </div>
+        <div class="link" style="margin-left:;margin-right:">
+            <a href="https://nme.babylonjs.com/" class="link-part-link">
+                <div class="icon-back">
+                    <img class="backImage" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/HexButtonStates.svg">
+                    <img class="iconImage" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/nodeIcon.svg">
+                </div>
+                <div class="link-part-desc">Node Material Editor</div>
+            </a>
+        </div>
+        <div class="link" style="margin-left:;margin-right:">
+            <a href="https://sandbox.babylonjs.com/" class="link-part-link">
+                <div class="icon-back">
+                    <img class="backImage" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/HexButtonStates.svg">
+                    <img class="iconImage" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/TestIcon.svg">
+                </div>
+                <div class="link-part-desc">Sandbox</div>
+            </a>
+        </div>
+    </div>
+</section>  <div class="viewer-block" style="width:auto;height:50vh;padding-top:0px;background-color:#67A8D2FF">
+    <babylon-viewer alt="A red, personified toy plane with frowning eyes and gritted teeth flying against a blue sky." camera-orbit="0.777 1.033 0.300" camera-target="0.004 0.110 0.027" selected-animation="0" animation-speed="1" animation-auto-play="" source="https://assets.babylonjs.com/meshes/Demos/optimized/acrobaticPlane_variants.glb" clear-color="#00000000"><template shadowrootmode="open"><!----><div class="full-size"><div id="canvasContainer" class="full-size"><canvas class="full-size canvas" touch-action="none" style="touch-action: none; -webkit-tap-highlight-color: transparent;" width="1897" height="481" tabindex="1"></canvas></div><!--?lit$869644326$--><slot class="full-size children-slot"></slot><slot name="progress-bar"><!--?lit$869644326$--><div part="progress-bar" aria-label="Loading Progress" class="bar loading-progress-outer loading-progress-outer-inactive"><div class="loading-progress-inner " style="width: 0%"></div></div></slot><slot name="tool-bar"><!--?lit$869644326$--><div part="tool-bar" class="bar  tool-bar"><!--?lit$869644326$--><!----><div class="animation-timeline"><button aria-label="Pause"><!--?lit$869644326$--><svg viewBox="0 0 24 24"><path fill="currentColor" d="M5.74609 3C4.7796 3 3.99609 3.7835 3.99609 4.75V19.25C3.99609 20.2165 4.7796 21 5.74609 21H9.24609C10.2126 21 10.9961 20.2165 10.9961 19.25V4.75C10.9961 3.7835 10.2126 3 9.24609 3H5.74609ZM14.7461 3C13.7796 3 12.9961 3.7835 12.9961 4.75V19.25C12.9961 20.2165 13.7796 21 14.7461 21H18.2461C19.2126 21 19.9961 20.2165 19.9961 19.25V4.75C19.9961 3.7835 19.2126 3 18.2461 3H14.7461Z"></path></svg></button> <input aria-label="Animation Progress" class="animation-timeline-input" type="range" min="0" max="1" step="0.0001" style=""></div><select aria-label="Select Animation Speed"><!--?lit$869644326$--><!----><option value="0.5"><!--?lit$869644326$-->0.5x</option><!----><!----><option value="1"><!--?lit$869644326$-->1x</option><!----><!----><option value="1.5"><!--?lit$869644326$-->1.5x</option><!----><!----><option value="2"><!--?lit$869644326$-->2x</option><!----></select> <!--?lit$869644326$--><select aria-label="Select Animation"><!--?lit$869644326$--><!----><option value="0"><!--?lit$869644326$-->idle</option><!----><!----><option value="1"><!--?lit$869644326$-->flight_path_1</option><!----><!----><option value="2"><!--?lit$869644326$-->flight_path_2</option><!----><!----><option value="3"><!--?lit$869644326$-->flight_path_3</option><!----></select><!--?--><!----><!----><div class="divider"></div><!----><!----><select aria-label="Select Material Variant"><!--?lit$869644326$--><!----><option value="acrobatic"><!--?lit$869644326$-->acrobatic</option><!----><!----><option value="fighter"><!--?lit$869644326$-->fighter</option><!----></select><!----><!----><div class="divider"></div><!----><!----><button aria-label="Reset Camera Pose"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M7.20711 2.54289C7.59763 2.93342 7.59763 3.56658 7.20711 3.95711L5.41421 5.75H13.25C17.6683 5.75 21.25 9.33172 21.25 13.75C21.25 18.1683 17.6683 21.75 13.25 21.75C8.83172 21.75 5.25 18.1683 5.25 13.75C5.25 13.1977 5.69772 12.75 6.25 12.75C6.80228 12.75 7.25 13.1977 7.25 13.75C7.25 17.0637 9.93629 19.75 13.25 19.75C16.5637 19.75 19.25 17.0637 19.25 13.75C19.25 10.4363 16.5637 7.75 13.25 7.75H5.41421L7.20711 9.54289C7.59763 9.93342 7.59763 10.5666 7.20711 10.9571C6.81658 11.3476 6.18342 11.3476 5.79289 10.9571L2.29289 7.45711C1.90237 7.06658 1.90237 6.43342 2.29289 6.04289L5.79289 2.54289C6.18342 2.15237 6.81658 2.15237 7.20711 2.54289Z"></path></svg></button><!----></div></slot><slot name="reload-button"><!--?lit$869644326$--><!--?lit$869644326$--><!--?--></slot></div></template>
+    </babylon-viewer>
+</div>
+  <section class="image-and-text-block  right " style="background-color: #5f655b;">
+    <div class="inner-container" style="min-height:400px;padding-top:40px;padding-bottom:40px;">
+        <div class="text-block" style="text-align:;width:;margin-left:50px;margin-right:50px;">
+                <h2>IBL Shadows </h2>
+            <p style="color:">Image-Based Lighting is a computer graphics lighting technique that approximates environment lighting based on a source image. Babylon.js first introduced support for IBL over 8 years ago and it has quickly become one of the most used features of the engine. A great contribution from Adobe leveled up IBL in Babylon by adding shadows to the mix. Now both light and shadows for the scene environment can be approximated from a source image. 
+            </p>
+            <div class="link-block">
+                <a style="color:" href="https://aka.ms/babylon8IBLShadowsDoc" target="_blank">Learn more about IBL Shadows in Babylon.js 
+                </a>
+            </div>
+        </div>
+        <div class="image-block">
+            <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/iblShadows.png" alt="A model of a WWII leather flight helmet with googles and an oxygen mask displayed on a stand with shadows cast on the base and ground." style="width:550px">
+        </div>
+    </div>
+</section>  <section class="image-and-text-block " style="background-color: #000000;">
+    <div class="inner-container" style="min-height:400px;padding-top:40px;padding-bottom:40px;">
+        <div class="image-block">
+            <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/areaLights.png" alt="A series of rectangular light panels of various heights casting light on a cluster of spheres, some reflective and others matte, and reflecting on the floor that has a checkerboard of reflective and matte squares." style="width:550px">
+        </div>
+        <div class="text-block" style="text-align:;width:;margin-left:50px;margin-right:50px;">
+                <h2>Area Lights </h2>
+            <p style="color:">This new addition to the lighting palette allows you to specify a 2D shape that emits light from it, much like a large diffuse light that you might find on a movie set. We can’t wait to see how you use this new light type to bring a new dimension to your scene!
+            </p>
+            <div class="link-block">
+                <a style="color:" href="https://aka.ms/babylon8AreaLightsDoc" target="_blank">Learn more about Area Lights in Babylon.js
+                </a>
+            </div>
+        </div>
+    </div>
+</section>  <section class="image-and-text-block  right " style="background-color: #23404e;">
+    <div class="inner-container" style="min-height:450px;padding-top:;padding-bottom:;">
+        <div class="text-block" style="text-align:;width:;margin-left:50px;margin-right:50px;">
+                <h2>Node Render Graph Alpha Release</h2>
+            <p style="color:">With the Node Render Graph, you now have full control of the entire render pipeline. This means that you can fully customize and control every part of the process of how your frames are rendered on the GPU. It comes with a new Node Graph tool to customize your own render pipeline without writing complex render process code. Please note that the Node Render Graph is still in Alpha version.
+            </p>
+            <div class="link-block">
+                <a style="color:" href="https://aka.ms/babylon8RenderGraphDoc" target="_blank">Learn more about Node Render Graph in Babylon.js
+                </a>
+            </div>
+        </div>
+        <div class="image-block">
+            <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/nrgeNodes.png" alt="A simple node graph with the default nodes in the node render graph editor wired together to create a sample render pipeline." style="width:550px">
+        </div>
+    </div>
+</section>  <section class="image-and-text-block " style="background-color: #263220;">
+    <div class="inner-container" style="min-height:500px;padding-top:30px;padding-bottom:30px;">
+        <div class="image-block">
+            <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/lightweightViewer.png" alt="A green, camouflaged, French WWII personified toy plane with frowning eyes and shark teeth in a lightweight 3D viewer with a simple control bar at the bottom to play animations and switch material variants." style="width:650px">
+        </div>
+        <div class="text-block" style="text-align:;width:;margin-left:50px;margin-right:50px;">
+                <h2>All New Lightweight Viewer </h2>
+            <p style="color:">This new viewer is designed to harness the same rendering beauty and power of the full engine but comes in a smaller bundle footprint and uses dynamic imports and capabilities (audio or animation for example) depending on the model that is loaded. It can be added to any web page with just a few lines of HTML, is fully extensible and comes with a super easy-to-use configurator.
+            </p>
+            <div class="link-block">
+                <a style="color:" href="https://aka.ms/babylon8viewerDoc" target="_blank">Learn more about the new Babylon.js Viewer 
+                </a>
+            </div>
+        </div>
+    </div>
+</section>  <section class="image-and-text-block  right " style="background-color: #3b3b3b;">
+    <div class="inner-container" style="min-height:400px;padding-top:;padding-bottom:;">
+        <div class="text-block" style="text-align:;width:;margin-left:50px;margin-right:50px;">
+                <h2>Native WGSL</h2>
+            <p style="color:">All the core engine shaders for Babylon.js are now available in both GLSL and WGSL. This means direct support for WebGPU right out of the box with no conversion layer. The Node Material Editor is also able to render in the WebGPU shader language, in addition to WebGL.
+            </p>
+            <div class="link-block">
+                <a style="color:" href="https://aka.ms/babylon8nmeWGSLDoc" target="_blank">Learn more about WGSL and GLSL support in NME
+                </a>
+            </div>
+        </div>
+        <div class="image-block">
+            <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/nmeWgsl.png" alt="The settings panel of the Node Material Editor with a new dropdown to select between WebGL and WebGPU versions." style="width:450px">
+        </div>
+    </div>
+</section>  <section class="image-and-text-block " style="background-color: #793333;">
+    <div class="inner-container" style="min-height:400px;padding-top:;padding-bottom:;">
+        <div class="image-block">
+            <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/audioEngineV2.png" alt="A series of orange buttons, with one selected in green above a digital audio levels display showing green stacked lights in several columns, with the tallest of them transitioning to yellow and red lights." style="width:550px">
+        </div>
+        <div class="text-block" style="text-align:;width:;margin-left:50px;margin-right:50px;">
+                <h2>Overhauled Audio Engine </h2>
+            <p style="color:">Babylon.js 8.0 brings an entirely refreshed audio engine. It was designed to be powerful — taking advantage of the full suite of web-audio features, modern — class names and architecture you've come to expect, and simple-to-use — allowing anyone to leverage these features, no matter what your experience level.
+            </p>
+            <div class="link-block">
+                <a style="color:" href="https://aka.ms/babylon8AudioEnginev2Doc" target="_blank">Learn more about Babylon.js Audio Engine 
+                </a>
+            </div>
+        </div>
+    </div>
+</section>  <section class="image-and-text-block  right " style="background-color: #372847;">
+    <div class="inner-container" style="min-height:480px;padding-top:;padding-bottom:;">
+        <div class="text-block" style="text-align:;width:;margin-left:50px;margin-right:50px;">
+                <h2>Gaussian Splat Updates</h2>
+            <p style="color:">Babylon.js 8.0 builds on the exciting foundation of Gaussian Splat support with some exciting new updates such as SPZ and compressed PLY formats, spherical harmonics, as well as runtime optimizations for memory footprint and CPU/GPU usage. 
+            </p>
+            <div class="link-block">
+                <a style="color:" href="https://aka.ms/babylon8gsplatImprovementsDoc" target="_blank">Learn more about Gaussian Splatting in Babylon.js
+                </a>
+            </div>
+        </div>
+        <div class="image-block">
+            <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/gaussianSplat(1).png" alt="A 3D representation of a yellow and blue parrot standing on a stone floor." style="width:500px">
+        </div>
+    </div>
+</section>  <section class="image-and-text-block " style="background-color: #430606;">
+    <div class="inner-container" style="min-height:450px;padding-top:;padding-bottom:;">
+        <div class="image-block">
+            <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/havokController.png" alt="a pill-shaped mesh moving up a spiral staircase illustrating Havok physics in a simple character controller." style="width:550px">
+        </div>
+        <div class="text-block" style="text-align:;width:;margin-left:50px;margin-right:50px;">
+                <h2>Havok Character Controller</h2>
+            <p style="color:">With Babylon.js 8.0, we’ve continued our amazing partnership with the very talented team at Havok, this time bringing their fully featured character controller into Babylon.js. This brings a state-of-the-art character controller to your toolbox allowing you to start making your very own character-centered game with just a few lines of code!
+            </p>
+            <div class="link-block">
+                <a style="color:" href="https://aka.ms/babylon8havokCCDoc" target="_blank">Learn more about Physics character controller in Babylon.js
+                </a>
+            </div>
+        </div>
+    </div>
+</section>  <div class="text-block">
+    <div class="inner-container" style="margin-left:50px;margin-right:50px">
+        <h2>Just the Tip of the Iceberg</h2>
+        <p>We don't take it lightly when we say that Babylon.js is fully-featured. Dive in to see how far this rabbit hole goes!</p>
+    </div>
+</div>  <section class="linkList-block" style="margin-top:;margin-bottom:30px">
+    <div class="link-part">
+        <div class="link" style="margin-left:;margin-right:">
+            <a href="https://www.babylonjs.com/specifications/" class="link-part-link">
+                <div class="icon-back">
+                    <img class="backImage" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/HexButtonStates.svg">
+                    <img class="iconImage" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/NotesIcon.svg">
+                </div>
+                <div class="link-part-desc">Full List of Features</div>
+            </a>
+        </div>
+    </div>
+</section>  <div class="middle-block">
+    <div class="container">
+        <div class="middle-background">
+            <h2>NOTABLE EXPERIENCES</h2>
+            <div class="container-info">
+                <ul id="hexGrid">
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" href="https://www.nike.com/w/womens-nike-by-you-shoes-5e1x6z6ealhzy7ok" target="_blank">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/nikeByYou.jpg" alt="Nike shoe customization in 3D">
+                                <div class="desc">
+                                    <div class="hexDesc">Nike By You</div>
+                                    <div class="hexDesc author">by Nike</div>
+                                </div>
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/hoverFrame.svg" class="hoverFrame">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/defaultFrame.svg" class="defaultFrame">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" href="https://www.target.com/room-planner/college" target="_blank">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/RoomCollege.jpg" alt="College Room Planner">
+                                <div class="desc">
+                                    <div class="hexDesc">College Room Planner</div>
+                                    <div class="hexDesc author">by Target</div>
+                                </div>
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/hoverFrame.svg" class="hoverFrame">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/defaultFrame.svg" class="defaultFrame">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" href="https://macys.3dcloud.io/" target="_blank">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/macysRoomPlanner.jpg" alt="3D Design Room Planner">
+                                <div class="desc">
+                                    <div class="hexDesc">3D Room Planner</div>
+                                    <div class="hexDesc author">by Macy's</div>
+                                </div>
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/hoverFrame.svg" class="hoverFrame">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/defaultFrame.svg" class="defaultFrame">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" href="https://classic.minecraft.net/" target="_blank">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/Minecraft_Classic.png" alt="Minecraft Classic">
+                                <div class="desc">
+                                    <div class="hexDesc">Minecraft Classic</div>
+                                    <div class="hexDesc author">by Mojang</div>
+                                </div>
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/hoverFrame.svg" class="hoverFrame">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/defaultFrame.svg" class="defaultFrame">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" href="https://poki.com/en/g/temple-run-2#" target="_blank">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/templeRun2.jpg" alt="Temple Run 2">
+                                <div class="desc">
+                                    <div class="hexDesc">Temple Run 2</div>
+                                    <div class="hexDesc author">by Imangi Studios</div>
+                                </div>
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/hoverFrame.svg" class="hoverFrame">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/defaultFrame.svg" class="defaultFrame">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" href="https://xboxdesignlab.xbox.com/" target="_blank">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/xboxDesignLabTile.jpg" alt="Xbox Design Lab custom Xbox controller in pride colors">
+                                <div class="desc">
+                                    <div class="hexDesc">Xbox Design Lab</div>
+                                    <div class="hexDesc author">by Microsoft</div>
+                                </div>
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/hoverFrame.svg" class="hoverFrame">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/defaultFrame.svg" class="defaultFrame">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" href="https://www.prnewswire.com/news-releases/configure-the-iconic-aeron-chair-in-3d-millerknoll-selects-3d-cloud-by-marxent-for-scalable-3d-product-configuration-301608528.html" target="_blank">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/millerKnoll.jpg" alt="MillerKnoll Chair Configurator">
+                                <div class="desc">
+                                    <div class="hexDesc">Chair Configurator</div>
+                                    <div class="hexDesc author">by MillerKnoll</div>
+                                </div>
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/hoverFrame.svg" class="hoverFrame">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/defaultFrame.svg" class="defaultFrame">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" href="https://wraps.wrapmate.com/" target="_blank">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/VW.jpg" alt="Volkswagen ID. Buzz Configurator">
+                                <div class="desc">
+                                    <div class="hexDesc">Volkswagen ID. Buzz Configurator</div>
+                                    <div class="hexDesc author">by Wrapmate</div>
+                                </div>
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/hoverFrame.svg" class="hoverFrame">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/defaultFrame.svg" class="defaultFrame">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" href="https://www.stanley1913.com/collections/stanley-create-custom" target="_blank">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/stanleyCustomizer.jpg" alt="Stanley cup in a customizer window allowing for custom graphics and colors">
+                                <div class="desc">
+                                    <div class="hexDesc">Stanley Customizer</div>
+                                    <div class="hexDesc author">by Stanley</div>
+                                </div>
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/hoverFrame.svg" class="hoverFrame">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/defaultFrame.svg" class="defaultFrame">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" href="https://cdn-staging.spectrumcustomizer.com/carhartt/v3/frontend/index.html?sku=A_104315_N04_v3" target="_blank">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/carharttCustomizer.jpg" alt="Carhartt vest allowing for custom embroidery through a 3D configurator">
+                                <div class="desc">
+                                    <div class="hexDesc">Carhartt Customizer</div>
+                                    <div class="hexDesc author">by Carhartt</div>
+                                </div>
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/hoverFrame.svg" class="hoverFrame">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/defaultFrame.svg" class="defaultFrame">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" href="https://deckdesigner.lowes.com/" target="_blank">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/lowesDeckDesigner.jpg" alt="3D model of a deck in a customizer window">
+                                <div class="desc">
+                                    <div class="hexDesc">Lowe's Deck Designer</div>
+                                    <div class="hexDesc author">by Lowe's</div>
+                                </div>
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/hoverFrame.svg" class="hoverFrame">
+                                <img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/defaultFrame.svg" class="defaultFrame">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>  <div class="downTriangle-block" style="margin-bottom:">
+    <div class="downTriangle-background">
+        <a href="https://www.babylonjs.com/community">
+            <div class="hex-container">
+                <img class="hex-backImage" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/moreButtonStates.svg">
+                <div class="hexagon">MORE</div>
+            </div>
+        </a>
+    </div>
+</div> 
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="social-icons">
+            <a href="https://www.twitter.com/babylonjs" target="_blank"><img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/TwitterIcon.svg" alt="Twitter"></a>
+            <a href="https://github.com/BabylonJS/Babylon.js" target="_blank"><img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/GithubIcon.svg" alt="Github"></a>
+            <a href="https://forum.babylonjs.com/" target="_blank"><img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/DiscourseIcon.svg" alt="Forum"></a>
+            <a href="https://medium.com/@babylonjs" target="_blank"><img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/MediumIcon.svg" alt="Blog"></a>
+            <a href="https://www.youtube.com/channel/UCyOemMa5EJkIgVavJjSCLKQ" target="_blank"><img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/YouTubeIcon.svg" alt="YouTube channel"></a>
+            <a href="https://www.netlify.com/" target="_blank"><img src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/netlify.svg" alt="Hosted by Netlify"></a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <a href="https://forum.babylonjs.com/" target="_blank">Forum</a>
+          <a href="https://doc.babylonjs.com/contribute/toBabylon/HowToContribute" target="_blank">Contribute</a>
+          <a href="https://doc.babylonjs.com/features/introductionToFeatures" target="_blank">Tutorials</a>
+          <a href="https://github.com/BabylonJS/Brand-Toolkit" target="_blank">Branding</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/animation.js.Herunterladen"></script>
+    <script src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/scripts.js.Herunterladen"></script>
+    <script src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/pullRefresh.js.Herunterladen"></script>
+    <script type="module" src="./Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best_files/babylon-viewer.esm.min.js.Herunterladen"></script>
+  
+
+</body></html>
