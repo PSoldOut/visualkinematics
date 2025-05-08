@@ -1,6 +1,5 @@
 \beamer@sectionintoc {1}{Einleitung}{3}{0}{1}
 \beamer@sectionintoc {2}{Anforderungen}{4}{0}{2}
 \beamer@sectionintoc {3}{Aufbau}{6}{0}{3}
-\beamer@sectionintoc {4}{Entwicklungsprozess}{11}{0}{4}
-\beamer@sectionintoc {5}{Evaluation}{17}{0}{5}
-\beamer@sectionintoc {6}{Ausblick auf die Bachelorarbeit}{18}{0}{6}
+\beamer@sectionintoc {4}{Evaluation}{11}{0}{4}
+\beamer@sectionintoc {5}{Ausblick auf die Bachelorarbeit}{12}{0}{5}

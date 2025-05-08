@@ -138,7 +138,7 @@
   \begin{itemize}
     \setlength{\itemsep}{1em}
     \item Zentrale Datei util.py mit Kern- und Hilfsfunktionen
-    \item Unterstützung geometrischer Transformationen und Koordinatensysteme
+    \item geometrische Transformationen und Umrechnung der Darstellungsformen von Rotationen
     \item Klasse Environment für konfigurierbare 3D-Szene mit Kamera, Licht und Gitter
     \item Funktion move() zur Simulation von Roboterbewegungen in der Ebene
   \end{itemize}
@@ -180,75 +180,75 @@
 
 
 
-\section{Entwicklungsprozess}
-
-\begin{frame}{Entwicklungsprozess}
-  \textbf{Wahl der Rendering API:}\\
-  \textbf{OpenGL}\vspace{0.5em}
-  \begin{itemize}
-    \item Plattformunabhängig (Windows, macOS, Linux)
-    \item Bewährt in 3D-Grafik, CAD und Spieleentwicklung
-    \item Muss lokal installiert werden → höhere Systemanforderungen
-    \item Integration in Webanwendungen schwierig
-  \end{itemize}
-\end{frame}
-
-\begin{frame}{Entwicklungsprozess}
-  \textbf{Wahl der Rendering API:}\\
-  \textbf{WebGL}\vspace{0.5em}
-  \begin{itemize}
-    \item Läuft direkt im Browser ohne Zusatzsoftware
-    \item Plattformunabhängig durch HTML5-Kompatibilität
-    \item Gut geeignet für interaktive Webanwendungen
-    \item Relativ generisch → hoher Entwicklungsaufwand
-    \item Darstellung meist in separatem Browser-Tab
-  \end{itemize}
-\end{frame}
-
-\begin{frame}{Entwicklungsprozess}
-  \textbf{Wahl der Rendering API:}\\
-  \textbf{Babylon.js}\vspace{0.5em}
-  \begin{itemize}
-    \item 3D-Engine auf Basis von WebGL
-    \item Viele nicht benötigte Funktionen (z.B. Physik, Sound)
-    \item Schnelle Umsetzung komplexer Szenen
-    \item Kann unnötige Komplexität erzeugen
-    \item Darstellung ebenfalls in separatem Browser-Tab
-  \end{itemize}
-\end{frame}
-
-\begin{frame}{Entwicklungsprozess}
-  \textbf{Wahl der Rendering API:}\\
-  \textbf{Three.js}\vspace{0.5em}
-  \begin{itemize}
-    \item Basiert ebenfalls auf WebGL
-    \item Gute Balance zwischen Kontrolle und Abstraktion
-    \item Flexibel, leichtgewichtig und erweiterbar
-    \item Ideal für sich entwickelnde Anforderungen
-    \item Darstellung in separatem Browser-Tab bleibt Einschränkung
-  \end{itemize}
-\end{frame}
-
-%prototypen vorstellen
-
-\begin{frame}{Entwicklungsprozess}
-  \textbf{Numpy als Mathematik-Library:}\vspace{0.5em}
-  \begin{itemize}
-    \item Bessere Performance als SymPy
-    \item symbolische Verarbeitung nicht erforderlich
-    \item Kompatibilität mit SymPy durch Umwandlungen dennoch gegeben
-  \end{itemize}
-\end{frame}
-
-
-\begin{frame}{Entwicklungsprozess}
-  \textbf{Environment-Klasse}\vspace{0.5em}
-  \begin{itemize}
-    \item Wiederkehrende elemente in den Beispiel-Notebooks in einer Klasse zusammengefasst
-    \item Kapselt Erstellung und Verwaltung einer 3D Szene (Kamera, Lichtquelle, Gitter, Achsen) und GUI-Elemente
-    \item einfaches Hinzuzufügen von GUI- und Szenen-Elementen
-  \end{itemize}
-\end{frame}
+%\section{Entwicklungsprozess}
+%
+%\begin{frame}{Entwicklungsprozess}
+%  \textbf{Wahl der Rendering API:}\\
+%  \textbf{OpenGL}\vspace{0.5em}
+%  \begin{itemize}
+%    \item Plattformunabhängig (Windows, macOS, Linux)
+%    \item Bewährt in 3D-Grafik, CAD und Spieleentwicklung
+%    \item Muss lokal installiert werden → höhere Systemanforderungen
+%    \item Integration in Webanwendungen schwierig
+%  \end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Entwicklungsprozess}
+%  \textbf{Wahl der Rendering API:}\\
+%  \textbf{WebGL}\vspace{0.5em}
+%  \begin{itemize}
+%    \item Läuft direkt im Browser ohne Zusatzsoftware
+%    \item Plattformunabhängig durch HTML5-Kompatibilität
+%    \item Gut geeignet für interaktive Webanwendungen
+%    \item Relativ generisch → hoher Entwicklungsaufwand
+%    \item Darstellung meist in separatem Browser-Tab
+%  \end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Entwicklungsprozess}
+%  \textbf{Wahl der Rendering API:}\\
+%  \textbf{Babylon.js}\vspace{0.5em}
+%  \begin{itemize}
+%    \item 3D-Engine auf Basis von WebGL
+%    \item Viele nicht benötigte Funktionen (z.B. Physik, Sound)
+%    \item Schnelle Umsetzung komplexer Szenen
+%    \item Kann unnötige Komplexität erzeugen
+%    \item Darstellung ebenfalls in separatem Browser-Tab
+%  \end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Entwicklungsprozess}
+%  \textbf{Wahl der Rendering API:}\\
+%  \textbf{Three.js}\vspace{0.5em}
+%  \begin{itemize}
+%    \item Basiert ebenfalls auf WebGL
+%    \item Gute Balance zwischen Kontrolle und Abstraktion
+%    \item Flexibel, leichtgewichtig und erweiterbar
+%    \item Ideal für sich entwickelnde Anforderungen
+%    \item Darstellung in separatem Browser-Tab bleibt Einschränkung
+%  \end{itemize}
+%\end{frame}
+%
+%%prototypen vorstellen
+%
+%\begin{frame}{Entwicklungsprozess}
+%  \textbf{Numpy als Mathematik-Library:}\vspace{0.5em}
+%  \begin{itemize}
+%    \item Bessere Performance als SymPy
+%    \item symbolische Verarbeitung nicht erforderlich
+%    \item Kompatibilität mit SymPy durch Umwandlungen dennoch gegeben
+%  \end{itemize}
+%\end{frame}
+%
+%
+%\begin{frame}{Entwicklungsprozess}
+%  \textbf{Environment-Klasse}\vspace{0.5em}
+%  \begin{itemize}
+%    \item Wiederkehrende elemente in den Beispiel-Notebooks in einer Klasse zusammengefasst
+%    \item Kapselt Erstellung und Verwaltung einer 3D Szene (Kamera, Lichtquelle, Gitter, Achsen) und GUI-Elemente
+%    \item einfaches Hinzuzufügen von GUI- und Szenen-Elementen
+%  \end{itemize}
+%\end{frame}
 
 
 \section{Evaluation}
@@ -256,7 +256,6 @@
   \begin{itemize}
     \setlength{\itemsep}{1em}
     \item Erfolgreiche Integration in JupyterLab: einfache Nutzung und direkte Visualisierung
-    \item Interaktive Bedienung durch ipywidgets (z.B. Schieberegler, Dropdowns)
     \item Unterstützung verschiedener Rotationsdarstellungen inkl. Umrechnungen
     \item Simulation radgetriebener Roboter über move()-Funktion realisiert
     \item Kompatibilität mit SymPy sichergestellt
@@ -276,6 +275,14 @@
     \item vorwärts- und rückwärts-Transformation
     
   \end{itemize}
+\end{frame}
+
+
+\begin{frame}{}
+  \begin{center}
+    \textbf{\huge Vielen Dank für Ihre Aufmerksamkeit!}  
+  \end{center}
+  
 \end{frame}
 
 
