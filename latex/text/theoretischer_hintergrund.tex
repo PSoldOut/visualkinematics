@@ -5,7 +5,7 @@ Zudem wird der Differentialantrieb als typisches Fortbewegungsprinzip mobiler Ro
 das in dieser Arbeit zur interaktiven Entwicklung und Visualisierung verwendet wird.
 
 \subsection{Darstellung der Position und Orientierung eines Roboters}
-Ein Roboter wird in der Regel als ein unverformbarer, fester Körper (Rigid Body) betrachtet, der sowohl eine bestimmte Position als auch eine Orientierung im Raum besitzt.
+Ein Roboter wird in der Regel als ein unverformbarer fester Körper (Rigid Body) betrachtet, der sowohl eine bestimmte Position als auch eine Orientierung im Raum besitzt.
 Die Position beschreibt den Abstand und die Verschiebung zwischen dem globalen Weltkoordinatensystem und dem körpereigenen Koordinatensystem des Roboters.
 Die Orientierung hingegen gibt den Unterschied in der Winkelausrichtung zwischen dem Weltkoordinatensystem und dem lokalen Koordinatensystem des Roboters an.
 Die Kombination aus Position und Orientierung eines Körpers wird als Pose bezeichnet. Die Transformation von einer Pose in eine andere kann intuitiv als Bewegung interpretiert werden.
@@ -23,18 +23,35 @@ Das bedeutet, dass jede Rotation zwischen zwei Koordinatensystemen im dreidimens
 wobei jeder Winkel einer bestimmten Achse zugeordnet ist. Die Rotationen werden nacheinander ausgeführt:
 Zunächst erfolgt eine Rotation des Weltkoordinatensystems um eine Achse, wodurch ein neues Koordinatensystem entsteht.
 Anschließend wird dieses neue System um eine seiner eigenen Achsen rotiert, gefolgt von einer dritten Rotation um eine Achse des wiederum neu entstandenen Systems.
+Dieser Vorgang wird in Abbildung~\ref{fig:Euler} illustriert.
+
+\vspace{1em}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\textwidth]{images/euler.png}
+        \caption{Eulerrotation eines Würfels um X, Y und Z in dieser Reihenfolge}
+        \label{fig:Euler}
+    \end{figure}
+
+\vspace{1em}
+
 
 Insgesamt gibt es zwölf eindeutige Rotationsabfolgen. Sechs davon beinhalten Wiederholungen derselben Achse (aber nicht unmittelbar hintereinander), beispielsweise XYX, XZX, YXY, YZY, ZXZ oder ZYZ. Die anderen sechs Rotationsabfolgen verwenden jeweils alle drei Achsen einmal, beispielsweise XYZ, XZY, YZX, YXZ, ZXY oder ZYX.
 
-Der Begriff Euler-Winkel wird häufig verwendet, um jede Art von dreifacher Rotationsdarstellung zu bezeichnen. Diese Bezeichnung ist jedoch nicht präzise, da – abhängig von der Reihenfolge der Rotationen – verschiedene Darstellungen entstehen. Deshalb muss die genaue Rotationsabfolge angegeben werden, auch wenn innerhalb bestimmter technischer Fachgebiete meist eine stillschweigende Konvention herrscht.
+Der Begriff Euler-Winkel wird häufig verwendet, um jede Art von dreifacher Rotationsdarstellung zu bezeichnen.
+Diese Bezeichnung ist jedoch nicht präzise, da – abhängig von der Reihenfolge der Rotationen – verschiedene Darstellungen entstehen.
+Deshalb muss die genaue Rotationsabfolge angegeben werden, auch wenn innerhalb bestimmter technischer Fachgebiete wie der Robotik meist die Konvention ZYZ herrscht.
 
-Eine besondere Rolle spielen die sogenannten Roll-Pitch-Yaw-Winkel, bei denen es zwei gebräuchliche Rotationssequenzen gibt: ZYX und XYZ. In der mobilen Robotik wird typischerweise die ZYX-Sequenz verwendet, während bei stationären Robotermanipulatoren oft die XYZ-Sequenz Anwendung findet \doublecite[48-51]{Robotics_Vision_and_Control}.
+Eine besondere Rolle spielen die sogenannten Roll-Pitch-Yaw-Winkel, bei denen es zwei gebräuchliche Rotationssequenzen gibt: ZYX und XYZ.
+In der mobilen Robotik wird typischerweise die ZYX-Sequenz verwendet,
+während bei stationären Robotermanipulatoren oft die XYZ-Sequenz Anwendung findet \doublecite[48-51]{Robotics_Vision_and_Control}.
 
 \subsection{Rotationsmatrizen}
 Eine Rotationsmatrix ist eine spezielle Art von Matrix, die ein Koordinatensystem um einen Winkel $\theta$ dreht und es dadurch in ein neues Koordinatensystem transformiert.
 Die Spalten einer Rotationsmatrix können dabei als die transformierten Einheitsvektoren des ursprünglichen Koordinatensystems interpretiert werden.
 
-Rotationsmatrizen sind stets orthonormal, das bedeutet, ihre Spalten (bzw. Zeilen) stehen senkrecht aufeinander und haben die Länge Eins.
+Rotationsmatrizen sind stets orthonormal, das bedeutet, ihre Spalten (bzw. Zeilen) stehen senkrecht aufeinander und haben die Länge 1.
 Daraus folgt die wichtige Eigenschaft:
 \[
  R^{-1}=R^T
@@ -42,7 +59,7 @@ Daraus folgt die wichtige Eigenschaft:
 wobei $R^{-1}$ die Inverse und $R^T$ die Trasponierte der Matrix $R$ ist.
 Ein weiteres charakteristisches Merkmal von Rotationsmatrizen ist, dass ihre Determinante stets den Wert $1$ hat.
 
-Rotationsmatrizen sind außerdem Elemente der sogenannten speziellen orthogonalen Gruppe der Dimension 2, die als $SO(2)$ bezeichnet wird. dies schreiben wir auch als
+Rotationsmatrizen sind außerdem Elemente der sogenannten speziellen orthogonalen Gruppe der Dimension 2, die als $SO(2)$ bezeichnet wird. Dies schreiben wir auch als
 \[
     R \in \mathrm{SO}(2) \subset \mathbb{R}^{2 \times 2}
 \]
@@ -51,7 +68,7 @@ Das bedeutet, dass das Produkt zweier Rotationsmatrizen wieder eine Rotationsmat
 Ebenso ist die Inverse jeder Rotationsmatrix ebenfalls Teil der Gruppe \doublecite[33]{Robotics_Vision_and_Control}.
 
 \subsection{Quaternionen und Unit-Quaternionen}
-Quaternionen wurden 1843 von Sir William Rowan Hamilton entdeckt. Sie erweitern die komplexen Zahlen und bestehen aus einem Skalar- und einem Vektoranteil:
+Quaternionen wurden im Jahr 1843 von William Rowan Hamilton entdeckt. Sie erweitern die komplexen Zahlen und bestehen aus einem Skalar- und Vektoranteil:
  \[
  q=s+v_xi+v_yj+v_zk
  \]
@@ -64,21 +81,18 @@ Quaternionen wurden 1843 von Sir William Rowan Hamilton entdeckt. Sie erweitern 
  \[
  q=\cos(\theta/2)+\hat{v} \sin(\theta/2)
  \]
-bezeichnet.\\
- Quaternionen bieten bei der Darstellung von Rotationen mehrere Vorteile.
- Sie ermöglichen eine recheneffiziente Kombination von Rotationen und vermeiden dabei Probleme wie den sogenannten Gimbal Lock, der bei der Verwendung von Euler-Winkeln auftreten kann.
+bezeichnet. Quaternionen bieten bei der Darstellung von Rotationen mehrere Vorteile.
+ Sie ermöglichen eine recheneffiziente Kombination von Rotationen und vermeiden dabei Probleme, wie den sogenannten Gimbal Lock, der bei der Verwendung von Euler-Winkeln auftreten kann.
  Zudem sind Quaternionen kompakter als Rotationsmatrizen und benötigen weniger Speicherplatz und Rechenleistung,
  was sie besonders attraktiv für Anwendungen in Bereichen wie Robotik, Computer Vision, Computergrafik und Navigation macht \doublecite[59-61]{Robotics_Vision_and_Control}.
 
 \subsection{Differentialantrieb}
-Ein mobiler Roboter mit Differentialantrieb besitzt zwei angetriebene Räder, jeweils eines auf jeder Seite des Roboters.
-Größere Roboter können zusätzlich über ein oder mehrere weitere Räder auf jeder Seite verfügen, die entweder passiv sind oder mechanisch mit den aktiven Rädern gekoppelt werden,
+Ein mobiler Roboter mit Differentialantrieb besitzt zwei angetriebene Räder, jeweils eines auf jeder Seite.
+Größere Roboter können zusätzlich über ein oder mehrere Räder auf jeder Seite verfügen, die entweder passiv sind oder mechanisch mit den aktiven Rädern gekoppelt werden,
 sodass sie sich einen Motor teilen. Die Räder sind an einer festen Position am Roboter befestigt.
-
 Die Steuerung des Roboters erfolgt durch die unterschiedliche Antriebsgeschwindigkeit der Räder.
 Drehen sich beide angetriebenen Räder mit gleicher Geschwindigkeit, bewegt sich der Roboter geradeaus.
 Rotieren die Räder hingegen mit unterschiedlichen Geschwindigkeiten, führt dies zu einer Drehbewegung des Roboters.
-
 Bei Robotern mit Differentialantrieb wird üblicherweise davon ausgegangen, dass es sich bei den verbauten Rädern um Standardräder handelt.
 Das bedeutet, dass sich die Räder – und somit der gesamte Roboter – ausschließlich in x-Richtung bewegen können, während Bewegungen oder ein Rutschen in y-Richtung nicht möglich sind.
 Zudem wird angenommen, dass jedes Rad nur einen einzigen Kontaktpunkt mit der Ebene besitzt

@@ -2,27 +2,35 @@
 
 Die Grundlagen der \textit{Kinematik}\footnote{Die Kinematik beschreibt die Bewegung von Körpern (z.\,B. Robotern). Sie beschäftigt sich mit Größen wie Position, Rotation, Geschwindigkeit und Beschleunigung.}
 stellen einen wesentlichen Bestandteil der Robotik dar und sind sowohl für mobile als auch für stationäre Roboter von zentraler Bedeutung.
-Während es bei stationären Robotern häufig darum geht, die Position des \textit{Endeffektors}\footnote{In der Robotik bezeichnet der Endeffektor das letzte Glied eines Roboters, das direkt mit der Umgebung interagiert. Häufig handelt es sich dabei um Werkzeuge oder Greifer} präzise zu berechnen,
+Während es bei stationären Robotern häufig darum geht, die Position des \textit{Endeffektors}\footnote{In der Robotik bezeichnet der Endeffektor das letzte Glied eines Roboters, das direkt mit der Umgebung interagiert. Häufig handelt es sich dabei um Werkzeuge oder Greifer.} präzise zu berechnen,
 konzentriert sich die Kinematik bei mobilen Robotern vor allem darauf, deren Position zuverlässig bestimmen zu können.
-Ein fundiertes Verständnis der erforderlichen kinematischen Modelle ist unerlässlich, um diese Größen korrekt zu berechnen.
-\doublecite[57]{autonomous_mobile_robots}
+Ein fundiertes Verständnis der erforderlichen kinematischen Modelle ist unerlässlich, um diese Größen korrekt zu berechnen
+\doublecite[57]{autonomous_mobile_robots}.
 
 Im Rahmen dieser Projektarbeit wird ein \textit{Framework}\footnote{In diesem Kontext ist ein Framework eine Sammlung vorgefertigter Bausteine, die die Entwicklung von Software erleichtert.
 Es gibt den grundsätzlichen Aufbau vor und erlaubt es, eigene Funktionen einzufügen.} entwickelt, das die Visualisierung kinematischer Kennwerte ermöglicht.
-Das Ziel dieses Frameworks ist es, unterstützend in der Lehre eingesetzt zu werden, um das Verständnis der Kinematik zu fördern und die praktische Anwendung dieser Konzepte zu erleichtern.
-Ein besonderer Fokus dieser Arbeit liegt auf der Rotation von Körpern im Raum. Dabei wird insbesondere erläutert,
-was unter Eulerwinkeln sowie Roll-Pitch-Yaw-Winkeln zu verstehen ist und worin die Unterschiede zwischen beiden Darstellungen bestehen.
-Darüber hinaus werden auch Rotationsmatrizen sowie Quaternionen behandelt, um die verschiedenen Ansätze zur Beschreibung von Rotationen umfassend darzustellen.
+Das Ziel dieses Frameworks ist es, unterstützend in der Lehre eingesetzt zu werden,
+um das Verständnis der Kinematik zu fördern und die praktische Anwendung dieser Konzepte zu erleichtern.
+
 
 
 \subsection{Motivation}
-Obwohl kinematische Modelle in vielen Bereichen der Robotik eine zentrale Rolle spielen, fällt es Studierenden häufig schwer,
+Mein Interesse an Computergrafik entstand vor einigen Jahren durch erste Projekte im Bereich der Spieleentwicklung.
+Die Möglichkeit, visuelle Inhalte programmatisch zu steuern und darzustellen, hat mich schnell fasziniert und mich tiefer in das Thema hineingezogen.
+Im Studium kam dann das Themenfeld der Robotik hinzu, das mich vor allem durch die Verbindung von mathematischen Modellen und realer Bewegung begeistert hat.
+Im Robotik-Modul fragte ich den betreuenden Professor, ob ich meine Projektarbeit in seinem Fachbereich schreiben könne.
+Er stimmte zu und gab mir die Aufgabe, ein Visualisierungsframework zu entwickeln, mit dem Roboter simuliert werden können.
+Das Thema war für mich besonders spannend, weil es meine beiden Interessensgebiete Computergrafik und Robotik auf sinnvoll zusammenbringt.
+Daraus entstand die Motivation, ein praktisches Werkzeug zu entwickeln das hilft
+kinematische Modelle anschaulich zu vermitteln.
+
+Obwohl kinematische Modelle in vielen Bereichen der Robotik eine zentrale Rolle spielen, fällt es Studierenden häufig schwer
 diese abstrakten mathematischen Konzepte vollständig zu durchdringen. Besonders Rotationen im dreidimensionalen Raum, die durch Eulerwinkel,
 Roll-Pitch-Yaw-Darstellungen, Rotationsmatrizen oder Quaternionen beschrieben werden, wirken in der Theorie oft wenig anschaulich und sind ohne visuelle
 Unterstützung schwer intuitiv erfassbar \doublecite[94-95]{The_Second_Handbook_of_Research_on_the_Psychology_of_Mathematics_Education}.
 In der Hochschullehre entsteht dadurch eine Lücke zwischen theoretischem Wissen und praktischem Verständnis.
 Lehrende stehen vor der Herausforderung, komplexe Zusammenhänge nicht nur formal korrekt, sondern auch nachvollziehbar und greifbar zu vermitteln.
-Gleichzeitig benötigen Studierende Möglichkeiten, das Gelernte interaktiv zu erproben, um eine tiefere, anwendungsorientierte Intuition für die Kinematik zu entwickeln.
+Gleichzeitig benötigen Studierende Gelegenheiten, das Gelernte interaktiv zu erproben, um eine tiefere, anwendungsorientierte Intuition für die Kinematik zu entwickeln.
 
 Moderne Lehrmethoden, die auf Visualisierung und Interaktion setzen, können hier entscheidend zur Verbesserung des Lernerfolgs beitragen.
 Insbesondere browserbasierte und plattformunabhängige Lösungen, wie sie in JupyterLab realisierbar sind,
@@ -40,10 +48,19 @@ mit dem sie durch einfache Python-Befehle individualisierbare Aufgabenstellungen
 Diese sollen es Studierenden ermöglichen, eigenständig mit Parametern zu experimentieren,
 Bewegungsabläufe zu analysieren und dadurch ein tieferes Verständnis für die Wirkungsweise kinematischer Modelle zu entwickeln.
 
-Besonderes Augenmerk liegt auf der Darstellung verschiedener Rotationsmodelle im Raum,
-darunter Eulerwinkel, Roll-Pitch-Yaw-Winkel, Rotationsmatrizen und Quaternionen.
-Durch deren visuelle Umsetzung werden nicht nur Unterschiede und Gemeinsamkeiten der jeweiligen Darstellungsformen sichtbar,
-sondern auch deren konkrete Bedeutung im räumlichen Kontext erfahrbar gemacht.
+Der Fokus dieser Arbeit liegt auf der Rotation von Körpern im Raum.
+Dabei werden verschiedene Rotationsmodelle wie Eulerwinkel, Roll-Pitch-Yaw-Winkel, Rotationsmatrizen und Quaternionen behandelt.
+Durch deren visuelle Umsetzung sollen sowohl Unterschiede als auch Gemeinsamkeiten dieser
+Darstellungsformen deutlich gemacht und ihre Bedeutung im räumlichen Kontext anschaulich vermittelt werden.
+Ziel ist es, den Lernprozess im Bereich der Kinematik durch moderne, interaktive Lehrmittel zu unterstützen und einen Beitrag zu einer zeitgemäßen,
+verständnisorientierten Ausbildung in der Robotik zu leisten.
 
-Insgesamt verfolgt das Projekt das Ziel, den Lernprozess im Bereich der Kinematik durch moderne,
-interaktive Lehrmittel zu unterstützen und einen Beitrag zu einer zeitgemäßen, verständnisorientierten Ausbildung in der Robotik zu leisten.
+
+\subsection{Aufbau der Arbeit}
+Zu Beginn wird in Kapitel 2 auf den theoretischen Hintergrund eingegangen, der notwendig ist, um dieser Arbeit folgen zu können.
+Dazu zählen die Darstellung der Position und Rotation eines Roboters, Euler- sowie Roll-Pitch-Yaw-Winkel, Rotationsmatrizen, Quaternionen,
+der Differentialantrieb und die Entwicklungsumgebung JupyterLab.
+Anschließend werden in Kapitel 3 die Anforderungen spezifiziert, welche die im Rahmen dieser Projektarbeit entwickelte Software erfüllen soll.
+In Kapitel 4 folgt eine Erläuterung des Aufbaus der Software, bevor in Kapitel 5 der gesamte Entwicklungsprozess beschrieben wird.
+Daraufhin wird die Software im Hinblick auf die definierten Anforderungen evaluiert.
+Abschließend wird aufgezeigt, wie dieses Projekt im Rahmen einer Bachelorarbeit weitergeführt werden könnte.
