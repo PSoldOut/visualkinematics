@@ -11,10 +11,6 @@ Durch den Einsatz von Tools wie Poetry zur Verwaltung von Abhängigkeiten und Bi
 interaktiven 3D-Visualisierung wird eine stabile und effiziente Nutzung ermöglicht.
 
 
-Tabelle \ref{tab:technologien} gibt einen Überblick über die zentralen Softwaretechnologien,
-die für die Implementierung des Frameworks verwendet wurden. Diese Komponenten unterstützen verschiedene Aspekte wie numerische Berechnungen,
-interaktive Steuerung und 3D-Visualisierung.
-
 \vspace{1em}
     \begin{table}[H]
         \centering
@@ -22,19 +18,23 @@ interaktive Steuerung und 3D-Visualisierung.
         \hline
         Kategorie                   & Technologie                   & Beschreibung  \\ \hline
         Programmiersprache          & Python                        & Hochsprachige, interpretierte Programmiersprache mit Fokus auf Lesbarkeit und Einfachheit. Ideal für wissenschaftliches Rechnen, Datenanalyse und Prototyping.        \\ \hline
-        Laufzeitumgebung            & JupyterLab                    & Web-basierte Entwicklungsumgebung für interaktive Notebooks        \\ \hline
-        Paketmanager                & Poetry                        & Verwaltung von Abhängigkeiten und virtuellen Umgebungen        \\ \hline
-        Mathe-Bibliothek            & Numpy                         & Bibliothek für numerische Berechnungen und lineare Algebra        \\ \hline
-        Mathe-Bibliothek            & Sympy                         & Bibliothek für symbolische Berechnungen        \\ \hline
-        Mathe-Bibliothek            & Scipy                         & Erweiterte Funktionen für wissenschaftliches Rechnen z.B Umwanldung von Rotationsdarstellungen        \\ \hline
-        3D-Rendering                & pythreejs                     & Python-Wrapper für three.js zur Darstellung von 3D-Geometrien in Notebooks        \\ \hline
-        Interaktivität              & ipywidgets                    & Erlaubt die Erstellung interaktiver GUI-Elemente wie Schieberegler, Dropdowns und Buttons in Jupyter-Notebooks        \\ \hline
+        Laufzeitumgebung            & JupyterLab                    & Web-basierte Entwicklungsumgebung für interaktive Notebooks.        \\ \hline
+        Paketmanager                & Poetry                        & Verwaltung von Abhängigkeiten und virtuellen Umgebungen.        \\ \hline
+        Mathe-Bibliothek            & Numpy                         & Bibliothek für numerische Berechnungen und lineare Algebra.        \\ \hline
+        Mathe-Bibliothek            & Sympy                         & Bibliothek für symbolische Berechnungen.        \\ \hline
+        Mathe-Bibliothek            & Scipy                         & Erweiterte Funktionen für wissenschaftliches Rechnen z.B Umwanldung von Rotationsdarstellungen.        \\ \hline
+        3D-Rendering                & pythreejs                     & Python-Wrapper für three.js zur Darstellung von 3D-Geometrien in Notebooks.        \\ \hline
+        Interaktivität              & ipywidgets                    & Erlaubt die Erstellung interaktiver GUI-Elemente wie Schieberegler, Dropdowns und Buttons in Jupyter-Notebooks.        \\ \hline
         \end{tabular}
         \caption{Überblick über die im Projekt verwendeten Softwaretechnologien}
         \label{tab:technologien}
     \end{table}
 \vspace{1em}
 
+
+Tabelle \ref{tab:technologien} gibt einen Überblick über die zentralen Softwaretechnologien,
+die für die Implementierung des Frameworks verwendet wurden. Diese Komponenten unterstützen verschiedene Aspekte wie numerische Berechnungen,
+interaktive Steuerung und 3D-Visualisierung.
 
 
 Abbildung~\ref{fig:verteilungsdiagramm} visualisiert das Zusammenspiel der einzelnen Softwarekomponenten innerhalb des Frameworks.
@@ -52,28 +52,29 @@ und interaktiven Steuerung ineinandergreifen, um eine stabile, plattformunabhän
 
 \vspace{1em}
 
-Das Framework ist, wie gefordert für die Nutzung innerhalb der Jupyter\-Lab-Um\-ge\-bung ausgelegt.
+Das Framework ist, wie gefordert, für die Nutzung innerhalb der Jupyter\-Lab-Um\-ge\-bung ausgelegt.
 Die Fachhochschule Dortmund stellt hierfür einen eigenen JupyterLab-Server bereit,
 auf den sowohl über eine VPN-Verbindung als auch direkt im Hochschulnetz zugegriffen werden kann.
-Dadurch ist keine lokale Installation erforderlich, und die Arbeitsumgebung steht einheitlich auf verschiedenen Endgeräten zur Verfügung.
+Dadurch ist keine lokale Installation erforderlich und die Arbeitsumgebung steht einheitlich auf verschiedenen Endgeräten zur Verfügung.
 
 Um eine einfache Einrichtung des Frameworks auf dem Server zu gewährleisten, ist es erforderlich, Versionskonflikte zwischen den verwendeten Abhängigkeiten zu vermeiden.
 Zu diesem Zweck wird das Werkzeug Poetry eingesetzt.
 Poetry ermöglicht die Verwaltung aller benötigten Python-Bibliotheken in festen Versionen und erstellt eine isolierte virtuelle Umgebung,
-in der alle Abhängigkeiten konsistent installiert sind. Dadurch wird sichergestellt,
+in der alle Abhängigkeiten in passenden Versionen zueinander installiert sind. Dadurch wird sichergestellt,
 dass das Framework unabhängig von der Zielumgebung stabil und reproduzierbar ausgeführt werden kann.
 
 Die Bibliothek ipywidgets wurde verwendet, um das Framework interaktiv zu gestalten.
-Mithilfe von Schiebereglern, Dropdown-Menüs und Checkboxen lassen sich Rotationen der gerenderten Objekte in weicher Echtzeit anpassen.
+Mithilfe von Schiebereglern, Dropdown-Menüs und Checkboxen lassen sich Rotationen der gerenderten Objekte in \textit{weicher Echtzeit}\footnote{Weiche Echtzeit bezeichnet Systeme, bei denen Zeitvorgaben wie Bildrate $\geq$ 60 Hz möglichst eingehalten werden sollen,
+aber gelegentliche Überschreitungen tolerierbar sind und nicht zu einem Systemversagen führen.} anpassen.
 Darüber hinaus ermöglichen die interaktiven Elemente eine benutzerfreundliche Steuerung weiterer Funktionen und tragen wesentlich zur intuitiven Bedienbarkeit des Frameworks bei.
 
 Eine der zentralen Bibliotheken innerhalb des Projekts ist NumPy, eine weit verbreitete Python-Bibliothek für numerische Berechnungen.
 NumPy wird im Kontext dieses Projekts hauptsächlich für erweiterte mathematische Operationen im Bereich der linearen Algebra eingesetzt.
-Außerdem ist NumPy mit der Bibliothek SymPy, die für symbolische Mathematik verwendet wird gut kompatibel.
-Diese Kompatibilität ist ebenfalls eine Anforderung im Projekt.
+Außerdem ist NumPy mit der Bibliothek SymPy, die für symbolische Mathematik verwendet wird, gut kompatibel.
+Diese Kompatibilität ist ebenfalls eine Anforderung in diesem Projekt.
 Obwohl NumPy eine leistungsfähige Grundlage für numerische Berechnungen bietet,
 enthält es keine Funktionen für spezielle geometrische Transformationen wie beispielsweise die Umwandlung von Euler-Winkeln in Quaternionen,
-die Umwandlung von Quaternionen in Rotationsmatrizen oder deren Umkehrung.
+von Quaternionen in Rotationsmatrizen oder deren Umkehrung.
 Daher wurde ergänzend die Bibliothek scipy.spatial verwendet, die solche Operationen effizient bereitstellt.
 
 
@@ -92,7 +93,7 @@ geometrischer Strukturen innerhalb des Frameworks ermöglicht.
 
 
 \subsection{Framework-Library (Implementierungsdetails)}
-Die Bibliothek des Frameworks besteht aus einer zentralen Datei, util.py.
+Die Bibliothek des Frameworks besteht aus einer zentralen Datei: util.py.
 In dieser Datei sind sämtliche Kernfunktionen implementiert, die zur Erstellung, Transformation und Animation geometrischer Formen benötigt werden.
 Darüber hinaus enthält util.py eine Reihe von Hilfsfunktionen,
 die unter anderem die Umrechnung zwischen verschiedenen Darstellungsformen von Rotationen ermöglichen sowie die Erstellung von Koordinatensystemen unterstützen.
@@ -186,10 +187,11 @@ Das Notebook orientiert sich an einer Übungsaufgabe der Fachhochschule Dortmund
     
 
 \end{quote}
+\noindent Quelle: Die Aufgabe stammt aus den eigenen Unterlagen des Moduls Robotik und ist als Datei \texttt{05\_Übung\_und\_Praktikum.ipynb} dieser Arbeit beigefügt.\\
 
 In der nächsten Codezelle wird die Pose des Roboters zurückgesetzt damit wiederholte Aufrufe dieser Zelle möglich sind.
 Anschließend wird die move() Funktion für jeden Abschnitt der Bahn aufgerufen. Dabei werden in diesem Beispiel-Notebook bereits
-die korrekten Werte für die Antriebsgeschwindigkeiten an move() übergeben, was vom Aufgabensteller geändert werden kann.
+die korrekten Werte für die Antriebsgeschwindigkeiten an move() übergeben, was vom Aufgabensteller geändert werden kann:
 
 
 \begin{center}
@@ -235,10 +237,10 @@ Ziel dieses Notebooks ist es, die Möglichkeiten des Frameworks zur Darstellung 
 Die direkte visuelle Rückmeldung innerhalb des Jupyter Notebooks ermöglicht es dem Lernenden,
 die Auswirkungen der jeweiligen Transformationen unmittelbar nachzuvollziehen und ein besseres Verständnis für deren Wirkung im dreidimensionalen Raum zu entwickeln.
 
-Um diese Ausgabe zu erreichen wurde ein Würfel sowie ein Environment-Objekt erzeugt. Der Würfel wurden zu dem Environment-Objekt
-hinzugefügt und anschließend wurden mit der Funktion add\_gizmo\_controls() (siehe Anhang S.\pageref{sec:add_gizmo_controls})
+Um diese Ausgabe zu erreichen wurde ein Würfel sowie ein Environment-Objekt erzeugt. Der Würfel wurde zu dem Environment-Objekt
+hinzugefügt. Anschließend wurden mit der Funktion add\_gizmo\_controls() (siehe Anhang S.\pageref{sec:add_gizmo_controls})
 Schieberegler zur Transformation des Würfels zum Environment-Objekt
-hinzugefügt. Zum Schluss wurde das Environment-Objekt mit der display() Funktion visualisiert.
+hinzugefügt. Zum Schluss wurde das Environment-Objekt mit der display() Funktion visualisiert:
 
 \begin{center}
     \begin{verbatim}
@@ -256,9 +258,9 @@ hinzugefügt. Zum Schluss wurde das Environment-Objekt mit der display() Funktio
 
 \subsubsection{quader.ipynb}
 Das letzte Beispiel-Notebook trägt den Namen quader.ipynb.
-Es orientiert sich an einer Klausuraufgabe der Fachhochschule Dortmund im Modul Robotik aus dem Jahr 2010,
-in der ein Quader um die Achsen des Basis-Koordinatensystems rotiert,
-die jeweiligen Rotationsmatrizen aufgestellt und zu einer Gesamtrotationsmatrix zusammengefasst werden sollen.
+Es orientiert sich an einer Klausuraufgabe der Fachhochschule Dortmund im Modul Robotik aus dem Jahr 2010.
+In der Aufgabe soll ein Quader um die Achsen des Basis-Koordinatensystems rotiert werden. Anschließend sollen
+die jeweiligen Rotationsmatrizen aufgestellt und zu einer Gesamtrotationsmatrix zusammengefasst werden.
 
 \begin{quote}
     \textit{Gegeben ist ein quaderförmiger Körper mit den Kantenlängen $l_x=3, l_y=4$ und $l_z=2$. Eine
@@ -287,17 +289,13 @@ die jeweiligen Rotationsmatrizen aufgestellt und zu einer Gesamtrotationsmatrix 
 
     \textit{c) Welche Positinen nehmen nach der Drehung des Körpers die Körperecken $M$ und $N$ in Bezug auf das Koordinatensystem $B$ ein?}
 
-    \textit{d) Welche Orientierung, ausgedrückt als Rotationsmatrix, hat das Koordinatensystem $K$ vor der Drehung der Körpers bezüglich der Koordinatensystems $B$?}
+    \textit{[...]}
 
-    \textit{e) Berechnen Sie die Eulerschen Winkel der Rotationsmatrix vor der Drehung.}
-
-    \textit{f) Welche Orientierung, ausgedrückt als Rotationsmatrix, hat das Koordinatensystem $K$
-    nach der Drehung des Körpers bezüglich des Koordinatensystems $B$?}
-
-    \textit{g) Berechnen Sie die Roll-Nick-Gier-Winkel der Rotationsmatrix von $K$ nach der Drehung.}
 \end{quote}
+\noindent Quelle: Klausuraufgabe der Fachhochschule Dortmund im Modul Robotik aus dem Jahr 2010. Ist als Datei \texttt{RobotikWS10.pdf} dieser Arbeit beigefügt.\\
 
-Das Notebook dient der Visuellen Simulation der Rotationen.
+
+Das Notebook dient der visuellen Simulation der Rotationen.
 Abbildung \ref{fig:Würfel mit Schiebereglern für die Rotation} zeigt das Notebook quader.ipynb während der Ausführung.
 
 
@@ -313,35 +311,12 @@ Abbildung \ref{fig:Würfel mit Schiebereglern für die Rotation} zeigt das Noteb
 
 \vspace{1em}
 Mit der Funktion rotate\_global\_animated(mesh, angles, order) (siehe Anhang S.\pageref{sec:rotate_global_animated}) wird der Quader zunächst wie in der Aufgabe beschrieben
-um die Achsen des Koordinatensystems $B$ rotiert. Diese Transformation wird Visuell dargestellt, um ein Gefühl für die Rotation zu vermitteln und die Endposition aufzuzeigen.
+um die Achsen des Koordinatensystems $B$ rotiert. Diese Transformation wird visuell dargestellt, um ein Gefühl für die Rotation zu vermitteln und die Endposition aufzuzeigen.
 Danach wird mit der Funktion rotate\_animated(mesh, angles, order) (siehe Anhang S.\pageref{sec:rotate_animated}) der Quader um sein körpereigenes Koordinatensystem rotiert, wobei jedoch die Rotationsreihenfolge invertiert wird.
-Diese beiden Rotationen führen den Quader in die gleiche Endposition und sollen den Lernenden diesen Zusammenhang visuell näherbringen.
+Diese beiden Rotationen führen den Quader in die gleiche Endposition und sollen den Lernenden diesen Zusammenhang visuell näherbringen:
 
 \begin{center}
     \begin{verbatim}
-        env = util.Environment()
-
-        b = three.Group()
-        k = util.create_axes(3, show_labels=True, name="K")
-
-        rectangle = util.createQuad([0,0,0],4,2,3)
-        k.add(rectangle)
-        b.add(k)
-
-        mat = np.array([
-            [ 0,  0, -1],
-            [-1,  0,  0],
-            [ 0,  1,  0]
-        ])
-        euler = util.rot_matrix_to_euler(mat, "XYZ")
-        env.add(b)
-
-        util.translate(k, [3, 4, 0])
-        util.translate(rectangle, [2, 1, 1.5])
-
-        display(env)
-        util.rotate(k, euler, "XYZ")
-
         angles=[60, -180, -90]
         order = "ZXY"
         util.set_rotation(b, [0,0,0], order)
@@ -352,9 +327,10 @@ Diese beiden Rotationen führen den Quader in die gleiche Endposition und sollen
     \end{verbatim}
 \end{center}
 
+
 Anschließend werden die Matrizen als Variablen aufgestellt, zusammengefasst und an die Funktion
 apply\_rot\_matrix\_animated(mesh, rot\_mat, speed, show\_rot\_mat) (siehe Anhang S.\pageref{sec:apply_rot_matrix_animated}) übergeben, sodass
-die Rotation des Quaders anhand der Rotationsmatrix betrachtet und mit der vorangegangenen Transformation vergleichen werden kann.
+die Rotation des Quaders anhand der Rotationsmatrix betrachtet und mit der vorangegangenen Transformation verglichen werden kann:
 
 \begin{center}
     \begin{verbatim}

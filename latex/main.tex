@@ -22,6 +22,17 @@
 \usepackage{textpos,xcolor,rawfonts,latexsym,graphicx,epsf,verbatim} %für deckblatt
 
 \usepackage{listings} %für code
+\usepackage{titlesec} %für verschieden große überschriften
+\usepackage{pdfpages}
+
+% setzt die schriftgröße für \section und \subsection
+\titleformat{\section}
+  {\normalfont\Large\bfseries} % Schriftstil für section
+  {\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries} % etwas kleiner als section
+  {\thesubsection}{1em}{}
 
 
 \lstdefinestyle{mypython}{

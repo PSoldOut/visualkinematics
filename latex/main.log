@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  15 MAY 2025 13:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  16 MAY 2025 15:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -808,18 +808,62 @@ File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
 Package: listings 2024/09/23 1.10c (Carsten Heinz)
-
+ (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box69
+\beforetitleunit=\skip109
+\aftertitleunit=\skip110
+\ttl@plus=\dimen259
+\ttl@minus=\dimen260
+\ttl@toksa=\toks46
+\titlewidth=\dimen261
+\titlewidthlast=\dimen262
+\titlewidthfirst=\dimen263
+) (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2025/03/12 v0.6f Insert pages of external PDF documents (AM)
+ (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count483
+\calc@Bcount=\count484
+\calc@Adimen=\dimen264
+\calc@Bdimen=\dimen265
+\calc@Askip=\skip111
+\calc@Bskip=\skip112
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count485
+\calc@Cskip=\skip113
+) (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen266
+\ESO@tempdimb=\dimen267
+)
+\AM@pagewidth=\dimen268
+\AM@pageheight=\dimen269
+\AM@fboxrule=\dimen270
+ (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2025/03/12 v0.6f Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count486
+\AM@pagebox=\box70
+\AM@global@opts=\toks47
+\AM@pagecnt=\count487
+\AM@toc@title=\toks48
+\AM@lof@heading=\toks49
+\c@AM@survey=\count488
+\AM@templatesizebox=\box71
+)
 
 Package biblatex Warning: Load 'inputenc' before biblatex.
 
 
-Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 97.
+Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 108.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'german'.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 97.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 108.
 (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (main.aux
@@ -828,25 +872,25 @@ Package babel Info: 'german' activates 'german' shorthands.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-Package hyperref Info: Link coloring OFF on input line 97.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+Package hyperref Info: Link coloring OFF on input line 108.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -899,38 +943,47 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 97.
-Package biblatex Info: Reference segment=0 on input line 97.
+Package biblatex Info: Reference section=0 on input line 108.
+Package biblatex Info: Reference segment=0 on input line 108.
  (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count483
-\scratchdimen=\dimen259
-\scratchbox=\box69
-\nofMPsegments=\count484
-\nofMParguments=\count485
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count486
-\MPscratchDim=\dimen260
-\MPnumerator=\count487
-\makeMPintoPDFobject=\count488
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count489
+\scratchdimen=\dimen271
+\scratchbox=\box72
+\nofMPsegments=\count490
+\nofMParguments=\count491
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count492
+\MPscratchDim=\dimen272
+\MPnumerator=\count493
+\makeMPintoPDFobject=\count494
+\everyMPtoPDFconversion=\toks51
 ) (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count489
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 109.
+\c@lstlisting=\count495
+ (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 120.
  (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (6.33075pt too wide) in paragraph at lines 113--116
+Overfull \hbox (6.33075pt too wide) in paragraph at lines 124--127
 \OT1/lmss/bx/n/24.88 Visualisierung ki-ne-ma-ti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--116
+Underfull \hbox (badness 10000) in paragraph at lines 124--127
 
  []
 
@@ -973,7 +1026,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 [2] (main.lof
-Overfull \hbox (8.34993pt too wide) in paragraph at lines 6--6
+Overfull \hbox (8.34993pt too wide) in paragraph at lines 7--7
  [][] [][]\OT1/lmr/m/n/12 W[]urfel mit Schie-be-reg-lern f[]ur die Trans-for-ma-ti-on (ro-ta-ti-on.ipynb w[]ahrend 
  []
 
@@ -1004,123 +1057,127 @@ l.34
 [2]) (text/theoretischer_hintergrund.tex
 
 [3]
-<images/euler.png, id=248, 1284.8pt x 1329.96875pt>
-File: images/euler.png Graphic file (type png)
-<use images/euler.png>
-Package pdftex.def Info: images/euler.png  used on input line 32.
-(pdftex.def)             Requested size: 308.71106pt x 319.5643pt.
+<images/position_orientierung.png, id=247, 678.535pt x 680.5425pt>
+File: images/position_orientierung.png Graphic file (type png)
+<use images/position_orientierung.png>
+Package pdftex.def Info: images/position_orientierung.png  used on input line 22.
+(pdftex.def)             Requested size: 308.71106pt x 309.61617pt.
 
 
-[4]
-
-[5
+[4
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.53 
+l.39 
+      <./images/position_orientierung.png>]
+<images/euler.png, id=257, 1284.8pt x 1329.96875pt>
+File: images/euler.png Graphic file (type png)
+<use images/euler.png>
+Package pdftex.def Info: images/euler.png  used on input line 44.
+(pdftex.def)             Requested size: 308.71106pt x 319.5643pt.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 53.
+ (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+
+[5
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.57 
       <./images/euler.png>]
 
-[6{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
+[6{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
 
-[7{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]) (text/anforderungen.tex
+[7{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
 
-[8]
+[8]) (text/anforderungen.tex
 
-[9]) (text/aufbau.tex
+[9]
 
-[10]
-Overfull \hbox (3.14978pt too wide) in paragraph at lines 23--23
+[10]) (text/aufbau.tex
+Overfull \hbox (3.14978pt too wide) in paragraph at lines 19--19
 []|\OT1/lmr/m/n/12 Technologie| 
  []
 
 
-Overfull \hbox (6.06535pt too wide) in paragraph at lines 24--24
+Overfull \hbox (6.06535pt too wide) in paragraph at lines 20--20
 []|\OT1/lmr/m/n/12 Programmiersprache| 
  []
 
 
-Overfull \hbox (2.16669pt too wide) in paragraph at lines 25--25
+Overfull \hbox (2.16669pt too wide) in paragraph at lines 21--21
 []|\OT1/lmr/m/n/12 JupyterLab| 
  []
 
 
-Underfull \hbox (badness 1558) in paragraph at lines 31--31
+Underfull \hbox (badness 1558) in paragraph at lines 27--27
 []|\OT1/lmr/m/n/12 Erlaubt die Er-stel-lung in-ter-ak-ti-ver GUI-
  []
 
-<images/diagramme/komponentendiagramm.png, id=306, 672.5125pt x 732.7375pt>
+
+
+[11]
+<images/diagramme/komponentendiagramm.png, id=315, 672.5125pt x 732.7375pt>
 File: images/diagramme/komponentendiagramm.png Graphic file (type png)
 <use images/diagramme/komponentendiagramm.png>
 Package pdftex.def Info: images/diagramme/komponentendiagramm.png  used on input line 48.
 (pdftex.def)             Requested size: 396.91325pt x 432.45673pt.
 
 
-[11
+[12
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.52 
      ]
 
-[12
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+[13
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.65 
       <./images/diagramme/komponentendiagramm.png (PNG copy)>]
 
-[13]
-
 [14]
-<images/robot.PNG, id=326, 528.47438pt x 402.75468pt>
+
+[15]
+<images/robot.PNG, id=339, 528.47438pt x 402.75468pt>
 File: images/robot.PNG Graphic file (type png)
 <use images/robot.PNG>
-Package pdftex.def Info: images/robot.PNG  used on input line 127.
+Package pdftex.def Info: images/robot.PNG  used on input line 128.
 (pdftex.def)             Requested size: 441.01773pt x 336.10538pt.
 
 
-[15
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+[16
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.140 \begin{center}
-                     <./images/robot.PNG>]
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 141.
+l.139 
+       <./images/robot.PNG>]
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 142.
  (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (15.9325pt too wide) in paragraph at lines 148--148
+Overfull \hbox (15.9325pt too wide) in paragraph at lines 149--149
 []        \OT1/lmtt/m/n/12 l1 = util.line_wheel_driven_robot(dummy, [0.01, 0, 0.00202], 1555)[] 
  []
 
-<images/uebung_robot.PNG, id=336, 601.4972pt x 231.86626pt>
+<images/uebung_robot.PNG, id=347, 601.4972pt x 231.86626pt>
 File: images/uebung_robot.PNG Graphic file (type png)
 <use images/uebung_robot.PNG>
-Package pdftex.def Info: images/uebung_robot.PNG  used on input line 171.
+Package pdftex.def Info: images/uebung_robot.PNG  used on input line 172.
 (pdftex.def)             Requested size: 441.01773pt x 170.011pt.
 
 
-[16{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}]
-Overfull \hbox (9.60933pt too wide) in paragraph at lines 184--185
+[17{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}]
+Overfull \hbox (9.60933pt too wide) in paragraph at lines 185--186
 []\OT1/lmr/m/it/12 Welche Ge-schwin-dig-kei-ten in Ro-bo-ter-ko-or-di-na-ten $\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 v[] \OT1/lmr/m/n/12 = [] = ([]\OML/lmm/m/it/12 ; dot[]; []\OT1/lmr/m/n/12 )[])$
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
-[17
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.217 \subsubsection
-                    {rotations.ipynb} <./images/uebung_robot.PNG>]
-<images/rotations.PNG, id=348, 673.76718pt x 504.38437pt>
-File: images/rotations.PNG Graphic file (type png)
-<use images/rotations.PNG>
-Package pdftex.def Info: images/rotations.PNG  used on input line 226.
-(pdftex.def)             Requested size: 441.01773pt x 330.15483pt.
-
-Underfull \hbox (badness 1014) in paragraph at lines 227--227
-[]\OT1/lmr/m/n/12 Abbildung 5: []W[]urfel mit Schie-be-reg-lern f[]ur die Trans-for-ma-ti-on (ro-ta-ti-on.ipynb
  []
 
 
@@ -1129,31 +1186,46 @@ Underfull \hbox (badness 1014) in paragraph at lines 227--227
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.237 
-       <./images/rotations.PNG>]
-Overfull \hbox (3.58249pt too wide) in paragraph at lines 247--247
-[]            \OT1/lmtt/m/n/12 grid=util.create_grid_XY(10,0.4), frame=util.create_axes(4))[] 
+l.204     \end{verbatim}
+                         <./images/uebung_robot.PNG>]
+<images/rotations.PNG, id=359, 673.76718pt x 504.38437pt>
+File: images/rotations.PNG Graphic file (type png)
+<use images/rotations.PNG>
+Package pdftex.def Info: images/rotations.PNG  used on input line 228.
+(pdftex.def)             Requested size: 441.01773pt x 330.15483pt.
+
+Underfull \hbox (badness 1014) in paragraph at lines 229--229
+[]\OT1/lmr/m/n/12 Abbildung 6: []W[]urfel mit Schie-be-reg-lern f[]ur die Trans-for-ma-ti-on (ro-ta-ti-on.ipynb
  []
 
-<images/klausur_quader.PNG, id=355, 277.035pt x 196.48407pt>
-File: images/klausur_quader.PNG Graphic file (type png)
-<use images/klausur_quader.PNG>
-Package pdftex.def Info: images/klausur_quader.PNG  used on input line 273.
-(pdftex.def)             Requested size: 264.61333pt x 187.67516pt.
 
 
-[19]
-
-[20
+[19
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.302 
-       <./images/klausur_quader.PNG>]
-<images/quader.PNG, id=367, 525.46312pt x 401.24907pt>
+l.239 
+       <./images/rotations.PNG>]
+Overfull \hbox (3.58249pt too wide) in paragraph at lines 249--249
+[]            \OT1/lmtt/m/n/12 grid=util.create_grid_XY(10,0.4), frame=util.create_axes(4))[] 
+ []
+
+<images/klausur_quader.PNG, id=366, 277.035pt x 196.48407pt>
+File: images/klausur_quader.PNG Graphic file (type png)
+<use images/klausur_quader.PNG>
+Package pdftex.def Info: images/klausur_quader.PNG  used on input line 275.
+(pdftex.def)             Requested size: 264.61333pt x 187.67516pt.
+
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
+
+ []
+
+<images/quader.PNG, id=372, 525.46312pt x 401.24907pt>
 File: images/quader.PNG Graphic file (type png)
 <use images/quader.PNG>
-Package pdftex.def Info: images/quader.PNG  used on input line 309.
+Package pdftex.def Info: images/quader.PNG  used on input line 307.
 (pdftex.def)             Requested size: 441.01773pt x 336.77751pt.
 
 
@@ -1161,10 +1233,15 @@ Package pdftex.def Info: images/quader.PNG  used on input line 309.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.324         b = three.Group()
-                                <./images/quader.PNG>]
+l.311 
+       <./images/klausur_quader.PNG>]
 
-[22]) (text/entwicklungsprozess.tex
+[22
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.325         util.set_rotation(b, [0,0,0], order)
+                                                   <./images/quader.PNG>]) (text/entwicklungsprozess.tex
 Overfull \hbox (1.18193pt too wide) in paragraph at lines 2--6
 \OT1/lmr/m/n/12 Es wur-den ver-schie-de-ne Tech-no-lo-gi-en zur 3D-Darstellung ver-gli-chen, dar-un-ter OpenGL,
  []
@@ -1172,8 +1249,13 @@ Overfull \hbox (1.18193pt too wide) in paragraph at lines 2--6
 
 
 [23]
-Overfull \hbox (9.46385pt too wide) in paragraph at lines 16--24
-\OT1/lmr/m/n/12 triebs-sy-ste-men wie Win-dows, ma-cOS und Li-nux ein-ge-setzt wer-den kann. Dies erm[]oglichte
+Overfull \hbox (7.5045pt too wide) in paragraph at lines 8--13
+\OT1/lmr/m/n/12 lung und Ma-ni-pu-la-ti-on von 3D-Grafiken mit-ein-an-der ver-gli-chen. Da-bei stan-den OpenGL,
+ []
+
+
+Overfull \hbox (4.24187pt too wide) in paragraph at lines 16--24
+\OT1/lmr/m/n/12 triebs-sy-ste-men wie Win-dows, ma-cOS und Li-nux ein-ge-setzt wer-den kann. Dies erm[]oglicht
  []
 
 
@@ -1181,57 +1263,52 @@ Overfull \hbox (9.46385pt too wide) in paragraph at lines 16--24
 [24]
 
 [25]
-<images/diagramme/prototypKomponentendiagramm.png, id=408, 421.575pt x 411.5375pt>
+<images/diagramme/prototypKomponentendiagramm.png, id=411, 421.575pt x 411.5375pt>
 File: images/diagramme/prototypKomponentendiagramm.png Graphic file (type png)
 <use images/diagramme/prototypKomponentendiagramm.png>
-Package pdftex.def Info: images/diagramme/prototypKomponentendiagramm.png  used on input line 69.
+Package pdftex.def Info: images/diagramme/prototypKomponentendiagramm.png  used on input line 68.
 (pdftex.def)             Requested size: 352.81552pt x 344.42067pt.
 
 
 [26]
-<images/prototyp.PNG, id=415, 492.33937pt x 577.40718pt>
+<images/prototyp.PNG, id=418, 492.33937pt x 577.40718pt>
 File: images/prototyp.PNG Graphic file (type png)
 <use images/prototyp.PNG>
-Package pdftex.def Info: images/prototyp.PNG  used on input line 84.
+Package pdftex.def Info: images/prototyp.PNG  used on input line 87.
 (pdftex.def)             Requested size: 308.71106pt x 362.06802pt.
 
 
 [27
-pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.88 
-      <./images/diagramme/prototypKomponentendiagramm.png (PNG copy)>]
-
-[28
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.107 E
+l.91 
+      <./images/diagramme/prototypKomponentendiagramm.png (PNG copy)>]
+
+[28
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.110 E
        in offensichtlicher Nachteil dieses Ansatzes ist jedoch, dass die vis... <./images/prototyp.PNG>]
 
 [29]
-<images/prototyp2.PNG, id=441, 249.18094pt x 268.75406pt>
+<images/prototyp2.PNG, id=444, 249.18094pt x 268.75406pt>
 File: images/prototyp2.PNG Graphic file (type png)
 <use images/prototyp2.PNG>
-Package pdftex.def Info: images/prototyp2.PNG  used on input line 144.
+Package pdftex.def Info: images/prototyp2.PNG  used on input line 147.
 (pdftex.def)             Requested size: 308.71106pt x 332.98914pt.
 
 
 [30
-pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.153 
+l.156 
        <./images/prototyp2.PNG>]
-Overfull \hbox (9.36528pt too wide) in paragraph at lines 178--183
-\OT1/lmr/m/n/12 gew[]ahrleistet bleibt. Die Vor-aus-set-zung daf[]ur ist je-doch, dass die []uber-gebenen sympy.Ma-
- []
-
-
 
 [31]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 192.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 195.
 
 
 [32]) (text/evaluation.tex
@@ -1241,15 +1318,20 @@ Overfull \hbox (0.83105pt too wide) in paragraph at lines 28--31
 \OT1/lmr/m/n/12 wur-de, ist die Mo-del-lie-rung sta-ti-on[]arer Ro-bo-ter (z.B. Knickarm-ro-bo-ter) samt Vorw[]arts-
  []
 
-) (text/ausblick_auf_bachelor.tex
 
-[34])
 
-[35]
+[34]) (text/ausblick_auf_bachelor.tex
+
+[35])
 
 [36]
-Overfull \hbox (26.0579pt too wide) in paragraph at lines 155--155
+Overfull \hbox (26.0579pt too wide) in paragraph at lines 166--166
 [][][]\OT1/lmr/m/n/12 (2025c). \OT1/lmr/m/it/12 Ba-by-lon-JS Spe-ci-fi-ca-ti-on\OT1/lmr/m/n/12 . \OT1/lmr/m/sc/12 url\OT1/lmr/m/n/12 : []$\OT1/lmtt/m/n/12 https : / / www . babylonjs . com / specifications/$[]
+ []
+
+
+Overfull \hbox (41.79626pt too wide) in paragraph at lines 166--166
+[][]\OT1/lmr/m/n/12 Project-Jupyter (2024). \OT1/lmr/m/it/12 Ju-py-ter-Lab Do-cu-men-ta-ti-on\OT1/lmr/m/n/12 . \OT1/lmr/m/sc/12 url\OT1/lmr/m/n/12 : []$\OT1/lmtt/m/n/12 https : / / jupyterlab . readthedocs .
  []
 
 
@@ -1264,26 +1346,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 27.
-(C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
+
 Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
 
 
-Overfull \hbox (18.0pt too wide) in paragraph at lines 48--48
-[][] [][][][][][] 
+Overfull \hbox (15.0pt too wide) in paragraph at lines 48--48
+|[][][][][][]
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
@@ -1293,8 +1367,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--64
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.72 \subsubsection
-                   *{\colorbox{lightgray}{\texttt{\textbf{\color{green} def}... [1{C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+l.60 \end{itemize}
+                   [1]
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
@@ -1315,23 +1394,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--108
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-\OT1/lmtt/b/n/12 (pos, radiusTop=1, radiusBottom=1, height=2, radialSegments=32,
- []
-
-
-Overfull \hbox (18.0pt too wide) in paragraph at lines 124--124
-[][] [][][][][][] 
- []
-
-
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.129 \noindent
-                \textbf{Parameter:} \vspace{-6ex} \\ [2]
+l.111 \end{itemize}
+                    [2]
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\OT1/lmtt/b/n/12 (pos, radiusTop=1, radiusBottom=1, height=2, radialSegments=32,
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 124--124
+|[][][][][][]
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
@@ -1343,12 +1422,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 157--157
-[][]\OT1/lmtt/b/n/12 def[] []create[]quad[](pos, width, height, depth, color=[0, 255, 0],
+[][]\OT1/lmtt/b/n/12 def[] []create[]box[](pos, width, height, depth, color=[0, 255, 0],
  []
 
 
-Overfull \hbox (18.0pt too wide) in paragraph at lines 157--157
-[][] [][][][][][] 
+Overfull \hbox (15.0pt too wide) in paragraph at lines 157--157
+|[][][][][][]
  []
 
 
@@ -1362,8 +1441,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--162
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.169     \item \texttt
-                       {transparent}: Ein Boolean-Wert, der angibt, ob das M... [3]
+l.162 \begin{itemize}
+                      [3]
 Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
@@ -1384,18 +1463,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--206
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
-
- []
-
-
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.225 \noindent
-                \textbf{Parameter:} \vspace{-6ex} \\ [4]
+l.206 \begin{itemize}
+                      [4]
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
@@ -1421,18 +1500,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--267
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
-
- []
-
-
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.286 B
-       ei jedem Schritt wird das Dummy-Objekt gemäß der gegebenen Geschwin... [5]
+l.267 \begin{itemize}
+                      [5]
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 289--290
 
  []
@@ -1443,6 +1522,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 298--299
  []
 
 
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.316 
+       [6]
 Underfull \hbox (badness 10000) in paragraph at lines 318--319
 
  []
@@ -1453,13 +1539,6 @@ Overfull \hbox (4.4035pt too wide) in paragraph at lines 321--322
  []
 
 
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.323     \item \texttt
-                       {steps}: Die Anzahl der Schritte, die die Bewegung au... [6]
 Underfull \hbox (badness 10000) in paragraph at lines 327--328
 
  []
@@ -1475,6 +1554,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 350--351
  []
 
 
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.359 ...n\_multiply}\textbf{\texttt{(q1, q2):}}}}
+                                                   [7]
 Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
@@ -1485,13 +1571,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 371--372
  []
 
 
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.385 \noindent
-                \textbf{Parameter:} \vspace{-6ex} \\ [7]
 Underfull \hbox (badness 10000) in paragraph at lines 385--386
 
  []
@@ -1512,6 +1591,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--417
  []
 
 
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.417 \begin{itemize}
+                      [8]
 Underfull \hbox (badness 10000) in paragraph at lines 430--431
 
  []
@@ -1522,13 +1608,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 438--439
  []
 
 
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.448 \subsubsection
-                    *{\colorbox{lightgray}{\texttt{\textbf{\color{green} def... [8]
 Underfull \hbox (badness 10000) in paragraph at lines 452--453
 
  []
@@ -1544,18 +1623,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 472--473
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 481--482
-
- []
-
-
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.497 
-       [9]
+l.477     \item \texttt
+                       {order}: Die Rotationsreihenfolge als String (z.B. \t... [9]
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 499--500
 
  []
@@ -1566,6 +1645,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 508--509
  []
 
 
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.522 \noindent
+                \textbf{Parameter:} \vspace{-6ex} \\ [10]
 Underfull \hbox (badness 10000) in paragraph at lines 522--523
 
  []
@@ -1576,13 +1662,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 531--532
  []
 
 
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.543 
-       [10]
 Underfull \hbox (badness 10000) in paragraph at lines 549--550
 
  []
@@ -1593,6 +1672,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 558--559
  []
 
 
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.572 \noindent
+                \textbf{Parameter:} \vspace{-6ex} \\ [11]
 Underfull \hbox (badness 10000) in paragraph at lines 572--573
 
  []
@@ -1603,13 +1689,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 581--582
  []
 
 
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.595 \noindent
-                \textbf{Parameter:} \vspace{-6ex} \\ [11]
 Underfull \hbox (badness 10000) in paragraph at lines 595--596
 
  []
@@ -1625,6 +1704,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 617--618
  []
 
 
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.618 \begin{itemize}
+                      [12]
 Underfull \hbox (badness 10000) in paragraph at lines 625--626
 
  []
@@ -1640,13 +1726,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 645--646
  []
 
 
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.646 \begin{itemize}
-                      [12]
 Underfull \hbox (badness 10000) in paragraph at lines 659--660
 
  []
@@ -1657,6 +1736,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 667--668
  []
 
 
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.679 \noindent
+                \textbf{Parameter:} \vspace{-6ex} \\ [13]
 Underfull \hbox (badness 10000) in paragraph at lines 679--680
 
  []
@@ -1667,13 +1753,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 688--689
  []
 
 
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.704 \noindent
-                \textbf{Parameter:} \vspace{-6ex} \\ [13]
 Underfull \hbox (badness 10000) in paragraph at lines 704--705
 
  []
@@ -1689,6 +1768,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 720--721
  []
 
 
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.734 \noindent
+                \textbf{Parameter:} \vspace{-6ex} \\ [14]
 Underfull \hbox (badness 10000) in paragraph at lines 734--735
 
  []
@@ -1704,13 +1790,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 755--756
  []
 
 
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.760     \item \texttt
-                       {speed}: Die Geschwindigkeit der Animation. Ein höhe... [14]
 Underfull \hbox (badness 10000) in paragraph at lines 764--765
 
  []
@@ -1721,18 +1800,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 779--780
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 789--790
-
- []
-
-
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.15}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.794     \item O
-                 bjekte der Szene hinzuzufügen. [15]
+l.784     \item \texttt
+                       {frame}: Ein 3D-Achsenobjekt, das als Referenzrahmen ... [15]
+Underfull \hbox (badness 10000) in paragraph at lines 789--790
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 798--799
 
  []
@@ -1743,13 +1822,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 815--816
  []
 
 
-Overfull \hbox (76.74939pt too wide) in paragraph at lines 832--832
-[][] [][][][][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 837--838
-
+Overfull \hbox (73.74939pt too wide) in paragraph at lines 832--832
+|[][][][][][]
  []
 
 
@@ -1758,8 +1832,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 837--838
 pdfTeX warning (ext4): destination with the same identifier (name{page.16}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.844     \end{itemize}
-                        [16]
+l.837     \noindent
+                    \textbf{Parameter:} \vspace{-6ex} \\ [16]
+Underfull \hbox (badness 10000) in paragraph at lines 837--838
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 853--854
 
  []
@@ -1770,18 +1849,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 867--868
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 881--882
-
- []
-
-
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.17}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.895     \noindent
+l.881     \noindent
                     \textbf{Parameter:} \vspace{-6ex} \\ [17]
+Underfull \hbox (badness 10000) in paragraph at lines 881--882
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 895--896
 
  []
@@ -1792,7 +1871,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 895--896
 pdfTeX warning (ext4): destination with the same identifier (name{page.18}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.160 \end{document}
+l.171 \end{document}
                      [18] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
@@ -1805,13 +1884,19 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29222 strings out of 473522
- 545894 string characters out of 5713642
- 1426843 words of memory out of 5000000
- 51835 multiletter control sequences out of 15000+600000
+ 30308 strings out of 473522
+ 564535 string characters out of 5713642
+ 1447464 words of memory out of 5000000
+ 52932 multiletter control sequences out of 15000+600000
  643505 words of font info for 142 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 78i,11n,81p,2442b,2147s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 78i,11n,81p,2442b,2167s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exist, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exist, replaced by a fixed one
 
@@ -1843,9 +1928,9 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 <C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (60 pages, 1048799 bytes).
+Output written on main.pdf (60 pages, 1063230 bytes).
 PDF statistics:
- 722 PDF objects out of 1000 (max. 8388607)
- 158 named destinations out of 1000 (max. 500000)
- 323 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 681 PDF objects out of 1000 (max. 8388607)
+ 119 named destinations out of 1000 (max. 500000)
+ 328 words of extra memory for PDF output out of 10000 (max. 10000000)
 
