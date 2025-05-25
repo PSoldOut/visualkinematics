@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1747401047.92706 "main.bcf" "main.bbl" "main" 1747424800.55823 0
-  "main.bcf" 1747424800 110634 9441fd5a82db19b1b9b3ee586b4dd126 "pdflatex"
+["biber main"] 1748168694.06642 "main.bcf" "main.bbl" "main" 1748168771.98039 0
+  "main.bcf" 1748168771 110634 9441fd5a82db19b1b9b3ee586b4dd126 "pdflatex"
   "quellen.bib" 1747401064 9925 dafd4cc3158d16d39085ef204180f4fc ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1747424797.67076 "c:/Users/Philipp/Desktop/gitProjects/visualkinematics/latex/main.tex" "main.pdf" "main" 1747424800.55888 0
-  "C:/Users/Philipp/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1747330884 81088 29d6fa367ac022d1b69251d68c0742e6 ""
+["pdflatex"] 1748168769.06849 "c:/Users/Philipp/Desktop/gitProjects/visualkinematics/latex/main.tex" "main.pdf" "main" 1748168771.98102 0
+  "C:/Users/Philipp/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1748166828 82686 2381c3433487640bf26aa76a10db7eb2 ""
   "C:/Users/Philipp/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1744032231 12037097 f1aaf3e725f1267bdc89a46b152a8116 ""
   "C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc" 1256929440 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc" 1256929440 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -242,7 +242,8 @@
   "C:/Users/Philipp/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/Philipp/AppData/Local/Programs/MiKTeX/tex/latex/xfor/xfor.sty" 1233849756 2689 44855b72da58344b1c1d9b3087bce6ca ""
   "C:/Users/Philipp/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "c:/Users/Philipp/Desktop/gitProjects/visualkinematics/latex/main.tex" 1747351862 4131 a1bdfced8e60116f42ef35c120fe22e2 ""
+  "c:/Users/Philipp/Desktop/gitProjects/visualkinematics/latex/main.tex" 1748165171 4131 a1bdfced8e60116f42ef35c120fe22e2 ""
+  "eigenst.pdf" 1748167908 1068668 ff5e894f794c61187c3c9315f79d2de0 ""
   "images/diagramme/komponentendiagramm.png" 1744904897 31548 acf86ebf384bb87678b4223dd89a996e ""
   "images/diagramme/prototypKomponentendiagramm.png" 1745857810 14641 fe1a93d25dad23c5e18d7e7a5477cb08 ""
   "images/euler.png" 1747308808 1328127 7440074f3050748daef42aa2d88e27a0 ""
@@ -254,20 +255,20 @@
   "images/robot.PNG" 1744904533 104822 373eb95fc927c5f5634d70d796dd556a ""
   "images/rotations.PNG" 1746355860 65524 fe69433838ed944f21d3a5e08df93207 ""
   "images/uebung_robot.PNG" 1744906292 24391 fc0083500ba9714d2d25f217413a5232 ""
-  "main.aux" 1747424800 13680 6b62e2811a1f02312971f4d0875fef0e "pdflatex"
-  "main.bbl" 1747401049 33711 100e437459c2eab5be876b34e3ff2082 "biber main"
-  "main.lof" 1747424800 1402 cde24d60db2077f0db7d945eaf9b5c50 "pdflatex"
-  "main.out" 1747424800 5306 f97cc6c307d2a293c828711daa825ce0 "pdflatex"
-  "main.run.xml" 1747424800 2307 3de67e6f1ed5bca0492f00cf768167cb "pdflatex"
-  "main.tex" 1747351862 4131 a1bdfced8e60116f42ef35c120fe22e2 ""
-  "main.toc" 1747424800 2942 cb9f391caac18179b0c738d8d445d6c8 "pdflatex"
+  "main.aux" 1748168771 13680 51be95e0a2532949ee4dcfa35fbaf1bb "pdflatex"
+  "main.bbl" 1748168696 33711 100e437459c2eab5be876b34e3ff2082 "biber main"
+  "main.lof" 1748168771 1402 cde24d60db2077f0db7d945eaf9b5c50 "pdflatex"
+  "main.out" 1748168771 5306 f97cc6c307d2a293c828711daa825ce0 "pdflatex"
+  "main.run.xml" 1748168771 2307 3de67e6f1ed5bca0492f00cf768167cb "pdflatex"
+  "main.tex" 1748165171 4131 a1bdfced8e60116f42ef35c120fe22e2 ""
+  "main.toc" 1748168771 2942 cb9f391caac18179b0c738d8d445d6c8 "pdflatex"
   "text/anforderungen.tex" 1747332232 5167 20f4d671ecc372fcb26fec18a0fddec5 ""
-  "text/anhang.tex" 1747342239 41574 77489f794ade547e5e4df9a4bcefe4d6 ""
+  "text/anhang.tex" 1748168768 41607 3b4e03ab3161a3e87d63153356dfcee6 ""
   "text/aufbau.tex" 1747403110 20966 13e959d0983d2eef62608a232cfff6a4 ""
   "text/ausblick_auf_bachelor.tex" 1746537350 2054 c075c959f4f6946cb2e6c705de6a22e3 ""
   "text/einleitung.tex" 1747304464 6300 4de97e11928f35265fc4bbd713c26979 ""
   "text/entwicklungsprozess.tex" 1747402835 19170 d27cfc50ee52d18e1f1804ccf9d7d82f ""
-  "text/evaluation.tex" 1747424796 2776 53da6d92af1c0958e4aa600db085d6c0 ""
+  "text/evaluation.tex" 1747424846 2776 53da6d92af1c0958e4aa600db085d6c0 ""
   "text/theoretischer_hintergrund.tex" 1747394162 11259 262b2dbc48e3f0098a5718d3b68a1ea2 ""
   (generated)
   "main.aux"
