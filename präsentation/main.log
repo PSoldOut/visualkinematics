@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  19 MAY 2025 16:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  9 JUN 2025 18:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -746,17 +746,17 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 <images/diagramme/komponentendiagramm.png, id=198, 672.5125pt x 732.7375pt>
 File: images/diagramme/komponentendiagramm.png Graphic file (type png)
 <use images/diagramme/komponentendiagramm.png>
-Package pdftex.def Info: images/diagramme/komponentendiagramm.png  used on input line 131.
+Package pdftex.def Info: images/diagramme/komponentendiagramm.png  used on input line 133.
 (pdftex.def)             Requested size: 205.37926pt x 223.76971pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 131.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 133.
  (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 131.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 133.
  (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 131.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 133.
  (C:\Users\Philipp\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
@@ -811,14 +811,14 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  22748 strings out of 473522
- 446454 string characters out of 5713642
+ 446456 string characters out of 5713642
  807196 words of memory out of 5000000
  45465 multiletter control sequences out of 15000+600000
  566175 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,123p,447b,655s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/Philipp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on main.pdf (13 pages, 171147 bytes).
+Output written on main.pdf (13 pages, 170973 bytes).
 PDF statistics:
  440 PDF objects out of 1000 (max. 8388607)
  32 named destinations out of 1000 (max. 500000)

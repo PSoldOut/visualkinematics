@@ -28,7 +28,7 @@
   \begin{itemize}
     \setlength{\itemsep}{1em}
     \item Entwicklung von Framework zur Visualisierung kinematischer Kennwerte für die Lehre
-    \item abstrakte mathematische Konzepte für Studenten schwierig zu durchdringen
+    \item Mathematische Konzepte für Studenten schwierig zu durchdringen
     \item Besonderer Fokus: Rotation von Körpern
     \item Werkzeug für Lehrpersonen zum erstellen von Übungsszenarien
   \end{itemize}
@@ -43,8 +43,8 @@
 %zum Beispiel in Übungen oder Vorlesungen im Bereich der Robotik, um komplexe Bewegungsabläufe und Zusammenhänge greifbarer zu machen.
 %
 %Der Hintergrund ist der, dass es Studierenden oft schwer fällt,
-%abstrakte mathematische Konzepte wie Transformationen im Raum wirklich zu verstehen.
-%Begriffe wie Eulerwinkel oder Quaternionen bleiben häufig theoretisch und schwer vorstellbar.
+%mathematische Konzepte wie Transformationen im Raum wirklich zu verstehen.
+%Konzepte wie Eulerwinkel oder Quaternionen bleiben häufig theoretisch und schwer vorstellbar.
 %
 %Ein besonderer Fokus meiner Arbeit liegt auf der Rotation von Körpern im Raum,
 %da es eines der Ersten konzepte der Kinematik ist das im bereich der Robotik gelehrt wird
@@ -54,6 +54,16 @@
 %dadurch ein besseres und anwendungsnahes Verständnis für gewisse kinematische Konzepte entwickeln.
 
 
+\begin{frame}{Anforderungen}
+  \begin{itemize}
+    \setlength{\itemsep}{1em}
+    \item Transformationen von Körpern im Raum Visualisieren (insbesondere Rotation)
+    \item Darstellungsmöglichkeiten (Euler, Matrix, Quaternionen)
+    \item Komfortable Erstellung und Anwendung von Übungsaufgaben
+    \item Einfache Bewegungsabläufe radgetriebender Roboter
+  \end{itemize}
+\end{frame}
+
 
 
 \section{Anforderungen}
@@ -62,22 +72,14 @@
     \setlength{\itemsep}{1em}
     \item Python-Schnittstelle
     \item Nutzung innerhalb von JupyterLab
-    \item nach möglichkeit Visualisierung innerhalb von JupyterLab
-    \item keine lokale Installation
+    \item Nach Möglichkeit Visualisierung innerhalb von JupyterLab
+    \item Keine lokale Installation
     \item Kompatibel mit Sympy
   \end{itemize}
 \end{frame}
 
 
-\begin{frame}{Anforderungen}
-  \begin{itemize}
-    \setlength{\itemsep}{1em}
-    \item Transformationen von Körpern im Raum Visualisieren (insbesondere Rotation)
-    \item Darstellungsmöglichkeiten (Euler, Matrix, Quaternionen)
-    \item komfortable erstellung und Anwendung von Übungsaufgaben
-    \item einfache Bewegungsabläufe Radgetriebender Roboter
-  \end{itemize}
-\end{frame}
+
 
 
 %Für die Entwicklung des Frameworks wurden mehrere Anforderungen festgelegt,
@@ -138,7 +140,7 @@
   \begin{itemize}
     \setlength{\itemsep}{1em}
     \item Zentrale Datei util.py mit Kern- und Hilfsfunktionen
-    \item geometrische Transformationen und Umrechnung der Darstellungsformen von Rotationen
+    \item Geometrische Transformationen und Umrechnung der Darstellungsformen von Rotationen
     \item Klasse Environment für konfigurierbare 3D-Szene mit Kamera, Licht und Gitter
     \item Funktion move() zur Simulation von Roboterbewegungen in der Ebene
   \end{itemize}
@@ -151,7 +153,7 @@
     \setlength{\itemsep}{1em}
     \item Würfel der interaktiv per GUI-Elementen transformiert werden kann
     \item Möglichkeiten des Frameworks veranschaulichen
-    \item Grundtranfsformationen nachzuvollziehbar machen
+    \item Grundtransformationen nachvollziehbar machen
   \end{itemize}
 \end{frame}
 
@@ -272,7 +274,7 @@
     \setlength{\itemsep}{1em}
     \item Deployment auf den JupyterLab-Servern der FH Dortmund
     \item Erweiterungen um Stationäre Robobter
-    \item vorwärts- und rückwärts-Transformation
+    \item Vorwärts- und rückwärts-Transformation
     
   \end{itemize}
 \end{frame}
